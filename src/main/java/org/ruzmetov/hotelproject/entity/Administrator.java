@@ -17,6 +17,7 @@ import java.util.UUID;
 @Entity
 public class Administrator {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @ManyToMany
