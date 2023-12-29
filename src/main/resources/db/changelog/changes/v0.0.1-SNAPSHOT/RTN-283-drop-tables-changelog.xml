@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet author="b.ruzmetov" id="drop service table">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="service"/>
+        </preConditions>
+        <rollback>
+            <dropTable tableName="service"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="b.ruzmetov" id="drop room table">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="room"/>
+        </preConditions>
+        <rollback>
+            <dropTable tableName="room"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="b.ruzmetov" id="drop reservation table">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="reservation"/>
+        </preConditions>
+        <rollback>
+            <dropTable tableName="reservation"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="b.ruzmetov" id="drop report table">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="report"/>
+        </preConditions>
+        <rollback>
+            <dropTable tableName="report"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="b.ruzmetov" id="drop payment table">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="payment"/>
+        </preConditions>
+        <rollback>
+            <dropTable tableName="payment"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="b.ruzmetov" id="drop feedback table">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="feedback"/>
+        </preConditions>
+        <rollback>
+            <dropTable tableName="feedback"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="b.ruzmetov" id="drop event table">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="event"/>
+        </preConditions>
+        <rollback>
+            <dropTable tableName="event"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="b.ruzmetov" id="drop employee table">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="employee"/>
+        </preConditions>
+        <rollback>
+            <dropTable tableName="employee"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="b.ruzmetov" id="drop customer table">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="customer"/>
+        </preConditions>
+        <rollback>
+            <dropTable tableName="customer"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="b.ruzmetov" id="drop administrator table">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="administrator"/>
+        </preConditions>
+        <rollback>
+            <dropTable tableName="administrator"/>
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>
