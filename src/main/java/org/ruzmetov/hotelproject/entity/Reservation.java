@@ -23,45 +23,33 @@ public class Reservation {
     @Column(name = "reservation_id")
     private UUID reservationId;
 
-    @ManyToMany
-    @JoinColumn (name = "customer_first_name", referencedColumnName = "customer_first_name")
-    private String customerFirstName;
+    @Column (name = "reservation_customer_id")
+    private UUID customerId;
 
-    @ManyToMany
-    @JoinColumn (name = "reservation_customer_last_name", referencedColumnName = "customer_last_name")
-    @Column(name = "reservation_customer_last_name")
-    private String customerLastName;
-
-    @ManyToOne
-    @JoinColumn(name = "reservation_room_number", referencedColumnName = "room_number")
     @Column(name = "reservation_room_number")
     private int roomNumber;
 
-    @ManyToOne
-    @JoinColumn(name = "reservation_event_id", referencedColumnName = "event_id")
+    @Column(name = "reservation_event_id")
     private UUID eventId;
 
-    @ManyToOne
-    @JoinColumn(name = "reservation_service_id", referencedColumnName = "service_id")
+    @Column(name = "reservation_service_id")
     private UUID serviceId;
 
-    @OneToOne
-    @JoinColumn(name = "reservation_total_amount", referencedColumnName = "payment_total_amount")
     @Column(name = "reservation_total_amount")
     private double totalAmount;
 
-    @OneToOne
-    @JoinColumn(name = "reservation_payment_method", referencedColumnName = "payment_method")
     @Column(name = "reservation_payment_method")
     private String paymentMethod;
 
-    @OneToOne
-    @JoinColumn(name = "reservation_payment_id", referencedColumnName = "payment_id")
     @Column(name = "reservation_payment_id")
     private UUID paymentId;
 
-    @ManyToMany
-    @JoinColumn(name = "reservation_cancelled_info", referencedColumnName = "cancellation_rates")
+    @Column(name = "reservation_transaction_id")
+    private UUID transactionId;
+
+    @Column(name = "reservation_transaction_history")
+    private String transactionHistory;
+
     @Column(name = "reservation_cancelled_info")
     private String cancellationInfo;
 
@@ -70,16 +58,6 @@ public class Reservation {
 
     @Column(name = "reservation_update")
     private Date reservationUpdate;
-
-    @ManyToOne
-    @JoinColumn (name = "reservation_employee_id", referencedColumnName = "employee_id")
-    @Column(name = "reservation_employee_id")
-    private UUID employeeId;
-
-    @ManyToOne
-    @JoinColumn (name = "reservation_administrator_id", referencedColumnName = "administrator_id")
-    @Column(name = "reservation_administrator_id")
-    private UUID administratorId;
 
     @Override
     public boolean equals(Object o) {
@@ -96,21 +74,20 @@ public class Reservation {
 
     @Override
     public String toString() {
-        return "CommonReservation{" +
+        return "Reservation{" +
                 "reservationId=" + reservationId +
-                ", customerFirstName='" + customerFirstName + '\'' +
-                ", customerLastName='" + customerLastName + '\'' +
+                ", customerId=" + customerId +
                 ", roomNumber=" + roomNumber +
                 ", eventId=" + eventId +
                 ", serviceId=" + serviceId +
                 ", totalAmount=" + totalAmount +
                 ", paymentMethod='" + paymentMethod + '\'' +
                 ", paymentId=" + paymentId +
+                ", transactionId=" + transactionId +
+                ", transactionHistory='" + transactionHistory + '\'' +
                 ", cancellationInfo='" + cancellationInfo + '\'' +
                 ", reservationCreate=" + reservationCreate +
                 ", reservationUpdate=" + reservationUpdate +
-                ", employeeId=" + employeeId +
-                ", administratorId=" + administratorId +
                 '}';
     }
 }

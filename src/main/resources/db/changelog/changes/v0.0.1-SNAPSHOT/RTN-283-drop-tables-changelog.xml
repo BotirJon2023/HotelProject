@@ -33,33 +33,6 @@
         </rollback>
     </changeSet>
 
-    <changeSet author="b.ruzmetov" id="drop report table">
-        <preConditions onFail="MARK_RAN">
-            <tableExists tableName="report"/>
-        </preConditions>
-        <rollback>
-            <dropTable tableName="report"/>
-        </rollback>
-    </changeSet>
-
-    <changeSet author="b.ruzmetov" id="drop payment table">
-        <preConditions onFail="MARK_RAN">
-            <tableExists tableName="payment"/>
-        </preConditions>
-        <rollback>
-            <dropTable tableName="payment"/>
-        </rollback>
-    </changeSet>
-
-    <changeSet author="b.ruzmetov" id="drop feedback table">
-        <preConditions onFail="MARK_RAN">
-            <tableExists tableName="feedback"/>
-        </preConditions>
-        <rollback>
-            <dropTable tableName="feedback"/>
-        </rollback>
-    </changeSet>
-
     <changeSet author="b.ruzmetov" id="drop event table">
         <preConditions onFail="MARK_RAN">
             <tableExists tableName="event"/>
@@ -69,30 +42,12 @@
         </rollback>
     </changeSet>
 
-    <changeSet author="b.ruzmetov" id="drop employee table">
-        <preConditions onFail="MARK_RAN">
-            <tableExists tableName="employee"/>
-        </preConditions>
-        <rollback>
-            <dropTable tableName="employee"/>
-        </rollback>
-    </changeSet>
-
     <changeSet author="b.ruzmetov" id="drop customer table">
         <preConditions onFail="MARK_RAN">
             <tableExists tableName="customer"/>
         </preConditions>
         <rollback>
             <dropTable tableName="customer"/>
-        </rollback>
-    </changeSet>
-
-    <changeSet author="b.ruzmetov" id="drop administrator table">
-        <preConditions onFail="MARK_RAN">
-            <tableExists tableName="administrator"/>
-        </preConditions>
-        <rollback>
-            <dropTable tableName="administrator"/>
         </rollback>
     </changeSet>
 

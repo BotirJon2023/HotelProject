@@ -21,49 +21,22 @@
             <column name="roomCategory" type="varchar(30)">
                 <constraints nullable="false"/>
             </column>
-            <column name="roomMaxOccupancy" type="integer">
-                <constraints nullable="false"/>
-            </column>
-            <column name="roomPricePerNight" type="integer">
-                <constraints nullable="false"/>
-            </column>
-            <column name="roomTotalPrice" type="double">
+            <column name="roomPricePerNight" type="double">
                 <constraints nullable="false"/>
             </column>
             <column name="isAvailableRoom" type="boolean">
                 <constraints nullable="false"/>
             </column>
-            <column name="bedNumbers" type="integer">
-                <constraints nullable="false"/>
-            </column>
-            <column name="viewFromRoom" type="varchar(255)">
-                <constraints nullable="false"/>
-            </column>
             <column name="roomFloor" type="integer">
                 <constraints nullable="false"/>
             </column>
-            <column name="roomSmokingPreferences" type="varchar(30)">
-                <constraints nullable="false"/>
-            </column>
-            <column name="roomSize" type="double">
-                <constraints nullable="false"/>
-            </column>
-            <column name="roomAdditionalService" type="varchar(255)">
-                <constraints nullable="false"/>
-            </column>
-            <column name="isBreakfastIncluded" type="boolean">
+            <column name="isBreakfastInclude" type="boolean">
                 <constraints nullable="false"/>
             </column>
             <column name="checkInDate" type="date">
                 <constraints nullable="false"/>
             </column>
             <column name="checkOutDate" type="date">
-                <constraints nullable="false"/>
-            </column>
-            <column name="employeeId" type="uuid">
-                <constraints nullable="false"/>
-            </column>
-            <column name="administratorId" type="uuid">
                 <constraints nullable="false"/>
             </column>
             <column name="roomTabCreate" type="date">
@@ -86,7 +59,7 @@
             <column name="serviceId" type="uuid">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="isBeakfastBooked" type="boolean">
+            <column name="isBreakfastBooked" type="boolean">
                 <constraints nullable="false"/>
             </column>
             <column name="serviceBreakfastPrice" type="double">
@@ -128,222 +101,15 @@
             <column name="serviceAirportTransferPrice" type="double">
                 <constraints nullable="false"/>
             </column>
-        </createTable>
-    </changeSet>
-
-    <changeSet author="b.ruzmetov" id="create reservation table">
-        <preConditions onFail="CONTINUE" onFailMessage="Table reservation already exists">
-            <not>
-                <tableExists tableName="reservation"/>
-            </not>
-        </preConditions>
-
-        <createTable tableName="reservation">
-            <column name="reservationId" type="uuid">
-                <constraints primaryKey="true" nullable="false"/>
-            </column>
-            <column name="customerFirstName" type="varchar(50)">
+            <column name="serviceTabCreate" type="date">
                 <constraints nullable="false"/>
             </column>
-            <column name="customerLastName" type="varchar(50)">
-                <constraints nullable="false"/>
-            </column>
-            <column name="roomNumber" type="integer">
-                <constraints nullable="false"/>
-            </column>
-            <column name="eventId" type="uuid">
-                <constraints nullable="true"/>
-            </column>
-            <column name="serviceId" type="uuid">
-                <constraints nullable="true"/>
-            </column>
-            <column name="totalAmount" type="double">
-                <constraints nullable="false"/>
-            </column>
-            <column name="paymentMethod" type="varchar(50)">
-                <constraints nullable="false"/>
-            </column>
-            <column name="paymentId" type="uuid">
-                <constraints nullable="true"/>
-            </column>
-            <column name="cancellationInfo" type="varchar(255)">
-                <constraints nullable="true"/>
-            </column>
-            <column name="reservationCreate" type="timestamp">
-                <constraints nullable="false"/>
-            </column>
-            <column name="reservationUpdate" type="timestamp">
-                <constraints nullable="false"/>
-            </column>
-            <column name="employeeId" type="uuid">
-                <constraints nullable="true"/>
-            </column>
-            <column name="administratorId" type="uuid">
-                <constraints nullable="true"/>
-            </column>
-        </createTable>
-
-    </changeSet>
-    <changeSet author="b.ruzmetov" id="create report table">
-        <preConditions onFail="CONTINUE" onFailMessage="Table report already exists">
-            <not>
-                <tableExists tableName="report"/>
-            </not>
-        </preConditions>
-
-        <createTable tableName="report">
-            <column name="reportId" type="uuid">
-                <constraints primaryKey="true" nullable="false"/>
-            </column>
-            <column name="startDate" type="date">
-                <constraints nullable="false"/>
-            </column>
-            <column name="endDate" type="date">
-                <constraints nullable="false"/>
-            </column>
-            <column name="revenueByRooms" type="varchar(255)">
-                <constraints nullable="true"/>
-            </column>
-            <column name="revenueByEvent" type="varchar(255)">
-                <constraints nullable="true"/>
-            </column>
-            <column name="revenueByService" type="varchar(255)">
-                <constraints nullable="true"/>
-            </column>
-            <column name="occupiedRooms" type="varchar(255)">
-                <constraints nullable="true"/>
-            </column>
-            <column name="vacantRooms" type="varchar(255)">
-                <constraints nullable="true"/>
-            </column>
-            <column name="reviewScoresAndFeedback" type="varchar(255)">
-                <constraints nullable="true"/>
-            </column>
-            <column name="cancellationRates" type="varchar(255)">
-                <constraints nullable="true"/>
-            </column>
-            <column name="accessEmployeeId" type="uuid">
-                <constraints nullable="true"/>
-            </column>
-            <column name="accessAdministratorId" type="uuid">
-                <constraints nullable="true"/>
-            </column>
-            <column name="reportTabCreate" type="timestamp">
-                <constraints nullable="false"/>
-            </column>
-            <column name="reportTabUpdate" type="timestamp">
+            <column name="serviceTabUpdate" type="date">
                 <constraints nullable="false"/>
             </column>
         </createTable>
-
     </changeSet>
-    <changeSet author="b.ruzmetov" id="create payment table">
-        <preConditions onFail="CONTINUE" onFailMessage="Table payment already exists">
-            <not>
-                <tableExists tableName="payment"/>
-            </not>
-        </preConditions>
 
-        <createTable tableName="payment">
-            <column name="paymentId" type="uuid">
-                <constraints primaryKey="true" nullable="false"/>
-            </column>
-            <column name="roomNumber" type="integer">
-                <constraints nullable="false"/>
-            </column>
-            <column name="serviceId" type="uuid">
-                <constraints nullable="true"/>
-            </column>
-            <column name="eventId" type="uuid">
-                <constraints nullable="true"/>
-            </column>
-            <column name="customerFirstName" type="varchar(50)">
-                <constraints nullable="false"/>
-            </column>
-            <column name="customerLastName" type="varchar(50)">
-                <constraints nullable="false"/>
-            </column>
-            <column name="creditCardNumber" type="integer">
-                <constraints nullable="false"/>
-            </column>
-            <column name="creditCardExpiringDate" type="date">
-                <constraints nullable="false"/>
-            </column>
-            <column name="creditCardCVV" type="integer">
-                <constraints nullable="false"/>
-            </column>
-            <column name="paymentMethod" type="varchar(50)">
-                <constraints nullable="false"/>
-            </column>
-            <column name="totalAmount" type="double">
-                <constraints nullable="false"/>
-            </column>
-            <column name="transactionId" type="uuid">
-                <constraints nullable="true"/>
-            </column>
-            <column name="transactionHistory" type="varchar(255)">
-                <constraints nullable="true"/>
-            </column>
-            <column name="employeeId" type="uuid">
-                <constraints nullable="true"/>
-            </column>
-            <column name="administratorId" type="uuid">
-                <constraints nullable="true"/>
-            </column>
-            <column name="paymentTabCreate" type="timestamp">
-                <constraints nullable="false"/>
-            </column>
-            <column name="paymentTabUpdate" type="timestamp">
-                <constraints nullable="false"/>
-            </column>
-        </createTable>
-
-    </changeSet>
-    <changeSet author="b.ruzmetov" id="create feedback table">
-        <preConditions onFail="CONTINUE" onFailMessage="Table feedback already exists">
-            <not>
-                <tableExists tableName="feedback"/>
-            </not>
-        </preConditions>
-
-        <createTable tableName="feedback">
-            <column name="feedbackId" type="uuid">
-                <constraints primaryKey="true" nullable="false"/>
-            </column>
-            <column name="roomNumber" type="integer">
-                <constraints nullable="false"/>
-            </column>
-            <column name="serviceId" type="uuid">
-                <constraints nullable="true"/>
-            </column>
-            <column name="eventId" type="uuid">
-                <constraints nullable="true"/>
-            </column>
-            <column name="satisfactionRating" type="integer">
-                <constraints nullable="false"/>
-            </column>
-            <column name="comments" type="varchar(255)">
-                <constraints nullable="true"/>
-            </column>
-            <column name="customerFirstName" type="varchar(50)">
-                <constraints nullable="false"/>
-            </column>
-            <column name="customerLastName" type="varchar(50)">
-                <constraints nullable="false"/>
-            </column>
-            <column name="accessAdministratorId" type="uuid">
-                <constraints nullable="true"/>
-            </column>
-            <column name="feedbackTabCreate" type="timestamp">
-                <constraints nullable="false"/>
-            </column>
-            <column name="feedbackTabUpdate" type="timestamp">
-                <constraints nullable="false"/>
-            </column>
-        </createTable>
-
-
-    </changeSet>
     <changeSet author="b.ruzmetov" id="create event table">
         <preConditions onFail="CONTINUE" onFailMessage="Table event already exists">
             <not>
@@ -382,24 +148,6 @@
             <column name="contactPersonName" type="varchar(100)">
                 <constraints nullable="true"/>
             </column>
-            <column name="eventCategory" type="varchar(50)">
-                <constraints nullable="true"/>
-            </column>
-            <column name="totalPrice" type="double">
-                <constraints nullable="false"/>
-            </column>
-            <column name="paymentMethod" type="varchar(50)">
-                <constraints nullable="false"/>
-            </column>
-            <column name="paymentId" type="uuid">
-                <constraints nullable="true"/>
-            </column>
-            <column name="employeeId" type="uuid">
-                <constraints nullable="true"/>
-            </column>
-            <column name="administratorId" type="varchar(50)">
-                <constraints nullable="true"/>
-            </column>
             <column name="eventTabCreate" type="timestamp">
                 <constraints nullable="false"/>
             </column>
@@ -407,52 +155,8 @@
                 <constraints nullable="false"/>
             </column>
         </createTable>
-
     </changeSet>
-    <changeSet author="b.ruzmetov" id="create employee table">
-        <preConditions onFail="CONTINUE" onFailMessage="Table employee already exists">
-            <not>
-                <tableExists tableName="employee"/>
-            </not>
-        </preConditions>
 
-        <createTable tableName="employee">
-            <column name="employeeId" type="uuid">
-                <constraints primaryKey="true" nullable="false"/>
-            </column>
-            <column name="firstName" type="varchar(50)">
-                <constraints nullable="false"/>
-            </column>
-            <column name="lastName" type="varchar(50)">
-                <constraints nullable="false"/>
-            </column>
-            <column name="department" type="varchar(50)">
-                <constraints nullable="false"/>
-            </column>
-            <column name="employeePosition" type="varchar(50)">
-                <constraints nullable="false"/>
-            </column>
-            <column name="shiftStartTime" type="time">
-                <constraints nullable="false"/>
-            </column>
-            <column name="shiftEndTime" type="time">
-                <constraints nullable="false"/>
-            </column>
-            <column name="feedback" type="varchar(255)">
-                <constraints nullable="true"/>
-            </column>
-            <column name="complaints" type="varchar(255)">
-                <constraints nullable="true"/>
-            </column>
-            <column name="employeeTabCreate" type="timestamp">
-                <constraints nullable="false"/>
-            </column>
-            <column name="employeeTabUpdate" type="timestamp">
-                <constraints nullable="false"/>
-            </column>
-        </createTable>
-
-    </changeSet>
     <changeSet author="b.ruzmetov" id="create customer table">
         <preConditions onFail="CONTINUE" onFailMessage="Table customer already exists">
             <not>
@@ -465,57 +169,30 @@
                 <constraints primaryKey="true" nullable="false"/>
             </column>
             <column name="firstName" type="varchar(50)">
-                <constraints nullable="false"/>
+                <constraints nullable="true"/>
             </column>
             <column name="lastName" type="varchar(50)">
-                <constraints nullable="false"/>
+                <constraints nullable="true"/>
             </column>
             <column name="email" type="varchar(100)">
-                <constraints nullable="false"/>
+                <constraints nullable="true"/>
             </column>
             <column name="phoneNumber" type="integer">
-                <constraints nullable="false"/>
+                <constraints nullable="true"/>
             </column>
             <column name="address" type="varchar(255)">
-                <constraints nullable="true"/>
-            </column>
-            <column name="reservationId" type="uuid">
-                <constraints nullable="true"/>
-            </column>
-            <column name="reservationHistory" type="varchar(255)">
-                <constraints nullable="true"/>
-            </column>
-            <column name="roomNumber" type="integer">
-                <constraints nullable="false"/>
-            </column>
-            <column name="serviceId" type="uuid">
-                <constraints nullable="true"/>
-            </column>
-            <column name="eventId" type="uuid">
                 <constraints nullable="true"/>
             </column>
             <column name="loyaltyPoints" type="varchar(50)">
                 <constraints nullable="true"/>
             </column>
-            <column name="checkInDate" type="date">
-                <constraints nullable="false"/>
-            </column>
-            <column name="checkInStatus" type="varchar(50)">
+            <column name="creditCardNumber" type="integer">
                 <constraints nullable="true"/>
             </column>
-            <column name="checkOutDate" type="date">
-                <constraints nullable="false"/>
-            </column>
-            <column name="checkOutStatus" type="varchar(50)">
+            <column name="creditCardExpiringDate" type="date">
                 <constraints nullable="true"/>
             </column>
-            <column name="totalAmount" type="integer">
-                <constraints nullable="false"/>
-            </column>
-            <column name="paymentMethod" type="varchar(50)">
-                <constraints nullable="false"/>
-            </column>
-            <column name="paymentId" type="uuid">
+            <column name="customer_credit_card_CVV" type="integer">
                 <constraints nullable="true"/>
             </column>
             <column name="customerTabCreate" type="timestamp">
@@ -525,43 +202,54 @@
                 <constraints nullable="false"/>
             </column>
         </createTable>
-
     </changeSet>
 
-    <changeSet author="b.ruzmetov" id="create administrator table">
-        <preConditions onFail="CONTINUE" onFailMessage="Table administrator already exists">
+    <changeSet author="b.ruzmetov" id="create reservation table">
+        <preConditions onFail="CONTINUE" onFailMessage="Table reservation already exists">
             <not>
-                <tableExists tableName="administrator"/>
+                <tableExists tableName="reservation"/>
             </not>
         </preConditions>
 
-        <createTable tableName="administrator">
-            <column name="administratorId" type="uuid">
+        <createTable tableName="reservation">
+            <column name="reservationId" type="uuid">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="firstName" type="varchar(50)">
+            <column name="customerId" type="uuid">
+                <constraints foreignKeyName="true" nullable="false"/>
+            </column>
+            <column name="roomNumber" type="integer">
+                <constraints foreignKeyName="true" nullable="false"/>
+            </column>
+            <column name="eventId" type="uuid">
+                <constraints foreignKeyName="true" nullable="true"/>
+            </column>
+            <column name="serviceId" type="uuid">
+                <constraints foreignKeyName="true" nullable="true"/>
+            </column>
+            <column name="totalAmount" type="double">
                 <constraints nullable="false"/>
             </column>
-            <column name="lastName" type="varchar(50)">
+            <column name="paymentMethod" type="varchar(50)">
                 <constraints nullable="false"/>
             </column>
-            <column name="password" type="varchar(255)">
-                <constraints nullable="false"/>
-            </column>
-            <column name="email" type="varchar(100)">
-                <constraints nullable="false"/>
-            </column>
-            <column name="department" type="varchar(50)">
-                <constraints nullable="false"/>
-            </column>
-            <column name="position" type="varchar(50)">
-                <constraints nullable="false"/>
-            </column>
-            <column name="feedbackReview" type="varchar(255)">
+            <column name="paymentId" type="uuid">
                 <constraints nullable="true"/>
             </column>
-            <column name="reportAccess" type="varchar(50)">
+            <column name="transactionId" type="uuid">
                 <constraints nullable="true"/>
+            </column>
+            <column name="transactionHistory" type="varchar(255)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="cancellationInfo" type="varchar(255)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="reservationCreate" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="reservationUpdate" type="timestamp">
+                <constraints nullable="false"/>
             </column>
         </createTable>
     </changeSet>

@@ -8,210 +8,91 @@
 
     <changeSet author="b.ruzmetov" id="insert test data into service table">
         <insert tableName="service">
-            <column name="serviceId" value="123e4567-e89b-12d3-a456-426655440222"/>
+            <column name="serviceId" value="020124se-r002-002v-i0c0-024ser01vi02"/>
             <column name="isBreakfastBooked" value="true"/>
-            <column name="serviceBreakfastPrice" value="16.99"/>
+            <column name="serviceBreakfastPrice" value="20.00"/>
             <column name="isRestaurantBooked" value="false"/>
             <column name="serviceRestaurantPrice" value="0.0"/>
             <column name="isBarBooked" value="true"/>
-            <column name="serviceBarPrice" value="8.50"/>
+            <column name="serviceBarPrice" value="10.00"/>
             <column name="isSwimmingPoolBooked" value="false"/>
             <column name="serviceSwimmingPoolPrice" value="0.0"/>
             <column name="isGymBooked" value="true"/>
-            <column name="serviceGymPrice" value="14.75"/>
+            <column name="serviceGymPrice" value="12.75"/>
             <column name="isGarageBooked" value="false"/>
             <column name="serviceGaragePrice" value="0.0"/>
             <column name="isAirportTransferBooked" value="true"/>
-            <column name="serviceAirportTransferPrice" value="26.00"/>
-            <column name="serviceTotalPrice" value="66.24"/>
-            <column name="servicePaymentMethod" value="Credit Card"/>
-            <column name="servicePaymentId" value="123e4567-e89b-12d3-a456-426655440222"/>
-            <column name="serviceEmployeeId" value="123e4567-e89b-12d3-a456-426655440223"/>
-            <column name="serviceAdministratorId" value="123e4567-e89b-12d3-a456-426655440224"/>
-            <column name="serviceTabCreate" value="2021-01-15T10:30:00"/>
-            <column name="serviceTabUpdate" value="2021-01-15T12:45:00"/>
+            <column name="serviceAirportTransferPrice" value="50.00"/>
+            <column name="serviceTabCreate" value="2024-01-03T10:30:00"/>
+            <column name="serviceTabUpdate" value="2024-01-03T12:45:00"/>
         </insert>
     </changeSet>
 
     <changeSet author="b.ruzmetov" id="insert test data into room table">
         <insert tableName="room">
-            <column name="roomNumber" value="111"/>
-            <column name="roomCategory" value="Twin Standart"/>
-            <column name="roomMaxOccupancy" value="2"/>
-            <column name="roomPricePerNight" value="150"/>
-            <column name="roomTotalPrice" value="750.00"/>
+            <column name="roomNumber" value="202"/>
+            <column name="roomCategory" value="Standard"/>
+            <column name="roomPricePerNight" value="100.00"/>
             <column name="isAvailableRoom" value="true"/>
-            <column name="bedNumbers" value="2"/>
-            <column name="viewFromRoom" value="River View"/>
-            <column name="roomFloor" value="1"/>
-            <column name="roomSmokingPreferences" value="Non-smoking"/>
-            <column name="roomSize" value="27.5"/>
-            <column name="roomAdditionalService" value="Wi-Fi"/>
+            <column name="roomFloor" value="2"/>
             <column name="isBreakfastInclude" value="true"/>
-            <column name="checkInDate" value="2021-03-15"/>
-            <column name="checkOutDate" value="2021-03-20"/>
-            <column name="employeeId" value="123e4567-e89b-12d3-a456-426655440221"/>
-            <column name="administratorId" value="123e4567-e89b-12d3-a456-426655440312"/>
-            <column name="roomTabCreate" value="2021-03-15T14:00:00"/>
-            <column name="roomTabUpdate" value="2021-03-16T09:45:00"/>
+            <column name="checkInDate" value="2024-01-03"/>
+            <column name="checkOutDate" value="2024-01-05"/>
+            <column name="roomTabCreate" value="2024-01-03T14:00:00"/>
+            <column name="roomTabUpdate" value="2024-01-03T16:45:00"/>
         </insert>
     </changeSet>
 
     <changeSet author="b.ruzmetov" id="insert test data into reservation table">
         <insert tableName="reservation">
-            <column name="reservationId" value="123e4567-e89b-12d3-a456-426655442200"/>
-            <column name="customerFirstName" value="Brooke"/>
-            <column name="customerLastName" value="Velez"/>
-            <column name="roomNumber" value="112"/>
-            <column name="eventId" value="123e4567-e89b-12d3-a456-426655440221"/>
-            <column name="serviceId" value="123e4567-e89b-12d3-a456-426655440332"/>
-            <column name="totalAmount" value="157.99"/>
+            <column name="reservationId" value="020124re-s002-002e-r0v0-024res01er02"/>
+            <column name="customerId" value="020124cu-s002-002t-0o0-024cus01to02"/>
+            <column name="roomNumber" value="202"/>
+            <column name="eventId" value="020124ev-e002-002n-t0e0-024eve01nt02"/>
+            <column name="serviceId" value="020124se-r002-002v-i0c0-024ser01vi02"/>
+            <column name="totalAmount" value="3292.75"/>
             <column name="paymentMethod" value="Credit Card"/>
-            <column name="paymentId" value="123e4567-e89b-12d3-a456-426655440243"/>
+            <column name="paymentId" value="020124pa-y002-002m-0e0-024pay01me02"/>
+            <column name="transactionId" value="020124tr-a002-002n-0s0-024tra01ns02"/>
+            <column name="transactionHistory" value="Regular guest"/>
             <column name="cancellationInfo" value="No cancellation"/>
-            <column name="reservationCreate" value="2021-04-22"/>
-            <column name="reservationUpdate" value="2021-04-23"/>
-            <column name="employeeId" value="123e4567-e89b-12d3-a456-426655440874"/>
-            <column name="administratorId" value="123e4567-e89b-12d3-a456-426655446105"/>
-        </insert>
-    </changeSet>
-
-    <changeSet author="b.ruzmetov" id="insert test data into report table">
-        <insert tableName="report">
-            <column name="reportId" value="123e4567-e89b-12d3-a456-426655450221"/>
-            <column name="startDate" value="2021-01-01"/>
-            <column name="endDate" value="2021-01-31"/>
-            <column name="revenueByRooms" value="16000.00"/>
-            <column name="revenueByEvent" value="2500.00"/>
-            <column name="revenueByService" value="4500.50"/>
-            <column name="occupiedRooms" value="83"/>
-            <column name="vacantRooms" value="17"/>
-            <column name="reviewScoresAndFeedback" value="Positive feedback received"/>
-            <column name="cancellationRates" value="7%"/>
-            <column name="accessEmployeeId" value="123e4567-e89b-12d3-a456-426655447602"/>
-            <column name="accessAdministratorId" value="123e4567-e89b-12d3-a456-426655449803"/>
-            <column name="reportTabCreate" value="2021-02-01T09:00:00"/>
-            <column name="reportTabUpdate" value="2021-02-01T15:30:00"/>
-        </insert>
-    </changeSet>
-
-    <changeSet author="b.ruzmetov" id="insert test data into payment table">
-        <insert tableName="payment">
-            <column name="paymentId" value="123e4567-e89b-12d3-a456-426655445901"/>
-            <column name="roomNumber" value="113"/>
-            <column name="serviceId" value="123e4567-e89b-12d3-a456-426655443202"/>
-            <column name="eventId" value="123e4567-e89b-12d3-a456-426655489003"/>
-            <column name="customerFirstName" value="Saskia"/>
-            <column name="customerLastName" value="Preston"/>
-            <column name="creditCardNumber" value="1839567890123456"/>
-            <column name="creditCardExpiringDate" value="2025-12-31"/>
-            <column name="creditCardCVV" value="127"/>
-            <column name="paymentMethod" value="Credit Card"/>
-            <column name="totalAmount" value="161.55"/>
-            <column name="transactionId" value="123e4567-e89b-12d3-a456-426655494004"/>
-            <column name="transactionHistory" value="Payment successful"/>
-            <column name="employeeId" value="123e4567-e89b-12d3-a456-426655446535"/>
-            <column name="administratorId" value="123e4567-e89b-12d3-a456-426655448706"/>
-            <column name="paymentTabCreate" value="2021-05-01T12:00:00"/>
-            <column name="paymentTabUpdate" value="2021-05-01T12:30:00"/>
-        </insert>
-    </changeSet>
-
-    <changeSet author="b.ruzmetov" id="insert test data into feedback table">
-        <insert tableName="feedback">
-            <column name="feedbackId" value="123e4567-e89b-12d3-a456-426655445381"/>
-            <column name="roomNumber" value="114"/>
-            <column name="serviceId" value="123e4567-e89b-12d3-a456-426655447272"/>
-            <column name="eventId" value="123e4567-e89b-12d3-a456-426655449393"/>
-            <column name="satisfactionRating" value="4"/>
-            <column name="comments" value="Enjoyed the stay"/>
-            <column name="customerFirstName" value="Marwa"/>
-            <column name="customerLastName" value="Phillips"/>
-            <column name="accessAdministratorId" value="123e4567-e89b-12d3-a456-426655446264"/>
-            <column name="feedbackTabCreate" value="2021-06-10T14:30:00"/>
-            <column name="feedbackTabUpdate" value="2021-06-11T09:45:00"/>
+            <column name="reservationCreate" value="2024-01-03"/>
+            <column name="reservationUpdate" value="2024-01-03"/>
         </insert>
     </changeSet>
 
     <changeSet author="b.ruzmetov" id="insert test data into event table">
         <insert tableName="event">
-            <column name="eventId" value="123e4567-e89b-12d3-a456-426655446261"/>
-            <column name="eventName" value="Birthday"/>
-            <column name="eventDescription" value="76 year old Birthday"/>
-            <column name="date" value="2021-07-01"/>
-            <column name="eventTimeBeginning" value="2021-07-01T18:00:00"/>
-            <column name="eventTimeEnd" value="2021-07-01T23:00:00"/>
-            <column name="location" value="Napoleon Room"/>
-            <column name="capacity" value="50"/>
+            <column name="eventId" value="020124ev-e002-002n-t0e0-024eve01nt02"/>
+            <column name="eventName" value="Wedding party"/>
+            <column name="eventDescription" value="Wedding of Jacob and Melinda Gates"/>
+            <column name="date" value="2024-01-03"/>
+            <column name="eventTimeBeginning" value="2024-01-03T17:00:00"/>
+            <column name="eventTimeEnd" value="2024-01-03T23:00:00"/>
+            <column name="location" value="Meldenson Salon"/>
+            <column name="capacity" value="100"/>
             <column name="organizedCompanyName" value="Private"/>
-            <column name="contactPersonName" value="Keiran Cole"/>
-            <column name="eventCategory" value="Birthday"/>
-            <column name="totalPrice" value="1500.00"/>
-            <column name="paymentMethod" value="Credit Card"/>
-            <column name="paymentId" value="123e4567-e89b-12d3-a456-426655443452"/>
-            <column name="employeeId" value="123e4567-e89b-12d3-a456-426655449873"/>
-            <column name="administratorId" value="123e4567-e34b-12d3-a456-421255448283"/>
-            <column name="eventTabCreate" value="2021-06-15T10:30:00"/>
-            <column name="eventTabUpdate" value="2021-07-20T15:45:00"/>
-        </insert>
-    </changeSet>
-
-    <changeSet author="b.ruzmetov" id="insert test data into employee table">
-        <insert tableName="employee">
-            <column name="employeeId" value="123e4567-e89b-12d3-a456-426655443451"/>
-            <column name="firstName" value="Oliver"/>
-            <column name="lastName" value="Stevenson"/>
-            <column name="departament" value="Front Office"/>
-            <column name="employeePosition" value="Receptionist Supervisor"/>
-            <column name="shiftStartTime" value="2021-08-15T08:00:00"/>
-            <column name="shiftEndTime" value="2021-08-15T16:30:00"/>
-            <column name="feedback" value="positive: Perfect work"/>
-            <column name="complains" value="None"/>
-            <column name="employeeTabCreate" value="2021-07-25T09:30:00"/>
-            <column name="employeeTabUpdate" value="2021-08-28T14:15:00"/>
+            <column name="contactPersonName" value="Jacob Gates"/>
+            <column name="eventTabCreate" value="2024-01-01T08:30:00"/>
+            <column name="eventTabUpdate" value="2024-01-03T15:45:00"/>
         </insert>
     </changeSet>
 
     <changeSet author="b.ruzmetov" id="insert test data into customer table">
         <insert tableName="customer">
-            <column name="customerId" value="123e4567-e89b-12d3-a456-426655442341"/>
-            <column name="firstName" value="Thomas"/>
-            <column name="lastName" value="Burns"/>
-            <column name="email" value="thomas.burns@gmail.com"/>
-            <column name="phoneNumber" value="+4900829672"/>
-            <column name="address" value="Knesebeckstrasse 90, 53520 Kaltenborn"/>
-            <column name="reservationId" value="123e4567-e89b-12d3-a456-426655447172"/>
-            <column name="reservationHistory" value="Regular customer"/>
-            <column name="roomNumber" value="115"/>
-            <column name="serviceId" value="123e4567-e89b-12d3-a456-426655444823"/>
-            <column name="eventId" value="123e4567-e89b-12d3-a456-426655448114"/>
-            <column name="loyaltyPoints" value="1500"/>
-            <column name="checkInDate" value="2021-09-02"/>
-            <column name="checkInStatus" value="Checked In"/>
-            <column name="checkOutDate" value="2021-09-07"/>
-            <column name="checkOutStatus" value="Checked Out"/>
-            <column name="totalAmount" value="1000.00"/>
-            <column name="paymentMethod" value="Credit Card"/>
-            <column name="paymentId" value="123e4567-e89b-12d3-a456-426655443835"/>
-            <column name="customerTabCreate" value="2021-09-01T11:00:00"/>
-            <column name="customerTabUpdate" value="2021-09-10T15:30:00"/>
+            <column name="customerId" value="020124cu-s002-002t-0o0-024cus01to02"/>
+            <column name="firstName" value="Jacob"/>
+            <column name="lastName" value="Gates"/>
+            <column name="email" value="jacob.gates@gmail.com"/>
+            <column name="phoneNumber" value="+4911110829"/>
+            <column name="address" value="Winteringstr. 12, 12372 Berlin"/>
+            <column name="loyaltyPoints" value="300"/>
+            <column name="creditCardNumber" value="2024010120240101"/>
+            <column name="creditCardExpiringDate" value="2026-02-02"/>
+            <column name="creditCardCVV" value="034"/>
+            <column name="customerTabCreate" value="2024-01-01T08:30:00"/>
+            <column name="customerTabUpdate" value="2024-01-03T15:45:00"/>
         </insert>
     </changeSet>
-
-    <changeSet author="b.ruzmetov" id="insert test data into administrator table">
-        <insert tableName="administrator">
-            <column name="administratorId" value="123e4567-e89b-12d3-a456-426655443241"/>
-            <column name="firstName" value="Damien"/>
-            <column name="lastName" value="Gilmore"/>
-            <column name="password" value="P@ssw0rd"/>
-            <column name="email" value="damien.gilmore@gmail.com"/>
-            <column name="departament" value="Front Office"/>
-            <column name="position" value="FO Manager"/>
-            <column name="feedbackReview" value="Communicative skills"/>
-            <column name="reportAccess" value="Full Access"/>
-        </insert>
-    </changeSet>
-
-
 
 </databaseChangeLog>
