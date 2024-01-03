@@ -9,19 +9,19 @@
     <changeSet author="b.ruzmetov" id="insert test data into service table">
         <insert tableName="service">
             <column name="serviceId" value="020124se-r002-002v-i0c0-024ser01vi02"/>
-            <column name="isBreakfastBooked" value="true"/>
+            <column name="isBreakfastBooked" value="1"/>
             <column name="serviceBreakfastPrice" value="20.00"/>
-            <column name="isRestaurantBooked" value="false"/>
+            <column name="isRestaurantBooked" value="0"/>
             <column name="serviceRestaurantPrice" value="0.0"/>
-            <column name="isBarBooked" value="true"/>
+            <column name="isBarBooked" value="1"/>
             <column name="serviceBarPrice" value="10.00"/>
-            <column name="isSwimmingPoolBooked" value="false"/>
+            <column name="isSwimmingPoolBooked" value="0"/>
             <column name="serviceSwimmingPoolPrice" value="0.0"/>
-            <column name="isGymBooked" value="true"/>
+            <column name="isGymBooked" value="1"/>
             <column name="serviceGymPrice" value="12.75"/>
-            <column name="isGarageBooked" value="false"/>
+            <column name="isGarageBooked" value="0"/>
             <column name="serviceGaragePrice" value="0.0"/>
-            <column name="isAirportTransferBooked" value="true"/>
+            <column name="isAirportTransferBooked" value="1"/>
             <column name="serviceAirportTransferPrice" value="50.00"/>
             <column name="serviceTabCreate" value="2024-01-03T10:30:00"/>
             <column name="serviceTabUpdate" value="2024-01-03T12:45:00"/>
@@ -33,9 +33,9 @@
             <column name="roomNumber" value="202"/>
             <column name="roomCategory" value="Standard"/>
             <column name="roomPricePerNight" value="100.00"/>
-            <column name="isAvailableRoom" value="true"/>
+            <column name="isAvailableRoom" value="1"/>
             <column name="roomFloor" value="2"/>
-            <column name="isBreakfastInclude" value="true"/>
+            <column name="isBreakfastInclude" value="1"/>
             <column name="checkInDate" value="2024-01-03"/>
             <column name="checkOutDate" value="2024-01-05"/>
             <column name="roomTabCreate" value="2024-01-03T14:00:00"/>
@@ -66,12 +66,11 @@
             <column name="firstName" value="Jacob"/>
             <column name="lastName" value="Gates"/>
             <column name="email" value="jacob.gates@gmail.com"/>
-            <column name="phoneNumber" value="+4911110829"/>
+            <column name="phoneNumber" value="491111080"/>
             <column name="address" value="Winteringstr. 12, 12372 Berlin"/>
             <column name="loyaltyPoints" value="300"/>
-            <column name="creditCardNumber" value="2024010120240101"/>
+            <column name="creditCardNumber" value="202401222"/>
             <column name="creditCardExpiringDate" value="2026-02-02"/>
-            <column name="creditCardCVV" value="034"/>
             <column name="customerTabCreate" value="2024-01-01T08:30:00"/>
             <column name="customerTabUpdate" value="2024-01-03T15:45:00"/>
         </insert>

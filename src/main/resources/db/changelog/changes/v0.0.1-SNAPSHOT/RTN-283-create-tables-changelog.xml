@@ -192,9 +192,6 @@
             <column name="creditCardExpiringDate" type="date">
                 <constraints nullable="true"/>
             </column>
-            <column name="customer_credit_card_CVV" type="integer">
-                <constraints nullable="true"/>
-            </column>
             <column name="customerTabCreate" type="timestamp">
                 <constraints nullable="false"/>
             </column>

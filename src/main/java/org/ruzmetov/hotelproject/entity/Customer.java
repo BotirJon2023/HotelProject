@@ -47,9 +47,6 @@ public class Customer {
     @Column(name = "customer_credit_card_expiring_date")
     private Date creditCardExpiringDate;
 
-    @Column(name = "customer_credit_card_CVV")
-    private int creditCardCVV;
-
     @Column(name = "customer_create")
     private Date customerTabCreate;
 
@@ -81,7 +78,6 @@ public class Customer {
                 ", loyalityPoints='" + loyalityPoints + '\'' +
                 ", creditCardNumber=" + creditCardNumber +
                 ", creditCardExpiringDate=" + creditCardExpiringDate +
-                ", creditCardCVV=" + creditCardCVV +
                 ", customerTabCreate=" + customerTabCreate +
                 ", customerTabUpdate=" + customerTabUpdate +
                 '}';

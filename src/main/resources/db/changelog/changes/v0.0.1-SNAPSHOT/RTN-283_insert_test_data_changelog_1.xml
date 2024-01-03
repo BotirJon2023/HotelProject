@@ -9,19 +9,19 @@
     <changeSet author="b.ruzmetov" id="insert test data into service table">
         <insert tableName="service">
             <column name="serviceId" value="020124se-r001-001v-i0c0-024ser01vi02"/>
-            <column name="isBreakfastBooked" value="true"/>
+            <column name="isBreakfastBooked" value="1"/>
             <column name="serviceBreakfastPrice" value="15.99"/>
-            <column name="isRestaurantBooked" value="false"/>
+            <column name="isRestaurantBooked" value="0"/>
             <column name="serviceRestaurantPrice" value="0.0"/>
-            <column name="isBarBooked" value="true"/>
+            <column name="isBarBooked" value="1"/>
             <column name="serviceBarPrice" value="8.50"/>
-            <column name="isSwimmingPoolBooked" value="false"/>
+            <column name="isSwimmingPoolBooked" value="0"/>
             <column name="serviceSwimmingPoolPrice" value="0.0"/>
-            <column name="isGymBooked" value="true"/>
+            <column name="isGymBooked" value="1"/>
             <column name="serviceGymPrice" value="12.75"/>
-            <column name="isGarageBooked" value="false"/>
+            <column name="isGarageBooked" value="0"/>
             <column name="serviceGaragePrice" value="0.0"/>
-            <column name="isAirportTransferBooked" value="true"/>
+            <column name="isAirportTransferBooked" value="1"/>
             <column name="serviceAirportTransferPrice" value="25.00"/>
             <column name="serviceTabCreate" value="2024-01-02T10:30:00"/>
             <column name="serviceTabUpdate" value="2024-01-02T12:45:00"/>
@@ -33,9 +33,9 @@
             <column name="roomNumber" value="101"/>
             <column name="roomCategory" value="Standard"/>
             <column name="roomPricePerNight" value="100.00"/>
-            <column name="isAvailableRoom" value="true"/>
+            <column name="isAvailableRoom" value="1"/>
             <column name="roomFloor" value="1"/>
-            <column name="isBreakfastInclude" value="true"/>
+            <column name="isBreakfastInclude" value="1"/>
             <column name="checkInDate" value="2024-01-02"/>
             <column name="checkOutDate" value="2024-01-07"/>
             <column name="roomTabCreate" value="2024-01-02T14:00:00"/>
@@ -67,14 +67,13 @@
             <column name="firstName" value="Alejandro"/>
             <column name="lastName" value="Rubio"/>
             <column name="email" value="alejandro.rubio@gmail.com"/>
-            <column name="phoneNumber" value="+4906720829"/>
-            <column name="address" value="Sömmeringstr. 9, 76872 Erlenbach Bei Kandel"/>
+            <column name="phoneNumber" value="490672082"/>
+            <column name="address" value="Sommeringstr. 9, 76872 Erlenbach Bei Kandel"/>
             <column name="loyaltyPoints" value="100"/>
-            <column name="creditCardNumber" value="2024010220240102"/>
+            <column name="creditCardNumber" value="202401111"/>
             <column name="creditCardExpiringDate" value="2027-01-01"/>
-            <column name="creditCardCVV" value="024"/>
-            <column name="customerTabCreate" value="2024-01-01T11:00:00"/>
-            <column name="customerTabUpdate" value="2024-01-02T15:30:00"/>
+            <column name="customerTabCreate" value="2024-01-01T11:05:05"/>
+            <column name="customerTabUpdate" value="2024-01-02T15:05:05"/>
         </insert>
     </changeSet>
 
