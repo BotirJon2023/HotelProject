@@ -6,6 +6,15 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
         http://www.liquibase.org/xml/ns/dbchangelog-ext https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
+    <changeSet author="b.ruzmetov" id="drop reservation table">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="reservation"/>
+        </preConditions>
+        <rollback>
+            <dropTable tableName="reservation"/>
+        </rollback>
+    </changeSet>
+
     <changeSet author="b.ruzmetov" id="drop service table">
         <preConditions onFail="MARK_RAN">
             <tableExists tableName="service"/>
@@ -21,15 +30,6 @@
         </preConditions>
         <rollback>
             <dropTable tableName="room"/>
-        </rollback>
-    </changeSet>
-
-    <changeSet author="b.ruzmetov" id="drop reservation table">
-        <preConditions onFail="MARK_RAN">
-            <tableExists tableName="reservation"/>
-        </preConditions>
-        <rollback>
-            <dropTable tableName="reservation"/>
         </rollback>
     </changeSet>
 

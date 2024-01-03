@@ -43,24 +43,6 @@
         </insert>
     </changeSet>
 
-    <changeSet author="b.ruzmetov" id="insert test data into reservation table">
-        <insert tableName="reservation">
-            <column name="reservationId" value="020124re-s004-004e-r0v0-024res01er02"/>
-            <column name="customerId" value="020124cu-s004-004t-0o0-024cus01to02"/>
-            <column name="roomNumber" value="424"/>
-            <column name="eventId" value="020124ev-e004-004n-t0e0-024eve01nt02"/>
-            <column name="serviceId" value="020124se-r004-004v-i0c0-024ser01vi02"/>
-            <column name="totalAmount" value="12566.00"/>
-            <column name="paymentMethod" value="Credit Card"/>
-            <column name="paymentId" value="020124pa-y004-004m-0e0-024pay01me02"/>
-            <column name="transactionId" value="020124tr-a004-004n-0s0-024tra01ns02"/>
-            <column name="transactionHistory" value="Regular guest"/>
-            <column name="cancellationInfo" value="No cancellation"/>
-            <column name="reservationCreate" value="2024-01-05"/>
-            <column name="reservationUpdate" value="2024-01-05"/>
-        </insert>
-    </changeSet>
-
     <changeSet author="b.ruzmetov" id="insert test data into event table">
         <insert tableName="event">
             <column name="eventId" value="020124ev-e004-004n-t0e0-024eve01nt02"/>
@@ -92,6 +74,25 @@
             <column name="creditCardCVV" value="056"/>
             <column name="customerTabCreate" value="2024-01-05T08:30:00"/>
             <column name="customerTabUpdate" value="2024-01-05T15:45:00"/>
+        </insert>
+    </changeSet>
+
+
+    <changeSet author="b.ruzmetov" id="insert test data into reservation table">
+        <insert tableName="reservation">
+            <column name="reservationId" value="020124re-s004-004e-r0v0-024res01er02"/>
+            <column name="customerId" value="020124cu-s004-004t-0o0-024cus01to02"/>
+            <column name="roomNumber" value="424"/>
+            <column name="eventId" value="020124ev-e004-004n-t0e0-024eve01nt02"/>
+            <column name="serviceId" value="020124se-r004-004v-i0c0-024ser01vi02"/>
+            <column name="totalAmount" value="12566.00"/>
+            <column name="paymentMethod" value="Credit Card"/>
+            <column name="paymentId" value="020124pa-y004-004m-0e0-024pay01me02"/>
+            <column name="transactionId" value="020124tr-a004-004n-0s0-024tra01ns02"/>
+            <column name="transactionHistory" value="Regular guest"/>
+            <column name="cancellationInfo" value="No cancellation"/>
+            <column name="reservationCreate" value="2024-01-05"/>
+            <column name="reservationUpdate" value="2024-01-05"/>
         </insert>
     </changeSet>
 
