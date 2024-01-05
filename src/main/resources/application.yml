@@ -4,15 +4,15 @@ spring:
   main:
     banner-mode: off
 
-  liquibase:
-    enabled: true
-    change-log: classpath:/db/changelog/changelog-master.xml
-    drop-first: true
-
   datasource:
     url: jdbc:mysql://localhost:3306/300523_m_be_hotel
     username: root
     password: Welcome!1
+
+  liquibase:
+    enabled: true
+    change-log: classpath:/db/changelog/changelog-master.xml
+    drop-first: true
 
   jpa:
     show-sql: false

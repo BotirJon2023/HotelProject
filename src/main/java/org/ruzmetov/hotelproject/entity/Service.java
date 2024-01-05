@@ -65,10 +65,10 @@ public class Service {
     @Column(name = "service_airport_transfer_price")
     private double serviceAirportTransferPrice;
 
-    @Column(name = "service_create")
+    @Column(name = "service_tab_create")
     private Date serviceTabCreate;
 
-    @Column(name = "service_update")
+    @Column(name = "service_tab_update")
     private Date serviceTabUpdate;
 
     @Override

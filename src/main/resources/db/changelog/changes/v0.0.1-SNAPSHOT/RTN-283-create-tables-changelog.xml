@@ -15,34 +15,34 @@
         </preConditions>
 
         <createTable tableName="room">
-            <column name="roomNumber" type="integer">
+            <column name="room_number" type="integer">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="roomCategory" type="varchar(30)">
+            <column name="room_category" type="varchar(30)">
                 <constraints nullable="false"/>
             </column>
-            <column name="roomPricePerNight" type="double">
+            <column name="room_price_per_night" type="double">
                 <constraints nullable="false"/>
             </column>
-            <column name="isAvailableRoom" type="boolean">
+            <column name="room_availability" type="boolean">
                 <constraints nullable="false"/>
             </column>
-            <column name="roomFloor" type="integer">
+            <column name="room_floor" type="integer">
                 <constraints nullable="false"/>
             </column>
-            <column name="isBreakfastInclude" type="boolean">
+            <column name="room_breakfast_include" type="boolean">
                 <constraints nullable="false"/>
             </column>
-            <column name="checkInDate" type="date">
+            <column name="room_checkIn_date" type="date">
                 <constraints nullable="false"/>
             </column>
-            <column name="checkOutDate" type="date">
+            <column name="room_checkOut_date" type="date">
                 <constraints nullable="false"/>
             </column>
-            <column name="roomTabCreate" type="date">
+            <column name="room_tab_create" type="date">
                 <constraints nullable="false"/>
             </column>
-            <column name="roomTabUpdate" type="date">
+            <column name="room_tab_update" type="date">
                 <constraints nullable="false"/>
             </column>
         </createTable>
@@ -56,55 +56,55 @@
         </preConditions>
 
         <createTable tableName="service">
-            <column name="serviceId" type="uuid">
+            <column name="service_id" type="uuid">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="isBreakfastBooked" type="boolean">
+            <column name="service_breakfast_booking" type="boolean">
                 <constraints nullable="false"/>
             </column>
-            <column name="serviceBreakfastPrice" type="double">
+            <column name="service_breakfast_price" type="double">
                 <constraints nullable="false"/>
             </column>
-            <column name="isRestaurantBooked" type="boolean">
+            <column name="service_restaurant_booking" type="boolean">
                 <constraints nullable="false"/>
             </column>
-            <column name="serviceRestaurantPrice" type="double">
+            <column name="service_restaurant_price" type="double">
                 <constraints nullable="false"/>
             </column>
-            <column name="isBarBooked" type="boolean">
+            <column name="service_bar_booking" type="boolean">
                 <constraints nullable="false"/>
             </column>
-            <column name="serviceBarPrice" type="double">
+            <column name="service_bar_price" type="double">
                 <constraints nullable="false"/>
             </column>
-            <column name="isSwimmingPoolBooked" type="boolean">
+            <column name="service_swimming_pool_booking" type="boolean">
                 <constraints nullable="false"/>
             </column>
-            <column name="serviceSwimmingPoolPrice" type="double">
+            <column name="service_swimming_pool_price" type="double">
                 <constraints nullable="false"/>
             </column>
-            <column name="IsGymBooked" type="boolean">
+            <column name="service_gym_booking" type="boolean">
                 <constraints nullable="false"/>
             </column>
-            <column name="serviceGymPrice" type="double">
+            <column name="service_gym_price" type="double">
                 <constraints nullable="false"/>
             </column>
-            <column name="isGarageBooked" type="boolean">
+            <column name="service_garage_booking" type="boolean">
                 <constraints nullable="false"/>
             </column>
-            <column name="serviceGaragePrice" type="double">
+            <column name="service_garage_price" type="double">
                 <constraints nullable="false"/>
             </column>
-            <column name="isAirportTransferBooked" type="boolean">
+            <column name="service_airport_transfer" type="boolean">
                 <constraints nullable="false"/>
             </column>
-            <column name="serviceAirportTransferPrice" type="double">
+            <column name="service_airport_transfer_price" type="double">
                 <constraints nullable="false"/>
             </column>
-            <column name="serviceTabCreate" type="date">
+            <column name="service_tab_create" type="date">
                 <constraints nullable="false"/>
             </column>
-            <column name="serviceTabUpdate" type="date">
+            <column name="service_tab_update" type="date">
                 <constraints nullable="false"/>
             </column>
         </createTable>
@@ -118,40 +118,40 @@
         </preConditions>
 
         <createTable tableName="event">
-            <column name="eventId" type="uuid">
+            <column name="event_id" type="uuid">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="eventName" type="varchar(100)">
+            <column name="event_name" type="varchar(100)">
                 <constraints nullable="false"/>
             </column>
-            <column name="eventDescription" type="varchar(255)">
+            <column name="event_description" type="varchar(255)">
                 <constraints nullable="true"/>
             </column>
-            <column name="date" type="date">
+            <column name="event_date" type="date">
                 <constraints nullable="false"/>
             </column>
-            <column name="eventTimeBeginning" type="timestamp">
+            <column name="event_time_beginning" type="timestamp">
                 <constraints nullable="false"/>
             </column>
-            <column name="eventTimeEnd" type="timestamp">
+            <column name="event_time_end" type="timestamp">
                 <constraints nullable="false"/>
             </column>
-            <column name="location" type="varchar(255)">
+            <column name="event_location" type="varchar(255)">
                 <constraints nullable="true"/>
             </column>
-            <column name="capacity" type="integer">
+            <column name="event_capacity" type="integer">
                 <constraints nullable="false"/>
             </column>
-            <column name="organizedCompanyName" type="varchar(100)">
+            <column name="event_organized_company" type="varchar(100)">
                 <constraints nullable="true"/>
             </column>
-            <column name="contactPersonName" type="varchar(100)">
+            <column name="event_contact_person" type="varchar(100)">
                 <constraints nullable="true"/>
             </column>
-            <column name="eventTabCreate" type="timestamp">
+            <column name="event_tab_create" type="timestamp">
                 <constraints nullable="false"/>
             </column>
-            <column name="eventTabUpdate" type="timestamp">
+            <column name="event_tab_update" type="timestamp">
                 <constraints nullable="false"/>
             </column>
         </createTable>
@@ -165,37 +165,37 @@
         </preConditions>
 
         <createTable tableName="customer">
-            <column name="customerId" type="uuid">
+            <column name="customer_id" type="uuid">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="firstName" type="varchar(50)">
+            <column name="customer_first_name" type="varchar(50)">
                 <constraints nullable="true"/>
             </column>
-            <column name="lastName" type="varchar(50)">
+            <column name="customer_last_name" type="varchar(50)">
                 <constraints nullable="true"/>
             </column>
-            <column name="email" type="varchar(100)">
+            <column name="customer_email" type="varchar(100)">
                 <constraints nullable="true"/>
             </column>
-            <column name="phoneNumber" type="integer">
+            <column name="customer_phone_number" type="integer">
                 <constraints nullable="true"/>
             </column>
-            <column name="address" type="varchar(255)">
+            <column name="customer_address" type="varchar(255)">
                 <constraints nullable="true"/>
             </column>
-            <column name="loyaltyPoints" type="varchar(50)">
+            <column name="customer_loyality_point" type="varchar(50)">
                 <constraints nullable="true"/>
             </column>
-            <column name="creditCardNumber" type="integer">
+            <column name="customer_credit_card_number" type="integer">
                 <constraints nullable="true"/>
             </column>
-            <column name="creditCardExpiringDate" type="date">
+            <column name="customer_credit_card_expiring_date" type="date">
                 <constraints nullable="true"/>
             </column>
-            <column name="customerTabCreate" type="timestamp">
+            <column name="customer_tab_create" type="timestamp">
                 <constraints nullable="false"/>
             </column>
-            <column name="customerTabUpdate" type="timestamp">
+            <column name="customer_tab_update" type="timestamp">
                 <constraints nullable="false"/>
             </column>
         </createTable>
@@ -209,43 +209,43 @@
         </preConditions>
 
         <createTable tableName="reservation">
-            <column name="reservationId" type="uuid">
+            <column name="reservation_id" type="uuid">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="customerId" type="uuid">
-                <constraints foreignKeyName="true" nullable="false"/>
-            </column>
-            <column name="roomNumber" type="integer">
-                <constraints foreignKeyName="true" nullable="false"/>
-            </column>
-            <column name="eventId" type="uuid">
+            <column name="reservation_customer_id" type="uuid">
                 <constraints foreignKeyName="true" nullable="true"/>
             </column>
-            <column name="serviceId" type="uuid">
+            <column name="reservation_room_number" type="integer">
                 <constraints foreignKeyName="true" nullable="true"/>
             </column>
-            <column name="totalAmount" type="double">
+            <column name="reservation_event_id" type="uuid">
+                <constraints foreignKeyName="true" nullable="true"/>
+            </column>
+            <column name="reservation_service_id" type="uuid">
+                <constraints foreignKeyName="true" nullable="true"/>
+            </column>
+            <column name="reservation_total_amount" type="double">
                 <constraints nullable="false"/>
             </column>
-            <column name="paymentMethod" type="varchar(50)">
+            <column name="reservation_payment_method" type="varchar(50)">
                 <constraints nullable="false"/>
             </column>
-            <column name="paymentId" type="uuid">
+            <column name="reservation_payment_id" type="uuid">
                 <constraints nullable="true"/>
             </column>
-            <column name="transactionId" type="uuid">
+            <column name="reservation_transaction_id" type="uuid">
                 <constraints nullable="true"/>
             </column>
-            <column name="transactionHistory" type="varchar(255)">
+            <column name="reservation_transaction_history" type="varchar(255)">
                 <constraints nullable="true"/>
             </column>
-            <column name="cancellationInfo" type="varchar(255)">
+            <column name="reservation_cancelled_info" type="varchar(255)">
                 <constraints nullable="true"/>
             </column>
-            <column name="reservationCreate" type="timestamp">
+            <column name="reservation_tab_create" type="timestamp">
                 <constraints nullable="false"/>
             </column>
-            <column name="reservationUpdate" type="timestamp">
+            <column name="reservation_tab_update" type="timestamp">
                 <constraints nullable="false"/>
             </column>
         </createTable>

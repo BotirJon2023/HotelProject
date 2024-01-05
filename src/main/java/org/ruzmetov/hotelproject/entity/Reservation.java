@@ -23,7 +23,7 @@ public class Reservation {
     @Column(name = "reservation_id")
     private UUID reservationId;
 
-    @Column (name = "reservation_customer_id")
+    @Column(name = "reservation_customer_id")
     private UUID customerId;
 
     @Column(name = "reservation_room_number")
@@ -53,10 +53,10 @@ public class Reservation {
     @Column(name = "reservation_cancelled_info")
     private String cancellationInfo;
 
-    @Column(name = "reservation_create")
+    @Column(name = "reservation_tab_create")
     private Date reservationCreate;
 
-    @Column(name = "reservation_update")
+    @Column(name = "reservation_tab_update")
     private Date reservationUpdate;
 
     @Override

@@ -47,10 +47,10 @@ public class Customer {
     @Column(name = "customer_credit_card_expiring_date")
     private Date creditCardExpiringDate;
 
-    @Column(name = "customer_create")
+    @Column(name = "customer_tab_create")
     private Date customerTabCreate;
 
-    @Column(name = "customer_update")
+    @Column(name = "customer_tab_update")
     private Date customerTabUpdate;
 
     @Override

@@ -50,10 +50,10 @@ public class Event {
     @Column(name = "event_contact_person")
     private String contactPersonName;
 
-    @Column(name = "event_create")
+    @Column(name = "event_tab_create")
     private Date eventTabCreate;
 
-    @Column(name = "event_update")
+    @Column(name = "event_tab_update")
     private Date eventTabUpdate;
 
     @Override

@@ -8,89 +8,89 @@
 
     <changeSet author="b.ruzmetov" id="insert test data into service table">
         <insert tableName="service">
-            <column name="serviceId" value="020124se-r002-002v-i0c0-024ser01vi02"/>
-            <column name="isBreakfastBooked" value="1"/>
-            <column name="serviceBreakfastPrice" value="20.00"/>
-            <column name="isRestaurantBooked" value="0"/>
-            <column name="serviceRestaurantPrice" value="0.0"/>
-            <column name="isBarBooked" value="1"/>
-            <column name="serviceBarPrice" value="10.00"/>
-            <column name="isSwimmingPoolBooked" value="0"/>
-            <column name="serviceSwimmingPoolPrice" value="0.0"/>
-            <column name="isGymBooked" value="1"/>
-            <column name="serviceGymPrice" value="12.75"/>
-            <column name="isGarageBooked" value="0"/>
-            <column name="serviceGaragePrice" value="0.0"/>
-            <column name="isAirportTransferBooked" value="1"/>
-            <column name="serviceAirportTransferPrice" value="50.00"/>
-            <column name="serviceTabCreate" value="2024-01-03T10:30:00"/>
-            <column name="serviceTabUpdate" value="2024-01-03T12:45:00"/>
+            <column name="service_id" value="020124se-r002-002v-i0c0-024ser01vi02"/>
+            <column name="service_breakfast_booking" value="1"/>
+            <column name="service_breakfast_price" value="20.00"/>
+            <column name="service_restaurant_booking" value="0"/>
+            <column name="service_restaurant_price" value="0.0"/>
+            <column name="service_bar_booking" value="1"/>
+            <column name="service_bar_price" value="10.00"/>
+            <column name="service_swimming_pool_booking" value="0"/>
+            <column name="service_swimming_pool_price" value="0.0"/>
+            <column name="service_gym_booking" value="1"/>
+            <column name="service_gym_price" value="12.75"/>
+            <column name="service_garage_booking" value="0"/>
+            <column name="service_garage_price" value="0.0"/>
+            <column name="service_airport_transfer" value="1"/>
+            <column name="service_airport_transfer_price" value="50.00"/>
+            <column name="service_tab_create" value="2024-01-03T10:30:00"/>
+            <column name="service_tab_update" value="2024-01-03T12:45:00"/>
         </insert>
     </changeSet>
 
     <changeSet author="b.ruzmetov" id="insert test data into room table">
         <insert tableName="room">
-            <column name="roomNumber" value="202"/>
-            <column name="roomCategory" value="Standard"/>
-            <column name="roomPricePerNight" value="100.00"/>
-            <column name="isAvailableRoom" value="1"/>
-            <column name="roomFloor" value="2"/>
-            <column name="isBreakfastInclude" value="1"/>
-            <column name="checkInDate" value="2024-01-03"/>
-            <column name="checkOutDate" value="2024-01-05"/>
-            <column name="roomTabCreate" value="2024-01-03T14:00:00"/>
-            <column name="roomTabUpdate" value="2024-01-03T16:45:00"/>
+            <column name="room_number" value="202"/>
+            <column name="room_category" value="Standard"/>
+            <column name="room_price_per_night" value="100.00"/>
+            <column name="room_availability" value="1"/>
+            <column name="room_floor" value="2"/>
+            <column name="room_breakfast_include" value="1"/>
+            <column name="room_checkIn_date" value="2024-01-03"/>
+            <column name="room_checkOut_date" value="2024-01-05"/>
+            <column name="room_tab_create" value="2024-01-03T14:00:00"/>
+            <column name="room_tab_update" value="2024-01-03T16:45:00"/>
         </insert>
     </changeSet>
 
     <changeSet author="b.ruzmetov" id="insert test data into event table">
         <insert tableName="event">
-            <column name="eventId" value="020124ev-e002-002n-t0e0-024eve01nt02"/>
-            <column name="eventName" value="Wedding party"/>
-            <column name="eventDescription" value="Wedding of Jacob and Melinda Gates"/>
-            <column name="date" value="2024-01-03"/>
-            <column name="eventTimeBeginning" value="2024-01-03T17:00:00"/>
-            <column name="eventTimeEnd" value="2024-01-03T23:00:00"/>
-            <column name="location" value="Meldenson Salon"/>
-            <column name="capacity" value="100"/>
-            <column name="organizedCompanyName" value="Private"/>
-            <column name="contactPersonName" value="Jacob Gates"/>
-            <column name="eventTabCreate" value="2024-01-01T08:30:00"/>
-            <column name="eventTabUpdate" value="2024-01-03T15:45:00"/>
+            <column name="event_id" value="020124ev-e002-002n-t0e0-024eve01nt02"/>
+            <column name="event_name" value="Wedding party"/>
+            <column name="event_description" value="Wedding of Jacob and Melinda Gates"/>
+            <column name="event_date" value="2024-01-03"/>
+            <column name="event_time_beginning" value="2024-01-03T17:00:00"/>
+            <column name="event_time_end" value="2024-01-03T23:00:00"/>
+            <column name="event_location" value="Meldenson Salon"/>
+            <column name="event_capacity" value="100"/>
+            <column name="event_organized_company" value="Private"/>
+            <column name="event_contact_person" value="Jacob Gates"/>
+            <column name="event_tab_create" value="2024-01-01T08:30:00"/>
+            <column name="event_tab_update" value="2024-01-03T15:45:00"/>
         </insert>
     </changeSet>
 
     <changeSet author="b.ruzmetov" id="insert test data into customer table">
         <insert tableName="customer">
-            <column name="customerId" value="020124cu-s002-002t-0o0-024cus01to02"/>
-            <column name="firstName" value="Jacob"/>
-            <column name="lastName" value="Gates"/>
-            <column name="email" value="jacob.gates@gmail.com"/>
-            <column name="phoneNumber" value="491111080"/>
-            <column name="address" value="Winteringstr. 12, 12372 Berlin"/>
-            <column name="loyaltyPoints" value="300"/>
-            <column name="creditCardNumber" value="202401222"/>
-            <column name="creditCardExpiringDate" value="2026-02-02"/>
-            <column name="customerTabCreate" value="2024-01-01T08:30:00"/>
-            <column name="customerTabUpdate" value="2024-01-03T15:45:00"/>
+            <column name="customer_id" value="020124cu-s002-002t-0o0-024cus01to02"/>
+            <column name="customer_first_name" value="Jacob"/>
+            <column name="customer_last_name" value="Gates"/>
+            <column name="customer_email" value="jacob.gates@gmail.com"/>
+            <column name="customer_phone_number" value="491111080"/>
+            <column name="customer_address" value="Winteringstr. 12, 12372 Berlin"/>
+            <column name="customer_loyality_point" value="300"/>
+            <column name="customer_credit_card_number" value="202401222"/>
+            <column name="customer_credit_card_expiring_date" value="2026-02-02"/>
+            <column name="customer_tab_create" value="2024-01-01T08:30:00"/>
+            <column name="customer_tab_update" value="2024-01-03T15:45:00"/>
         </insert>
     </changeSet>
 
     <changeSet author="b.ruzmetov" id="insert test data into reservation table">
         <insert tableName="reservation">
-            <column name="reservationId" value="020124re-s002-002e-r0v0-024res01er02"/>
-            <column name="customerId" value="020124cu-s002-002t-0o0-024cus01to02"/>
-            <column name="roomNumber" value="202"/>
-            <column name="eventId" value="020124ev-e002-002n-t0e0-024eve01nt02"/>
-            <column name="serviceId" value="020124se-r002-002v-i0c0-024ser01vi02"/>
-            <column name="totalAmount" value="3292.75"/>
-            <column name="paymentMethod" value="Credit Card"/>
-            <column name="paymentId" value="020124pa-y002-002m-0e0-024pay01me02"/>
-            <column name="transactionId" value="020124tr-a002-002n-0s0-024tra01ns02"/>
-            <column name="transactionHistory" value="Regular guest"/>
-            <column name="cancellationInfo" value="No cancellation"/>
-            <column name="reservationCreate" value="2024-01-03"/>
-            <column name="reservationUpdate" value="2024-01-03"/>
+            <column name="reservation_id" value="020124re-s002-002e-r0v0-024res01er02"/>
+            <column name="reservation_customer_id" value="020124cu-s002-002t-0o0-024cus01to02"/>
+            <column name="reservation_room_number" value="202"/>
+            <column name="reservation_event_id" value="020124ev-e002-002n-t0e0-024eve01nt02"/>
+            <column name="reservation_service_id" value="020124se-r002-002v-i0c0-024ser01vi02"/>
+            <column name="reservation_total_amount" value="3292.75"/>
+            <column name="reservation_payment_method" value="Credit Card"/>
+            <column name="reservation_payment_id" value="020124pa-y002-002m-0e0-024pay01me02"/>
+            <column name="reservation_transaction_id" value="020124tr-a002-002n-0s0-024tra01ns02"/>
+            <column name="reservation_transaction_history" value="Regular guest"/>
+            <column name="reservation_cancelled_info" value="No cancellation"/>
+            <column name="reservation_tab_create" value="2024-01-03"/>
+            <column name="reservation_tab_update" value="2024-01-03"/>
         </insert>
     </changeSet>
 

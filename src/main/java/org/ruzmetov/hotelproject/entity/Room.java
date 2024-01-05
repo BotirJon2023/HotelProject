@@ -15,7 +15,6 @@ import java.util.Objects;
 @NoArgsConstructor
 @Table(name = "room")
 @Entity
-
 public class Room {
 
     @Id
