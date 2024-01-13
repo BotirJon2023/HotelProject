@@ -23,7 +23,7 @@ public class Reservation {
     @Column(name = "reservation_id")
     private UUID reservationId;
 
-    @Column(name = "reservation_customer_id")
+    @Column (name = "reservation_customer_id")
     private UUID customerId;
 
     @Column(name = "reservation_room_number")
