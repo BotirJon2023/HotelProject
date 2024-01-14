@@ -15,12 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 public class RoomController {
 
-//   private final RoomService roomService;
+    private final RoomService roomService;
 
     @GetMapping("/{id}")
     public Room getAccountById(@PathVariable("id") String id) {
-        // return roomService.getAccountById(id);
-        return null;
+        return roomService.getAccById(id);
+
     }
 
 

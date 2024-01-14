@@ -15,20 +15,20 @@ import org.springframework.web.bind.annotation.RestController;
 
 public class CustomerController {
 
-    // private final CustomerService customerService;
+    private final CustomerService customerService;
 
 
-    @GetMapping("/1")
-    public String getCustomer () {
-        return "!!!";
-    }
 //    public CustomerController(CustomerService customerService) {
 //        this.customerService = customerService;
 
 
-    @GetMapping("/{id}")
+    @GetMapping("/{id}") // http://localhost:8080/customer/020124cu-s001-001t-0o0-024cus01to02
     public Customer getAccountById(@PathVariable("id") String id) {
-        // return customerService.getAccountById(id);
-        return null;
+        return customerService.getAccById(id);
+
     }
- }
+
+//    public CustomerService getCustomerService() {
+//         return customerService;
+//    }
+}

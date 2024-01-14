@@ -15,12 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 public class ServiceController {
 
-  //  private final ServiceService serviceService;
+    private final ServiceService serviceService;
 
     @GetMapping("/{id}")
     public Service getAccountById(@PathVariable("id") String id) {
-        // return serviceService.getAccountById(id);
-        return null;
+        return serviceService.getAccById(id);
+
     }
 
 }

@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class EventController {
 
 
-//    private final EventService eventService;
+    private final EventService eventService;
 
 //    public EventController(EventService eventService) {
 //        this.eventService = eventService;
@@ -24,8 +24,7 @@ public class EventController {
 
     @GetMapping("/{id}")
     public Event getAccountById(@PathVariable("id") String id) {
-        // return eventService.getAccountById(id);
-        return null;
+        return eventService.getAccById(id);
     }
 
 

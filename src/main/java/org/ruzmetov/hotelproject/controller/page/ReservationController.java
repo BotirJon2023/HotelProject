@@ -15,12 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 public class ReservationController {
 
-   // private final ReservationService reservationService;
+    private final ReservationService reservationService;
 
     @GetMapping("/{id}")
     public Reservation getAccountById(@PathVariable("id") String id) {
-        // return reservationService.getAccountById(id);
-        return null;
+        return reservationService.getAccById(id);
+
     }
 
 }
