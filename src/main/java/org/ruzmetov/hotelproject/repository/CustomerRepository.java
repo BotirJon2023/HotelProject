@@ -2,12 +2,12 @@ package org.ruzmetov.hotelproject.repository;
 
 import org.ruzmetov.hotelproject.entity.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
+
 import java.util.UUID;
 
-public interface CustomerRepository extends JpaRepository <Customer, UUID>   {
+public interface CustomerRepository extends JpaRepository<Customer, UUID> {
 
-    Customer getCustomerByCustomerId (UUID id);
-
+    Customer getCustomerByCustomerId(UUID id);
 
 
 }

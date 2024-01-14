@@ -14,7 +14,7 @@ import java.util.UUID;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table (name = "service")
+@Table(name = "service")
 @Entity
 public class Service {
 
