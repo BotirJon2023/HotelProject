@@ -6,7 +6,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Date;
 import java.util.Objects;
 import java.util.UUID;
 
@@ -23,17 +22,21 @@ public class Reservation {
     @Column(name = "reservation_id")
     private UUID reservationId;
 
-    @Column(name = "reservation_customer_id")
-    private UUID customerId;
+    @OneToOne
+    @JoinColumn(name = "reservation_customer_id", referencedColumnName = "customer_id")
+    private Customer customerId;
 
-    @Column(name = "reservation_room_number")
-    private int roomNumber;
+    @OneToOne
+    @JoinColumn(name = "reservation_room_id", referencedColumnName = "room_id")
+    private Room roomId;
 
-    @Column(name = "reservation_event_id")
-    private UUID eventId;
+    @OneToOne
+    @JoinColumn(name = "reservation_event_id", referencedColumnName = "event_id")
+    private Event eventId;
 
-    @Column(name = "reservation_service_id")
-    private UUID serviceId;
+    @OneToOne
+    @JoinColumn(name = "reservation_service_id", referencedColumnName = "service_id")
+    private Service serviceId;
 
     @Column(name = "reservation_total_amount")
     private double totalAmount;
@@ -53,12 +56,6 @@ public class Reservation {
     @Column(name = "reservation_cancelled_info")
     private String cancellationInfo;
 
-    @Column(name = "reservation_tab_create")
-    private Date reservationCreate;
-
-    @Column(name = "reservation_tab_update")
-    private Date reservationUpdate;
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -77,7 +74,7 @@ public class Reservation {
         return "Reservation{" +
                 "reservationId=" + reservationId +
                 ", customerId=" + customerId +
-                ", roomNumber=" + roomNumber +
+                ", roomId=" + roomId +
                 ", eventId=" + eventId +
                 ", serviceId=" + serviceId +
                 ", totalAmount=" + totalAmount +
@@ -86,8 +83,6 @@ public class Reservation {
                 ", transactionId=" + transactionId +
                 ", transactionHistory='" + transactionHistory + '\'' +
                 ", cancellationInfo='" + cancellationInfo + '\'' +
-                ", reservationCreate=" + reservationCreate +
-                ", reservationUpdate=" + reservationUpdate +
                 '}';
     }
 }

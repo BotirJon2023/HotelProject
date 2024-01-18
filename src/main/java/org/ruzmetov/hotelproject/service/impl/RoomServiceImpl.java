@@ -14,8 +14,8 @@ public class RoomServiceImpl implements RoomService {
     private final RoomRepository roomRepository;
 
     @Override
-    public Room getAccById(String roomNumber) {
+    public Room getAccById(String id) {
 
-        return roomRepository.getRoomByRoomNumber(Integer.getInteger(roomNumber));
+        return roomRepository.getRoomByRoomId(Integer.getInteger(id));
     }
 }

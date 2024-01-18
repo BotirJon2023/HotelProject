@@ -15,7 +15,7 @@
         </preConditions>
 
         <createTable tableName="room">
-            <column name="room_number" type="integer">
+            <column name="room_id" type="integer">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
             <column name="room_category" type="varchar(30)">
@@ -215,7 +215,7 @@
             <column name="reservation_customer_id" type="uuid">
                 <constraints foreignKeyName="true" nullable="true"/>
             </column>
-            <column name="reservation_room_number" type="integer">
+            <column name="reservation_room_id" type="integer">
                 <constraints foreignKeyName="true" nullable="true"/>
             </column>
             <column name="reservation_event_id" type="uuid">

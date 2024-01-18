@@ -19,8 +19,8 @@ public class Room {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "room_number")
-    private int roomNumber;
+    @Column(name = "room_id")
+    private int roomId;
 
     @Column(name = "room_category")
     private String roomCategory;
@@ -43,29 +43,23 @@ public class Room {
     @Column(name = "room_checkOut_date")
     private Date checkOutDate;
 
-    @Column(name = "room_tab_create")
-    private Date roomTabCreate;
-
-    @Column(name = "room_tab_update")
-    private Date roomTabUpdate;
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Room room = (Room) o;
-        return roomNumber == room.roomNumber;
+        return roomId == room.roomId;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(roomNumber);
+        return Objects.hash(roomId);
     }
 
     @Override
     public String toString() {
         return "Room{" +
-                "roomNumber=" + roomNumber +
+                "roomId=" + roomId +
                 ", roomCategory='" + roomCategory + '\'' +
                 ", roomPricePerNight=" + roomPricePerNight +
                 ", isAvailableRoom=" + isAvailableRoom +
@@ -73,8 +67,6 @@ public class Room {
                 ", isBreakfastInclude=" + isBreakfastInclude +
                 ", checkInDate=" + checkInDate +
                 ", checkOutDate=" + checkOutDate +
-                ", roomTabCreate=" + roomTabCreate +
-                ", roomTabUpdate=" + roomTabUpdate +
                 '}';
     }
 }

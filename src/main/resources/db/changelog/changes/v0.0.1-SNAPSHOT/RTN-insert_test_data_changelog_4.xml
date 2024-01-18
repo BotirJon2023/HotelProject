@@ -31,7 +31,7 @@
 
     <changeSet author="b.ruzmetov" id="insert test data into room table">
         <insert tableName="room">
-            <column name="room_number" value="424"/>
+            <column name="room_id" value="424"/>
             <column name="room_category" value="Suite"/>
             <column name="room_price_per_night" value="490.00"/>
             <column name="room_availability" value="1"/>
@@ -82,7 +82,7 @@
         <insert tableName="reservation">
             <column name="reservation_id" value="020124re-s004-004e-r0v0-024res01er02"/>
             <column name="reservation_customer_id" value="020124cu-s004-004t-0o0-024cus01to02"/>
-            <column name="reservation_room_number" value="424"/>
+            <column name="reservation_room_id" value="424"/>
             <column name="reservation_event_id" value="020124ev-e004-004n-t0e0-024eve01nt02"/>
             <column name="reservation_service_id" value="020124se-r004-004v-i0c0-024ser01vi02"/>
             <column name="reservation_total_amount" value="12566.00"/>

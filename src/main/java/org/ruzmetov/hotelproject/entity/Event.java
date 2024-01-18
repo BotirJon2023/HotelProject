@@ -50,12 +50,6 @@ public class Event {
     @Column(name = "event_contact_person")
     private String contactPersonName;
 
-    @Column(name = "event_tab_create")
-    private Date eventTabCreate;
-
-    @Column(name = "event_tab_update")
-    private Date eventTabUpdate;
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -82,8 +76,6 @@ public class Event {
                 ", capacity=" + capacity +
                 ", organizedCompanyName='" + organizedCompanyName + '\'' +
                 ", contactPersonName='" + contactPersonName + '\'' +
-                ", eventTabCreate=" + eventTabCreate +
-                ", eventTabUpdate=" + eventTabUpdate +
                 '}';
     }
 }

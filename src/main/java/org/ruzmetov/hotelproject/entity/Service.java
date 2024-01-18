@@ -65,12 +65,6 @@ public class Service {
     @Column(name = "service_airport_transfer_price")
     private double serviceAirportTransferPrice;
 
-    @Column(name = "service_tab_create")
-    private Date serviceTabCreate;
-
-    @Column(name = "service_tab_update")
-    private Date serviceTabUpdate;
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -102,8 +96,6 @@ public class Service {
                 ", serviceGaragePrice=" + serviceGaragePrice +
                 ", isAirportTransferBooked=" + isAirportTransferBooked +
                 ", serviceAirportTransferPrice=" + serviceAirportTransferPrice +
-                ", serviceTabCreate=" + serviceTabCreate +
-                ", serviceTabUpdate=" + serviceTabUpdate +
                 '}';
     }
 }
