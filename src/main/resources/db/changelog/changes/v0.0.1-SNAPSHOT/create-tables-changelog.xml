@@ -201,13 +201,34 @@
         </createTable>
     </changeSet>
 
+    <changeSet author="b.ruzmetov" id="create payment table">
+        <preConditions onFail="CONTINUE" onFailMessage="Table payment already exists">
+            <not>
+                <tableExists tableName="payment"/>
+            </not>
+        </preConditions>
+        <createTable tableName="payment">
+            <column name="payment_id" type="uuid">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="payment_method" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="payment_is_paid" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+            <column name="payment_transaction_history" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
     <changeSet author="b.ruzmetov" id="create reservation table">
         <preConditions onFail="CONTINUE" onFailMessage="Table reservation already exists">
             <not>
                 <tableExists tableName="reservation"/>
             </not>
         </preConditions>
-
         <createTable tableName="reservation">
             <column name="reservation_id" type="uuid">
                 <constraints primaryKey="true" nullable="false"/>
@@ -226,18 +247,6 @@
             </column>
             <column name="reservation_total_amount" type="double">
                 <constraints nullable="false"/>
-            </column>
-            <column name="reservation_payment_method" type="varchar(50)">
-                <constraints nullable="false"/>
-            </column>
-            <column name="reservation_payment_id" type="uuid">
-                <constraints nullable="true"/>
-            </column>
-            <column name="reservation_transaction_id" type="uuid">
-                <constraints nullable="true"/>
-            </column>
-            <column name="reservation_transaction_history" type="varchar(255)">
-                <constraints nullable="true"/>
             </column>
             <column name="reservation_cancelled_info" type="varchar(255)">
                 <constraints nullable="true"/>

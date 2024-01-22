@@ -41,17 +41,10 @@ public class Reservation {
     @Column(name = "reservation_total_amount")
     private double totalAmount;
 
-    @Column(name = "reservation_payment_method")
-    private String paymentMethod;
+    @OneToOne
+    @JoinColumn(name = "reservation_payment_id", referencedColumnName = "payment_id")
+    private Payment paymentId;
 
-    @Column(name = "reservation_payment_id")
-    private UUID paymentId;
-
-    @Column(name = "reservation_transaction_id")
-    private UUID transactionId;
-
-    @Column(name = "reservation_transaction_history")
-    private String transactionHistory;
 
     @Column(name = "reservation_cancelled_info")
     private String cancellationInfo;
@@ -78,10 +71,6 @@ public class Reservation {
                 ", eventId=" + eventId +
                 ", serviceId=" + serviceId +
                 ", totalAmount=" + totalAmount +
-                ", paymentMethod='" + paymentMethod + '\'' +
-                ", paymentId=" + paymentId +
-                ", transactionId=" + transactionId +
-                ", transactionHistory='" + transactionHistory + '\'' +
                 ", cancellationInfo='" + cancellationInfo + '\'' +
                 '}';
     }

@@ -15,6 +15,15 @@
         </rollback>
     </changeSet>
 
+    <changeSet author="b.ruzmetov" id="drop payment table">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="payment"/>
+        </preConditions>
+        <rollback>
+            <dropTable tableName="payment"/>
+        </rollback>
+    </changeSet>
+
     <changeSet author="b.ruzmetov" id="drop service table">
         <preConditions onFail="MARK_RAN">
             <tableExists tableName="service"/>

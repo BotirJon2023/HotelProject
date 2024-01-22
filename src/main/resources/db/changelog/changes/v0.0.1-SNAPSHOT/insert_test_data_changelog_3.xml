@@ -76,6 +76,15 @@
         </insert>
     </changeSet>
 
+    <changeSet author="b.ruzmetov" id="insert test data into payment table">
+        <insert tableName="payment">
+            <column name="payment_id" value="ae674f8f-1560-44cf-9990-0f7870a3dabc"/>
+            <column name="payment_method" value="Credit Card"/>
+            <column name="payment_is_paid" value="1"/>
+            <column name="payment_transaction_history" value="No history"/>
+        </insert>
+    </changeSet>
+
     <changeSet author="b.ruzmetov" id="insert test data into reservation table">
         <insert tableName="reservation">
             <column name="reservation_id" value="31ab5b88-78fe-40ac-a7af-499222c4959d"/>
@@ -84,10 +93,6 @@
             <column name="reservation_event_id" value="f036d56d-003b-44f3-9295-eac57d876bbe"/>
             <column name="reservation_service_id" value="a95ee7d1-93de-466e-b6f3-80038b58dfc9"/>
             <column name="reservation_total_amount" value="1757.00"/>
-            <column name="reservation_payment_method" value="Credit Card"/>
-            <column name="reservation_payment_id" value="ae674f8f-1560-44cf-9990-0f7870a3dabc"/>
-            <column name="reservation_transaction_id" value="1f0d863c-ccd0-4e78-b152-d5c929396250"/>
-            <column name="reservation_transaction_history" value="No history"/>
             <column name="reservation_cancelled_info" value="No cancellation"/>
             <column name="reservation_tab_create" value="2024-01-04"/>
             <column name="reservation_tab_update" value="2024-01-04"/>
