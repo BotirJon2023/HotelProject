@@ -8,7 +8,7 @@
 
     <changeSet author="b.ruzmetov" id="insert test data into service table">
         <insert tableName="service">
-            <column name="service_id" value="020124se-r002-002v-i0c0-024ser01vi02"/>
+            <column name="service_id" value="5764fe67-bd41-4416-850b-2b06bd32ecca"/>
             <column name="service_breakfast_booking" value="1"/>
             <column name="service_breakfast_price" value="20.00"/>
             <column name="service_restaurant_booking" value="0"/>
@@ -45,7 +45,7 @@
 
     <changeSet author="b.ruzmetov" id="insert test data into event table">
         <insert tableName="event">
-            <column name="event_id" value="020124ev-e002-002n-t0e0-024eve01nt02"/>
+            <column name="event_id" value="9b2e1522-5658-4555-8cb8-acb5de2fefef"/>
             <column name="event_name" value="Wedding party"/>
             <column name="event_description" value="Wedding of Jacob and Melinda Gates"/>
             <column name="event_date" value="2024-01-03"/>
@@ -62,7 +62,7 @@
 
     <changeSet author="b.ruzmetov" id="insert test data into customer table">
         <insert tableName="customer">
-            <column name="customer_id" value="020124cu-s002-002t-0o0-024cus01to02"/>
+            <column name="customer_id" value="92e50b51-0ebe-4e0f-a446-f831406ae4bc"/>
             <column name="customer_first_name" value="Jacob"/>
             <column name="customer_last_name" value="Gates"/>
             <column name="customer_email" value="jacob.gates@gmail.com"/>
@@ -78,15 +78,15 @@
 
     <changeSet author="b.ruzmetov" id="insert test data into reservation table">
         <insert tableName="reservation">
-            <column name="reservation_id" value="020124re-s002-002e-r0v0-024res01er02"/>
-            <column name="reservation_customer_id" value="020124cu-s002-002t-0o0-024cus01to02"/>
+            <column name="reservation_id" value="ea6ce994-701b-4a64-b789-c77e2914b53d"/>
+            <column name="reservation_customer_id" value="92e50b51-0ebe-4e0f-a446-f831406ae4bc"/>
             <column name="reservation_room_id" value="202"/>
-            <column name="reservation_event_id" value="020124ev-e002-002n-t0e0-024eve01nt02"/>
-            <column name="reservation_service_id" value="020124se-r002-002v-i0c0-024ser01vi02"/>
+            <column name="reservation_event_id" value="9b2e1522-5658-4555-8cb8-acb5de2fefef"/>
+            <column name="reservation_service_id" value="5764fe67-bd41-4416-850b-2b06bd32ecca"/>
             <column name="reservation_total_amount" value="3292.75"/>
             <column name="reservation_payment_method" value="Credit Card"/>
-            <column name="reservation_payment_id" value="020124pa-y002-002m-0e0-024pay01me02"/>
-            <column name="reservation_transaction_id" value="020124tr-a002-002n-0s0-024tra01ns02"/>
+            <column name="reservation_payment_id" value="d20a8ebf-14f4-4df0-936d-8ce14bea0141"/>
+            <column name="reservation_transaction_id" value="9d36ea1d-c0dd-4ffc-8325-60296b953798"/>
             <column name="reservation_transaction_history" value="Regular guest"/>
             <column name="reservation_cancelled_info" value="No cancellation"/>
             <column name="reservation_tab_create" value="2024-01-03"/>
