@@ -245,6 +245,9 @@
             <column name="reservation_service_id" type="uuid">
                 <constraints foreignKeyName="true" nullable="true"/>
             </column>
+            <column name="reservation_payment_id" type="uuid">
+                <constraints foreignKeyName="true" nullable="true"/>
+            </column>
             <column name="reservation_total_amount" type="double">
                 <constraints nullable="false"/>
             </column>
