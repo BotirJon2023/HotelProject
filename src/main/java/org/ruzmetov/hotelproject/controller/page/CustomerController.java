@@ -18,9 +18,6 @@ public class CustomerController {
     private final CustomerService customerService;
 
 
-//    public CustomerController(CustomerService customerService) {
-//        this.customerService = customerService;
-
 
     @GetMapping("/{id}") // http://localhost:8080/customer/020124cu-s001-001t-0o0-024cus01to02
     public Customer getAccountById(@PathVariable("id") String id) {
@@ -28,7 +25,4 @@ public class CustomerController {
 
     }
 
-//    public CustomerService getCustomerService() {
-//         return customerService;
-//    }
 }

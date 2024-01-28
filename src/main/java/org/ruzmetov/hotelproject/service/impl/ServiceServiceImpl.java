@@ -19,3 +19,4 @@ public class ServiceServiceImpl implements ServiceService {
         return serviceRepository.getServicesByServiceId(UUID.fromString(id));
     }
 }
+

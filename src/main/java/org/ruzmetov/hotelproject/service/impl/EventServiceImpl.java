@@ -20,3 +20,4 @@ public class EventServiceImpl implements EventService {
         return eventRepository.getEventByEventId(UUID.fromString(id));
     }
 }
+

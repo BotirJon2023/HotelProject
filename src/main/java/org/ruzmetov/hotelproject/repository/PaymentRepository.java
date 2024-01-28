@@ -10,3 +10,4 @@ public interface PaymentRepository extends JpaRepository<Payment, UUID> {
 Payment getPaymentByPaymentId(UUID id);
 
 }
+

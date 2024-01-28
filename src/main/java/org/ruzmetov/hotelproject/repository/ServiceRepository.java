@@ -11,3 +11,4 @@ public interface ServiceRepository extends JpaRepository<Service, UUID> {
     Service getServicesByServiceId(UUID id);
 
 }
+

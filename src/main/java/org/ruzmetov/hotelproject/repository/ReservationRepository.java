@@ -9,5 +9,4 @@ public interface ReservationRepository extends JpaRepository<Reservation, UUID> 
 
     Reservation getReservationByReservationId(UUID id);
 
-
 }

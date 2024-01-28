@@ -7,3 +7,4 @@ public interface EventService {
 
     Event getAccById(String id);
 }
+

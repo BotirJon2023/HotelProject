@@ -10,3 +10,4 @@ public interface EventRepository extends JpaRepository<Event, UUID> {
     Event getEventByEventId(UUID id);
 
 }
+

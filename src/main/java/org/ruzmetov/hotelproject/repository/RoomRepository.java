@@ -8,3 +8,4 @@ public interface RoomRepository extends JpaRepository<Room, Integer> {
     Room getRoomByRoomId(int id);
 
 }
+

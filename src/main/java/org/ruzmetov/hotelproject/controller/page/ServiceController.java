@@ -22,5 +22,4 @@ public class ServiceController {
         return serviceService.getAccById(id);
 
     }
-
 }

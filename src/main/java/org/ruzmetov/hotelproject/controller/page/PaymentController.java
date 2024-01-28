@@ -1,25 +1,27 @@
 package org.ruzmetov.hotelproject.controller.page;
 
-
 import lombok.RequiredArgsConstructor;
-import org.ruzmetov.hotelproject.entity.Room;
-import org.ruzmetov.hotelproject.service.interf.RoomService;
+import org.ruzmetov.hotelproject.entity.Payment;
+import org.ruzmetov.hotelproject.service.interf.PaymentService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.UUID;
+
 @RestController
-@RequestMapping("/room")
+@RequestMapping("/payment")
 @RequiredArgsConstructor
 
-public class RoomController {
+public class PaymentController {
 
-    private final RoomService roomService;
+    private final PaymentService paymentService;
 
     @GetMapping("/{id}")
-    public Room getAccountById(@PathVariable("id") String id) {
-        return roomService.getAccById(id);
+    public Payment getAccountById(@PathVariable("id") String id) {
+        return paymentService.getAccById(UUID.fromString(id));
 
     }
+
 }

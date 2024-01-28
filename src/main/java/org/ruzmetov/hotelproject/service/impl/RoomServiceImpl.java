@@ -19,3 +19,4 @@ public class RoomServiceImpl implements RoomService {
         return roomRepository.getRoomByRoomId(Integer.getInteger(id));
     }
 }
+
