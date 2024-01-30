@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.JdbcTypeCode;
+import org.hibernate.type.SqlTypes;
 
 import java.util.Date;
 import java.util.Objects;
@@ -18,8 +20,9 @@ import java.util.Objects;
 public class Room {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "room_id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "room_id", columnDefinition = "integer")
+    @JdbcTypeCode(SqlTypes.CHAR)
     private int roomId;
 
     @Column(name = "room_category")

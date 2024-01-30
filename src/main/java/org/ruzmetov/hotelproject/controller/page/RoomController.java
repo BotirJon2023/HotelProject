@@ -17,9 +17,9 @@ public class RoomController {
 
     private final RoomService roomService;
 
-    @GetMapping("/{id}")
-    public Room getAccountById(@PathVariable("id") String id) {
-        return roomService.getAccById(id);
+    @GetMapping("/{id}")  // http://localhost:8080/room/101
+    public Room getRoomByRoomId(@PathVariable("id") String id) {
+        return roomService.getRoomById(id);
 
     }
 }

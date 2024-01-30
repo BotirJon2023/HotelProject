@@ -8,7 +8,7 @@ import java.util.UUID;
 public interface ServiceRepository extends JpaRepository<Service, UUID> {
 
 
-    Service getServicesByServiceId(UUID id);
+    Service findServiceByServiceId(UUID id);
 
 }
 

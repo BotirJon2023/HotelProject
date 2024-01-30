@@ -5,6 +5,6 @@ import org.ruzmetov.hotelproject.entity.Room;
 public interface RoomService {
 
 
-    Room getAccById(String id);
+    Room getRoomById(String id);
 }
 

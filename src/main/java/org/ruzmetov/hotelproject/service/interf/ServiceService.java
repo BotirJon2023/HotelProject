@@ -5,6 +5,6 @@ import org.ruzmetov.hotelproject.entity.Service;
 public interface ServiceService {
 
 
-    Service getAccById(String id);
+    Service getServiceById(String id);
 }
 

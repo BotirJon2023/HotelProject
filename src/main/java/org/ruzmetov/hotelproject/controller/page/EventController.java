@@ -19,10 +19,10 @@ public class EventController {
     private final EventService eventService;
 
 
-    @GetMapping("/{id}")
-    public Event getAccountById(@PathVariable("id") String id) {
-        return eventService.getAccById(id);
-    }
+    @GetMapping("/{id}") // http://localhost:8080/event/9b2e1522-5658-4555-8cb8-acb5de2fefef
+    public Event getEventByEventId(@PathVariable("id") String id) {
 
+        return eventService.getEventById(id);
+    }
 
 }

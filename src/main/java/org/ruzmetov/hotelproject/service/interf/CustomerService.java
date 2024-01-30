@@ -6,6 +6,6 @@ import org.ruzmetov.hotelproject.entity.Customer;
 public interface CustomerService {
 
 
-    Customer getAccById(String id);
+    Customer getCustomerById(String id);
 }
 

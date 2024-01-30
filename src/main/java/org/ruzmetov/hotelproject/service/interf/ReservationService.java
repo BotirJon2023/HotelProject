@@ -5,6 +5,6 @@ import org.ruzmetov.hotelproject.entity.Reservation;
 public interface ReservationService {
 
 
-    Reservation getAccById(String id);
+    Reservation getReservationById(String id);
 }
 

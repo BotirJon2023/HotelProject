@@ -18,9 +18,9 @@ public class PaymentController {
 
     private final PaymentService paymentService;
 
-    @GetMapping("/{id}")
-    public Payment getAccountById(@PathVariable("id") String id) {
-        return paymentService.getAccById(UUID.fromString(id));
+    @GetMapping("/{id}") // http://localhost:8080/payment/48325ff0-3efc-43c7-bd4c-2896ad9d140f
+    public Payment getPaymentByPaymentId(@PathVariable("id") String id) {
+        return paymentService.getPaymentById(UUID.fromString(id));
 
     }
 

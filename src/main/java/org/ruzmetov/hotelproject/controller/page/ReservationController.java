@@ -17,9 +17,9 @@ public class ReservationController {
 
     private final ReservationService reservationService;
 
-    @GetMapping("/{id}")
-    public Reservation getAccountById(@PathVariable("id") String id) {
-        return reservationService.getAccById(id);
+    @GetMapping("/{id}") // http://localhost:8080/reservation/31ab5b88-78fe-40ac-a7af-499222c4959d
+    public Reservation getReservationByReservationId(@PathVariable("id") String id) {
+        return reservationService.getReservationById(id);
 
     }
 

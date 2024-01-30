@@ -7,7 +7,7 @@ import java.util.UUID;
 
 public interface EventRepository extends JpaRepository<Event, UUID> {
 
-    Event getEventByEventId(UUID id);
+    Event findEventByEventId(UUID id);
 
 }
 

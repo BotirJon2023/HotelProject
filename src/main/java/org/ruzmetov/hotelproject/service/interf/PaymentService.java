@@ -7,7 +7,7 @@ import java.util.UUID;
 
 public interface PaymentService {
 
-    Payment getAccById(UUID id);
+    Payment getPaymentById(UUID id);
 
 }
 

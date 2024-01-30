@@ -17,9 +17,9 @@ public class ServiceController {
 
     private final ServiceService serviceService;
 
-    @GetMapping("/{id}")
-    public Service getAccountById(@PathVariable("id") String id) {
-        return serviceService.getAccById(id);
+    @GetMapping("/{id}") // http://localhost:8080/service/5690a8ff-3007-4978-9d52-4c541da26e76
+    public Service getServiceByServiceId(@PathVariable("id") String id) {
+        return serviceService.getServiceById(id);
 
     }
 }

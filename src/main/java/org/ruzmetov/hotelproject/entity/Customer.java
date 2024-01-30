@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.JdbcTypeCode;
+import org.hibernate.type.SqlTypes;
 
 import java.util.Date;
 import java.util.Objects;
@@ -19,8 +21,9 @@ import java.util.UUID;
 public class Customer {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "customer_id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "customer_id", columnDefinition = "UUID")
+    @JdbcTypeCode(SqlTypes.CHAR)
     private UUID customerId;
 
     @Column(name = "customer_first_name")

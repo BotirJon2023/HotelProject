@@ -5,6 +5,6 @@ import org.ruzmetov.hotelproject.entity.Event;
 public interface EventService {
 
 
-    Event getAccById(String id);
+    Event getEventById(String id);
 }
 

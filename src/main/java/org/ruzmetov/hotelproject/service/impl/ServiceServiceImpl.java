@@ -14,9 +14,9 @@ public class ServiceServiceImpl implements ServiceService {
     private final ServiceRepository serviceRepository;
 
     @Override
-    public Service getAccById(String id) {
+    public Service getServiceById(String id) {
 
-        return serviceRepository.getServicesByServiceId(UUID.fromString(id));
+        return serviceRepository.findServiceByServiceId(UUID.fromString(id));
     }
 }
 

@@ -18,10 +18,10 @@ public class PaymentServiceImpl implements PaymentService {
 
 
     @Override
-    public Payment getAccById(UUID id) {
+    public Payment getPaymentById(UUID id) {
 
 
-        return paymentRepository.getPaymentByPaymentId(UUID.fromString(String.valueOf(id)));
+        return paymentRepository.findPaymentByPaymentId(UUID.fromString(String.valueOf(id)));
 
     }
 }

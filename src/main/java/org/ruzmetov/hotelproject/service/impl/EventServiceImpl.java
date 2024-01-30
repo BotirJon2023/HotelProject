@@ -15,9 +15,9 @@ public class EventServiceImpl implements EventService {
     private final EventRepository eventRepository;
 
     @Override
-    public Event getAccById(String id) {
+    public Event getEventById(String id) {
 
-        return eventRepository.getEventByEventId(UUID.fromString(id));
+        return eventRepository.findEventByEventId(UUID.fromString(id));
     }
 }
 

@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.JdbcTypeCode;
+import org.hibernate.type.SqlTypes;
 
 import java.util.Objects;
 import java.util.UUID;
@@ -18,33 +20,33 @@ import java.util.UUID;
 public class Reservation {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "reservation_id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "reservation_id", columnDefinition = "UUID")
+    @JdbcTypeCode(SqlTypes.CHAR)
     private UUID reservationId;
 
     @OneToOne
     @JoinColumn(name = "reservation_customer_id", referencedColumnName = "customer_id")
-    private Customer customerId;
+    private Customer customer;
 
     @OneToOne
     @JoinColumn(name = "reservation_room_id", referencedColumnName = "room_id")
-    private Room roomId;
+    private Room room;
 
     @OneToOne
     @JoinColumn(name = "reservation_event_id", referencedColumnName = "event_id")
-    private Event eventId;
+    private Event event;
 
     @OneToOne
     @JoinColumn(name = "reservation_service_id", referencedColumnName = "service_id")
-    private Service serviceId;
+    private Service service;
 
     @Column(name = "reservation_total_amount")
     private double totalAmount;
 
     @OneToOne
     @JoinColumn(name = "reservation_payment_id", referencedColumnName = "payment_id")
-    private Payment paymentId;
-
+    private Payment payment;
 
     @Column(name = "reservation_cancelled_info")
     private String cancellationInfo;
@@ -66,10 +68,10 @@ public class Reservation {
     public String toString() {
         return "Reservation{" +
                 "reservationId=" + reservationId +
-                ", customerId=" + customerId +
-                ", roomId=" + roomId +
-                ", eventId=" + eventId +
-                ", serviceId=" + serviceId +
+                ", customerId=" + customer +
+                ", roomId=" + room +
+                ", eventId=" + event +
+                ", serviceId=" + service +
                 ", totalAmount=" + totalAmount +
                 ", cancellationInfo='" + cancellationInfo + '\'' +
                 '}';
