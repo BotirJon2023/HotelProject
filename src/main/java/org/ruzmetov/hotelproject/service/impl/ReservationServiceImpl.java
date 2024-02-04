@@ -16,9 +16,11 @@ public class ReservationServiceImpl implements ReservationService {
 
     @Override
     public Reservation getReservationById(String id) {
+        return reservationRepository.findReservationByReservationId(UUID.fromString(String.valueOf(id)));
+    }
 
-        return reservationRepository.findReservationByReservationId(UUID.fromString(id));
-
+    @Override
+    public final Reservation deleteReservationById(String id) {
+        return reservationRepository.deleteReservationByReservationId(UUID.fromString(id));
     }
 }
-

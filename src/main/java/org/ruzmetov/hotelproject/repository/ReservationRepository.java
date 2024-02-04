@@ -9,4 +9,5 @@ public interface ReservationRepository extends JpaRepository<Reservation, UUID> 
 
     Reservation findReservationByReservationId(UUID id);
 
+    Reservation deleteReservationByReservationId(UUID id);
 }

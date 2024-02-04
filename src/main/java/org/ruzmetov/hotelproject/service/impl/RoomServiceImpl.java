@@ -10,13 +10,15 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class RoomServiceImpl implements RoomService {
 
-
     private final RoomRepository roomRepository;
 
     @Override
-    public Room getRoomById(String id) {
+    public Room getRoomById(int id) {
+        return roomRepository.findRoomByRoomId(id);
+    }
 
-        return roomRepository.findRoomByRoomId(Integer.getInteger(id));
+    @Override
+    public Room deleteRoomById(int id) {
+        return roomRepository.deleteRoomByRoomId(id);
     }
 }
-

@@ -6,7 +6,6 @@ import org.ruzmetov.hotelproject.repository.PaymentRepository;
 import org.ruzmetov.hotelproject.service.interf.PaymentService;
 import org.springframework.stereotype.Service;
 
-
 import java.util.UUID;
 
 @Service
@@ -16,13 +15,13 @@ public class PaymentServiceImpl implements PaymentService {
 
     private final PaymentRepository paymentRepository;
 
-
     @Override
     public Payment getPaymentById(UUID id) {
-
-
         return paymentRepository.findPaymentByPaymentId(UUID.fromString(String.valueOf(id)));
+    }
 
+    @Override
+    public Payment deletePaymentById(String id) {
+        return paymentRepository.deletePaymentByPaymentId(UUID.fromString(id));
     }
 }
-

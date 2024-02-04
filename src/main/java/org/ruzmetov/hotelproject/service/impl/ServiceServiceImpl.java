@@ -15,8 +15,11 @@ public class ServiceServiceImpl implements ServiceService {
 
     @Override
     public Service getServiceById(String id) {
-
         return serviceRepository.findServiceByServiceId(UUID.fromString(id));
     }
-}
 
+    @Override
+    public final Service deleteServiceById(String id) {
+        return serviceRepository.deleteServiceByServiceId(UUID.fromString(id));
+    }
+}

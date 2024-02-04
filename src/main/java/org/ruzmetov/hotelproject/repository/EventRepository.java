@@ -9,5 +9,5 @@ public interface EventRepository extends JpaRepository<Event, UUID> {
 
     Event findEventByEventId(UUID id);
 
+    Event deleteEventByEventId(UUID id);
 }
-
