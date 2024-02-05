@@ -1,5 +1,7 @@
 package org.ruzmetov.hotelproject.service.interf;
 
+import org.ruzmetov.hotelproject.dto.CustomerDtoReservations;
+import org.ruzmetov.hotelproject.dto.CustomerUpdateDto;
 import org.ruzmetov.hotelproject.entity.Customer;
 
 public interface CustomerService {
@@ -13,4 +15,8 @@ public interface CustomerService {
  //   Customer updateCustomerById(String id);
 
     Customer deleteCustomerById(String id);
+
+    Customer updateCustomerById(String id, CustomerUpdateDto customerUpdateDto);
+
+    CustomerDtoReservations getCustomerWithReservationByCustomerId(String id);
 }

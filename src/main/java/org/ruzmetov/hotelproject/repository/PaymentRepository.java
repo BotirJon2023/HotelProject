@@ -8,6 +8,7 @@ import java.util.UUID;
 public interface PaymentRepository extends JpaRepository<Payment, UUID> {
 
     Payment findPaymentByPaymentId(UUID id);
+
     Payment deletePaymentByPaymentId(UUID id);
 
 }

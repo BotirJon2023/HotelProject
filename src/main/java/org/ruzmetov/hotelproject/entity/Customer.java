@@ -10,6 +10,7 @@ import org.hibernate.type.SqlTypes;
 
 import java.util.Date;
 import java.util.Objects;
+import java.util.Set;
 import java.util.UUID;
 
 @Getter
@@ -49,6 +50,10 @@ public class Customer {
 
     @Column(name = "customer_credit_card_expiring_date")
     private Date creditCardExpiringDate;
+
+    @OneToMany(mappedBy = "customer")
+    private Set<Reservation> reservations;
+
 
     @Override
     public boolean equals(Object o) {

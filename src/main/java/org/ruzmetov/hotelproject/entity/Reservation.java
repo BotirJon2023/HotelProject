@@ -25,8 +25,8 @@ public class Reservation {
     @JdbcTypeCode(SqlTypes.CHAR)
     private UUID reservationId;
 
-    @OneToOne
-    @JoinColumn(name = "reservation_customer_id", referencedColumnName = "customer_id")
+    @ManyToOne
+    @JoinColumn(name = "reservation_customer_id")
     private Customer customer;
 
     @OneToOne

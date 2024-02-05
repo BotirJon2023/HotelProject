@@ -192,12 +192,7 @@
             <column name="customer_credit_card_expiring_date" type="date">
                 <constraints nullable="true"/>
             </column>
-            <column name="customer_tab_create" type="timestamp">
-                <constraints nullable="false"/>
-            </column>
-            <column name="customer_tab_update" type="timestamp">
-                <constraints nullable="false"/>
-            </column>
+
         </createTable>
     </changeSet>
 

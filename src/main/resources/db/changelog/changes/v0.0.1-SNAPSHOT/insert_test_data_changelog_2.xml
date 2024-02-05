@@ -71,9 +71,7 @@
             <column name="customer_loyality_point" value="300"/>
             <column name="customer_credit_card_number" value="202401222"/>
             <column name="customer_credit_card_expiring_date" value="2026-02-02"/>
-            <column name="customer_tab_create" value="2024-01-01T08:30:00"/>
-            <column name="customer_tab_update" value="2024-01-03T15:45:00"/>
-        </insert>
+           </insert>
     </changeSet>
 
     <changeSet author="b.ruzmetov" id="insert test data into payment table">

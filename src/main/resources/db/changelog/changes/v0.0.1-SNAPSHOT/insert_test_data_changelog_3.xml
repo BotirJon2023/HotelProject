@@ -71,8 +71,6 @@
             <column name="customer_loyality_point" value="1300"/>
             <column name="customer_credit_card_number" value="202401333"/>
             <column name="customer_credit_card_expiring_date" value="2025-03-03"/>
-            <column name="customer_tab_create" value="2024-01-04T08:30:00"/>
-            <column name="customer_tab_update" value="2024-01-04T15:45:00"/>
         </insert>
     </changeSet>
 

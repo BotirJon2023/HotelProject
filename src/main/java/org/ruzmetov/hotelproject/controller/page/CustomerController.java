@@ -1,10 +1,10 @@
 package org.ruzmetov.hotelproject.controller.page;
 
 import lombok.RequiredArgsConstructor;
-import org.ruzmetov.hotelproject.dto.CustomerDto;
+import org.ruzmetov.hotelproject.dto.CustomerDtoReservations;
+import org.ruzmetov.hotelproject.dto.CustomerUpdateDto;
 import org.ruzmetov.hotelproject.entity.Customer;
 import org.ruzmetov.hotelproject.service.interf.CustomerService;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
@@ -22,30 +22,22 @@ public class CustomerController {
         return customerService.getCustomerById(id);
     }
 
-    @PostMapping("/createOneCustomer")  // http://localhost:8080/createOneCustomer
+    @GetMapping("/reservation/{id}") // http://localhost:8080/customer/reservation/5147b945-14c8-4f6f-8662-e8c3befb7838
+    public CustomerDtoReservations getCustomerWithReservationByCustomerId(@PathVariable("id") String id) {
+        return customerService.getCustomerWithReservationByCustomerId(id);
+    }
+
+    @PostMapping("/createOneCustomer")  // http://localhost:8080/customer/createOneCustomer
     @ResponseBody
     public Customer postCreateCustomer(@RequestBody Customer customer) {
         return customerService.createCustomer(customer);
     }
 
-//    @PutMapping("/updateOneCustomer/{id}")  // http://localhost:8080/createOneCustomer/5147b945-14c8-4f6f-8662-e8c3befb7838
-//    public Customer putUpdateCustomer(@PathVariable(value = "id") String id) {
-//        return customerService.putCustomerById(id);
-//    }
-
-
-//    @PutMapping("/updateOneCustomer/{id}") // http://localhost:8080/createOneCustomer/5147b945-14c8-4f6f-8662-e8c3befb7838
-//    public Customer updateCustomerByCustomerId(@PathVariable UUID id, @RequestBody Customer updatedCustomer) {
-//        Customer customer = customerService.getCustomerById(String.valueOf(id));
-//        if (customer != null) {
-//            updatedCustomer.setCustomerId(id);
-//                customerService.updateCustomerById(String.valueOf(id));
-//            return new Customer(updatedCustomer, HttpStatus.OK);
-//        } else {
-//            return new Customer(HcttpStatus.NOT_FOUND);
-//        }
-//    }
-
+    @PutMapping("/updateOneCustomer/{id}")
+    // http://localhost:8080/customer/updateOneCustomer/5147b945-14c8-4f6f-8662-e8c3befb7838
+    public Customer updateCustomerByCustomerId(@PathVariable(value = "id") String id, @RequestBody CustomerUpdateDto customerUpdateDto) {
+        return customerService.updateCustomerById(id, customerUpdateDto);
+    }
 
     @DeleteMapping("/delete/{id}") // http://localhost:8080/customer/delete/5147b945-14c8-4f6f-8662-e8c3befb7838
     public Customer deleteCustomerByCustomerId(@PathVariable("id") String id) {
