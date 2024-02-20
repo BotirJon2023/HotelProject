@@ -39,12 +39,6 @@
             <column name="room_checkOut_date" type="date">
                 <constraints nullable="false"/>
             </column>
-            <column name="room_tab_create" type="date">
-                <constraints nullable="false"/>
-            </column>
-            <column name="room_tab_update" type="date">
-                <constraints nullable="false"/>
-            </column>
         </createTable>
     </changeSet>
 
@@ -58,12 +52,6 @@
         <createTable tableName="service">
             <column name="service_id" type="uuid">
                 <constraints primaryKey="true" nullable="false"/>
-            </column>
-            <column name="service_breakfast_booking" type="boolean">
-                <constraints nullable="false"/>
-            </column>
-            <column name="service_breakfast_price" type="double">
-                <constraints nullable="false"/>
             </column>
             <column name="service_restaurant_booking" type="boolean">
                 <constraints nullable="false"/>
@@ -99,12 +87,6 @@
                 <constraints nullable="false"/>
             </column>
             <column name="service_airport_transfer_price" type="double">
-                <constraints nullable="false"/>
-            </column>
-            <column name="service_tab_create" type="date">
-                <constraints nullable="false"/>
-            </column>
-            <column name="service_tab_update" type="date">
                 <constraints nullable="false"/>
             </column>
         </createTable>
@@ -148,12 +130,6 @@
             <column name="event_contact_person" type="varchar(100)">
                 <constraints nullable="true"/>
             </column>
-            <column name="event_tab_create" type="timestamp">
-                <constraints nullable="false"/>
-            </column>
-            <column name="event_tab_update" type="timestamp">
-                <constraints nullable="false"/>
-            </column>
         </createTable>
     </changeSet>
 
@@ -186,7 +162,7 @@
             <column name="customer_loyality_point" type="varchar(50)">
                 <constraints nullable="true"/>
             </column>
-            <column name="customer_credit_card_number" type="integer">
+            <column name="customer_credit_card_number" type="varchar(50)">
                 <constraints nullable="true"/>
             </column>
             <column name="customer_credit_card_expiring_date" type="date">
@@ -248,12 +224,6 @@
             </column>
             <column name="reservation_cancelled_info" type="varchar(255)">
                 <constraints nullable="true"/>
-            </column>
-            <column name="reservation_tab_create" type="timestamp">
-                <constraints nullable="false"/>
-            </column>
-            <column name="reservation_tab_update" type="timestamp">
-                <constraints nullable="false"/>
             </column>
         </createTable>
     </changeSet>

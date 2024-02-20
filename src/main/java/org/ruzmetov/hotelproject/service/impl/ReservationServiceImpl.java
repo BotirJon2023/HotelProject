@@ -2,10 +2,8 @@ package org.ruzmetov.hotelproject.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.ruzmetov.hotelproject.dto.ReservationUpdateDto;
-import org.ruzmetov.hotelproject.entity.Customer;
 import org.ruzmetov.hotelproject.entity.Reservation;
-import org.ruzmetov.hotelproject.exeption.CustomerNotFoundException;
-import org.ruzmetov.hotelproject.exeption.ReservationNotFoundException;
+import org.ruzmetov.hotelproject.exception.ReservationNotFoundException;
 import org.ruzmetov.hotelproject.repository.ReservationRepository;
 import org.ruzmetov.hotelproject.service.interf.ReservationService;
 import org.springframework.stereotype.Service;

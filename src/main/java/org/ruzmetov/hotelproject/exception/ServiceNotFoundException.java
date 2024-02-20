@@ -1,4 +1,4 @@
-package org.ruzmetov.hotelproject.exeption;
+package org.ruzmetov.hotelproject.exception;
 
 public class ServiceNotFoundException extends RuntimeException {
 

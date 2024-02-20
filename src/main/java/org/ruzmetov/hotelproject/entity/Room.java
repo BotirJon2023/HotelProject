@@ -22,7 +22,7 @@ public class Room {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "room_id", columnDefinition = "integer")
-    @JdbcTypeCode(SqlTypes.CHAR)
+    @JdbcTypeCode(SqlTypes.INTEGER)
     private int roomId;
 
     @Column(name = "room_category")

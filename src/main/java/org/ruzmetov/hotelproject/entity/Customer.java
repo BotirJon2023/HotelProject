@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.experimental.Accessors;
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
 
@@ -15,6 +16,7 @@ import java.util.UUID;
 
 @Getter
 @Setter
+@Accessors(fluent = false, chain = true)
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "customer")
@@ -46,7 +48,7 @@ public class Customer {
     private String loyalityPoints;
 
     @Column(name = "customer_credit_card_number")
-    private int creditCardNumber;
+    private String creditCardNumber;
 
     @Column(name = "customer_credit_card_expiring_date")
     private Date creditCardExpiringDate;

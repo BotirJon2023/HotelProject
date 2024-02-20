@@ -2,16 +2,11 @@ package org.ruzmetov.hotelproject.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.ruzmetov.hotelproject.dto.RoomUpdateDto;
-import org.ruzmetov.hotelproject.entity.Reservation;
 import org.ruzmetov.hotelproject.entity.Room;
-import org.ruzmetov.hotelproject.exeption.ReservationNotFoundException;
-import org.ruzmetov.hotelproject.exeption.RoomNotFoundException;
+import org.ruzmetov.hotelproject.exception.RoomNotFoundException;
 import org.ruzmetov.hotelproject.repository.RoomRepository;
 import org.ruzmetov.hotelproject.service.interf.RoomService;
 import org.springframework.stereotype.Service;
-
-import java.util.Date;
-import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor

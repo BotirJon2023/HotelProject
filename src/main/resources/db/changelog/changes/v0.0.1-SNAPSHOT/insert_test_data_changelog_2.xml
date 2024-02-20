@@ -9,8 +9,6 @@
     <changeSet author="b.ruzmetov" id="insert test data into service table">
         <insert tableName="service">
             <column name="service_id" value="5764fe67-bd41-4416-850b-2b06bd32ecca"/>
-            <column name="service_breakfast_booking" value="1"/>
-            <column name="service_breakfast_price" value="20.00"/>
             <column name="service_restaurant_booking" value="0"/>
             <column name="service_restaurant_price" value="0.0"/>
             <column name="service_bar_booking" value="1"/>
@@ -23,8 +21,6 @@
             <column name="service_garage_price" value="0.0"/>
             <column name="service_airport_transfer" value="1"/>
             <column name="service_airport_transfer_price" value="50.00"/>
-            <column name="service_tab_create" value="2024-01-03T10:30:00"/>
-            <column name="service_tab_update" value="2024-01-03T12:45:00"/>
         </insert>
     </changeSet>
 
@@ -38,8 +34,6 @@
             <column name="room_breakfast_include" value="1"/>
             <column name="room_checkIn_date" value="2024-01-03"/>
             <column name="room_checkOut_date" value="2024-01-05"/>
-            <column name="room_tab_create" value="2024-01-03T14:00:00"/>
-            <column name="room_tab_update" value="2024-01-03T16:45:00"/>
         </insert>
     </changeSet>
 
@@ -55,8 +49,6 @@
             <column name="event_capacity" value="100"/>
             <column name="event_organized_company" value="Private"/>
             <column name="event_contact_person" value="Jacob Gates"/>
-            <column name="event_tab_create" value="2024-01-01T08:30:00"/>
-            <column name="event_tab_update" value="2024-01-03T15:45:00"/>
         </insert>
     </changeSet>
 
@@ -71,7 +63,7 @@
             <column name="customer_loyality_point" value="300"/>
             <column name="customer_credit_card_number" value="202401222"/>
             <column name="customer_credit_card_expiring_date" value="2026-02-02"/>
-           </insert>
+        </insert>
     </changeSet>
 
     <changeSet author="b.ruzmetov" id="insert test data into payment table">
@@ -93,8 +85,6 @@
             <column name="reservation_service_id" value="5764fe67-bd41-4416-850b-2b06bd32ecca"/>
             <column name="reservation_total_amount" value="3292.75"/>
             <column name="reservation_cancelled_info" value="No cancellation"/>
-            <column name="reservation_tab_create" value="2024-01-03"/>
-            <column name="reservation_tab_update" value="2024-01-03"/>
         </insert>
     </changeSet>
 

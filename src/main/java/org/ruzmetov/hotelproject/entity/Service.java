@@ -26,12 +26,6 @@ public class Service {
     @JdbcTypeCode(SqlTypes.CHAR)
     private UUID serviceId;
 
-    @Column(name = "service_breakfast_booking")
-    private boolean isBeakfastBooked;
-
-    @Column(name = "service_breakfast_price")
-    private double serviceBreakfastPrice;
-
     @Column(name = "service_restaurant_booking")
     private boolean isRestaurantBooked;
 
@@ -85,8 +79,6 @@ public class Service {
     public String toString() {
         return "Service{" +
                 "serviceId=" + serviceId +
-                ", isBeakfastBooked=" + isBeakfastBooked +
-                ", serviceBreakfastPrice=" + serviceBreakfastPrice +
                 ", isRestaurantBooked=" + isRestaurantBooked +
                 ", serviceRestaurantPrice=" + serviceRestaurantPrice +
                 ", isBarBooked=" + isBarBooked +

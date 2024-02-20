@@ -6,12 +6,14 @@ import org.ruzmetov.hotelproject.dto.CustomerDtoReservations;
 import org.ruzmetov.hotelproject.dto.CustomerUpdateDto;
 import org.ruzmetov.hotelproject.dto.ReservationDto;
 import org.ruzmetov.hotelproject.entity.Customer;
-import org.ruzmetov.hotelproject.exeption.CustomerNotFoundException;
+import org.ruzmetov.hotelproject.exception.CustomerNotFoundException;
+import org.ruzmetov.hotelproject.exception.errorMessages.CustomerErrorMessage;
 import org.ruzmetov.hotelproject.repository.CustomerRepository;
 import org.ruzmetov.hotelproject.service.interf.CustomerService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
@@ -30,12 +32,50 @@ class CustomerServiceImpl implements CustomerService {
         return customerRepository.findCustomerByCustomerId(UUID.fromString(id));
     }
 
+//    @Override
+//    @Transactional(readOnly = true)
+//    public Customer getCustomerById(String id) {
+//        log.info("Get Customer by id = {}", customerId);
+//        Customer customer = customerRepository.findById(UUID.fromString(id))
+//                .orElseThrow(() -> new CustomerNotFoundException(CustomerErrorMessage.Customer_does_not_exist));
+//        return customerMapper.customerDto(customer);
+//    }
+
+
     @Override
     public Customer createCustomer(Customer customer) {
 
         return customerRepository.save(customer);
     }
 
+    @Override
+    @Transactional
+    public Customer updateCustomerById(String id, CustomerUpdateDto customerUpdateDto) {
+        log.info("Updated customer with id {} was called.", id);
+        Customer customer = customerRepository.findById(UUID.fromString(id)).orElseThrow(() -> new CustomerNotFoundException("Customer with this id not found!"));
+        customer.setAddress(customerUpdateDto.getAddress());
+        customer.setEmail(customerUpdateDto.getEmail());
+        customer.setFirstName(customerUpdateDto.getFirstName());
+        customer.setLastName(customerUpdateDto.getLastName());
+        customer.setPhoneNumber(customerUpdateDto.getPhoneNumber());
+        return customerRepository.save(customer);
+    }
+
+    @Override
+    @Transactional
+    public CustomerDtoReservations getCustomerWithReservationByCustomerId(String id) {
+        log.info("Find customer with reservation id {}.", id);
+        Customer customer = customerRepository.findById(UUID.fromString(id)).orElseThrow(() -> new CustomerNotFoundException("Customer with this id not found!"));
+        CustomerDtoReservations customerDtoReservations = new CustomerDtoReservations();
+        customerDtoReservations.setFirstName(customer.getFirstName());
+        customerDtoReservations.setReservations(customer.getReservations().stream().map(reservation -> new ReservationDto(reservation.getReservationId())).collect(Collectors.toSet()));
+        return customerDtoReservations;
+    }
+
+//    @Override
+//    public List<Customer> getAllCustomers() {
+//        return (List<Customer>) customerRepository;
+//    }
 
 //    @Override
 //    @Transactional
@@ -57,31 +97,6 @@ class CustomerServiceImpl implements CustomerService {
         return customerRepository.deleteCustomerByCustomerId(UUID.fromString(id));
     }
 
-    @Override
-    @Transactional
-    public Customer updateCustomerById(String id, CustomerUpdateDto customerUpdateDto) {
-        log.info("Updated customer with id {} was called.", id);
-        Customer customer = customerRepository.findById(UUID.fromString(id)).orElseThrow(() -> new CustomerNotFoundException("Customer with this id not found!"));
-        customer.setAddress(customerUpdateDto.getAddress());
-        customer.setEmail(customerUpdateDto.getEmail());
-        customer.setFirstName(customerUpdateDto.getFirstName());
-        customer.setLastName(customerUpdateDto.getLastName());
-        customer.setPhoneNumber(customerUpdateDto.getPhoneNumber());
-        return customerRepository.save(customer);
-    }
-
-    @Override
-    @Transactional
-
-    public CustomerDtoReservations getCustomerWithReservationByCustomerId(String id) {
-        log.info("Find customer with reservation id {}.", id);
-        Customer customer = customerRepository.findById(UUID.fromString(id)).orElseThrow(() -> new CustomerNotFoundException("Customer with this id not found!"));
-        CustomerDtoReservations customerDtoReservations = new CustomerDtoReservations();
-        customerDtoReservations.setFirstName(customer.getFirstName());
-        customerDtoReservations.setReservations(customer.getReservations().stream().map(reservation -> new ReservationDto(reservation.getReservationId())).collect(Collectors.toSet()));
-        return customerDtoReservations;
-    }
-}
 
 //    Override
 //    @Transactional(readOnly = true)
@@ -90,4 +105,4 @@ class CustomerServiceImpl implements CustomerService {
 //        Credit credit = creditRepository.findById(UUID.fromString(creditId))
 //                .orElseThrow(() -> new CreditNotFoundException(ErrorMessage.NO_CREDIT_WITH_ID));
 //        return creditMapper.creditToPaymentScheduleDto(credit);
-//    }
+}

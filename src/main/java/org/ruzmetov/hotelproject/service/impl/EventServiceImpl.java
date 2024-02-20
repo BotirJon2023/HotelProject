@@ -2,16 +2,13 @@ package org.ruzmetov.hotelproject.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.ruzmetov.hotelproject.dto.EventUpdateDto;
-import org.ruzmetov.hotelproject.entity.Customer;
 import org.ruzmetov.hotelproject.entity.Event;
-import org.ruzmetov.hotelproject.exeption.CustomerNotFoundException;
-import org.ruzmetov.hotelproject.exeption.EventNotFoundException;
+import org.ruzmetov.hotelproject.exception.EventNotFoundException;
 import org.ruzmetov.hotelproject.repository.EventRepository;
 import org.ruzmetov.hotelproject.service.interf.EventService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Date;
 import java.util.UUID;
 
 @Service

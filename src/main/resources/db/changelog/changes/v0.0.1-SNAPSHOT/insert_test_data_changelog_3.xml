@@ -9,8 +9,6 @@
     <changeSet author="b.ruzmetov" id="insert test data into service table">
         <insert tableName="service">
             <column name="service_id" value="a95ee7d1-93de-466e-b6f3-80038b58dfc9"/>
-            <column name="service_breakfast_booking" value="1"/>
-            <column name="service_breakfast_price" value="22.00"/>
             <column name="service_restaurant_booking" value="0"/>
             <column name="service_restaurant_price" value="0.0"/>
             <column name="service_bar_booking" value="1"/>
@@ -23,8 +21,6 @@
             <column name="service_garage_price" value="0.0"/>
             <column name="service_airport_transfer" value="1"/>
             <column name="service_airport_transfer_price" value="25.00"/>
-            <column name="service_tab_create" value="2024-01-04T10:30:00"/>
-            <column name="service_tab_update" value="2024-01-04T12:45:00"/>
         </insert>
     </changeSet>
 
@@ -38,8 +34,6 @@
             <column name="room_breakfast_include" value="1"/>
             <column name="room_checkIn_date" value="2024-01-04"/>
             <column name="room_checkOut_date" value="2024-01-08"/>
-            <column name="room_tab_create" value="2024-01-04T14:00:00"/>
-            <column name="room_tab_update" value="2024-01-04T16:45:00"/>
         </insert>
     </changeSet>
 
@@ -55,8 +49,6 @@
             <column name="event_capacity" value="250"/>
             <column name="event_organized_company" value="Private"/>
             <column name="event_contact_person" value="Karl Kowalsky"/>
-            <column name="event_tab_create" value="2024-01-04T08:30:00"/>
-            <column name="event_tab_update" value="2024-01-04T15:45:00"/>
         </insert>
     </changeSet>
 
@@ -92,8 +84,6 @@
             <column name="reservation_service_id" value="a95ee7d1-93de-466e-b6f3-80038b58dfc9"/>
             <column name="reservation_total_amount" value="1757.00"/>
             <column name="reservation_cancelled_info" value="No cancellation"/>
-            <column name="reservation_tab_create" value="2024-01-04"/>
-            <column name="reservation_tab_update" value="2024-01-04"/>
         </insert>
     </changeSet>
 

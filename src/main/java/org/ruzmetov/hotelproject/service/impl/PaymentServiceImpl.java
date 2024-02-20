@@ -2,10 +2,8 @@ package org.ruzmetov.hotelproject.service.impl;
 
 import lombok.RequiredArgsConstructor;
 import org.ruzmetov.hotelproject.dto.PaymentUpdateDto;
-import org.ruzmetov.hotelproject.entity.Customer;
 import org.ruzmetov.hotelproject.entity.Payment;
-import org.ruzmetov.hotelproject.exeption.CustomerNotFoundException;
-import org.ruzmetov.hotelproject.exeption.PaymentNotFoundException;
+import org.ruzmetov.hotelproject.exception.PaymentNotFoundException;
 import org.ruzmetov.hotelproject.repository.PaymentRepository;
 import org.ruzmetov.hotelproject.service.interf.PaymentService;
 import org.springframework.stereotype.Service;
