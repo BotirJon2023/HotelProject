@@ -1,11 +1,10 @@
-package org.ruzmetov.hotelproject.controller.page;
+package org.ruzmetov.hotelproject.controller.rest;
 
 import lombok.RequiredArgsConstructor;
 import org.ruzmetov.hotelproject.dto.CustomerDtoReservations;
 import org.ruzmetov.hotelproject.dto.CustomerUpdateDto;
 import org.ruzmetov.hotelproject.entity.Customer;
 import org.ruzmetov.hotelproject.service.interf.CustomerService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,10 +17,7 @@ public class CustomerController {
 
     private final CustomerService customerService;
 
-//    @Autowired
-//    public CustomerController(CustomerService customerService) {
-//        this.customerService = customerService;
-//    }
+
 
     @GetMapping("/{id}") // http://localhost:8080/customer/5147b945-14c8-4f6f-8662-e8c3befb7838
     // @RequestMapping (value = "/{id}", method = RequestMethod.GET)
@@ -33,11 +29,6 @@ public class CustomerController {
     // @RequestMapping (value = "/reservation/{id}", method = RequestMethod.GET)
     public CustomerDtoReservations getCustomerWithReservationByCustomerId(@PathVariable("id") String id) {
         return customerService.getCustomerWithReservationByCustomerId(id);
-    }
-
-    @GetMapping("/pages") //  http://localhost:8080/customer/pages
-    public String homepage() {
-        return "index";
     }
 
 

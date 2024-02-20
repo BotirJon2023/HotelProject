@@ -7,13 +7,11 @@ import org.ruzmetov.hotelproject.dto.CustomerUpdateDto;
 import org.ruzmetov.hotelproject.dto.ReservationDto;
 import org.ruzmetov.hotelproject.entity.Customer;
 import org.ruzmetov.hotelproject.exception.CustomerNotFoundException;
-import org.ruzmetov.hotelproject.exception.errorMessages.CustomerErrorMessage;
 import org.ruzmetov.hotelproject.repository.CustomerRepository;
 import org.ruzmetov.hotelproject.service.interf.CustomerService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
@@ -23,8 +21,8 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 class CustomerServiceImpl implements CustomerService {
 
+
     private final CustomerRepository customerRepository;
-//    private final CustomerMapper customerMapper;
 
 
     @Override
@@ -32,19 +30,8 @@ class CustomerServiceImpl implements CustomerService {
         return customerRepository.findCustomerByCustomerId(UUID.fromString(id));
     }
 
-//    @Override
-//    @Transactional(readOnly = true)
-//    public Customer getCustomerById(String id) {
-//        log.info("Get Customer by id = {}", customerId);
-//        Customer customer = customerRepository.findById(UUID.fromString(id))
-//                .orElseThrow(() -> new CustomerNotFoundException(CustomerErrorMessage.Customer_does_not_exist));
-//        return customerMapper.customerDto(customer);
-//    }
-
-
     @Override
     public Customer createCustomer(Customer customer) {
-
         return customerRepository.save(customer);
     }
 
@@ -72,10 +59,8 @@ class CustomerServiceImpl implements CustomerService {
         return customerDtoReservations;
     }
 
-//    @Override
-//    public List<Customer> getAllCustomers() {
-//        return (List<Customer>) customerRepository;
-//    }
+//
+
 
 //    @Override
 //    @Transactional

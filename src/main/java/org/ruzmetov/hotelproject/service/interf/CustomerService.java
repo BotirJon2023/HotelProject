@@ -18,5 +18,6 @@ public interface CustomerService {
 
     CustomerDtoReservations getCustomerWithReservationByCustomerId(String id);
 
-    // List<Customer> getAllCustomers();
+
+
 }

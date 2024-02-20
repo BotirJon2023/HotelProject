@@ -1,4 +1,4 @@
-package org.ruzmetov.hotelproject.controller.page;
+package org.ruzmetov.hotelproject.controller.rest;
 
 import lombok.RequiredArgsConstructor;
 import org.ruzmetov.hotelproject.dto.EventUpdateDto;
