@@ -11,4 +11,5 @@ public interface ServiceRepository extends JpaRepository<Service, UUID> {
 
     Service deleteServiceByServiceId(UUID id);
 
+    Service save();
 }

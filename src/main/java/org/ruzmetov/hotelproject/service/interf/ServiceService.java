@@ -6,7 +6,7 @@ import org.ruzmetov.hotelproject.entity.Service;
 public interface ServiceService {
     Service getServiceById(String id);
 
-    Service createService(Service service);
+    Service createService(String service);
 
     Service updateServiceById(String id, ServiceUpdateDto serviceUpdateDto);
 
