@@ -33,10 +33,10 @@
             <column name="room_breakfast_include" type="boolean">
                 <constraints nullable="false"/>
             </column>
-            <column name="room_checkIn_date" type="date">
+            <column name="room_check_in_date" type="date">
                 <constraints nullable="false"/>
             </column>
-            <column name="room_checkOut_date" type="date">
+            <column name="room_check_out_date" type="date">
                 <constraints nullable="false"/>
             </column>
         </createTable>

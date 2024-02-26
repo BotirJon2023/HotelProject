@@ -109,6 +109,13 @@
 
     <build>
         <plugins>
+
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.12-SNAPSHOT</version>
+            </plugin>
+
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -142,6 +149,9 @@
         </repository>
     </repositories>
     <pluginRepositories>
+
+
+
         <pluginRepository>
             <id>spring-milestones</id>
             <name>Spring Milestones</name>
@@ -158,6 +168,9 @@
                 <enabled>false</enabled>
             </releases>
         </pluginRepository>
+
+
+
     </pluginRepositories>
 
 </project>

@@ -32,8 +32,8 @@
             <column name="room_availability" value="1"/>
             <column name="room_floor" value="3"/>
             <column name="room_breakfast_include" value="1"/>
-            <column name="room_checkIn_date" value="2024-01-04"/>
-            <column name="room_checkOut_date" value="2024-01-08"/>
+            <column name="room_check_in_date" value="2024-01-04"/>
+            <column name="room_check_out_date" value="2024-01-08"/>
         </insert>
     </changeSet>
 

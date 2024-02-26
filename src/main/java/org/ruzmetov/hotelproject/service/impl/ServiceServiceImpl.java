@@ -21,8 +21,8 @@ public class ServiceServiceImpl implements ServiceService {
     }
 
     @Override
-    public Service createService(String service) {
-        return serviceRepository.save();
+    public Service createService(Service service) {
+        return serviceRepository.save(service);
     }
 
     @Override

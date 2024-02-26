@@ -40,10 +40,10 @@ public class Room {
     @Column(name = "room_breakfast_include")
     private boolean isBreakfastInclude;
 
-    @Column(name = "room_checkIn_date")
+    @Column(name = "room_check_in_date")
     private Date checkInDate;
 
-    @Column(name = "room_checkOut_date")
+    @Column(name = "room_check_out_date")
     private Date checkOutDate;
 
     @Override

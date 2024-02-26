@@ -31,24 +31,6 @@ class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public Customer createCustomer(Customer customer) {
-        return customerRepository.save(customer);
-    }
-
-    @Override
-    @Transactional
-    public Customer updateCustomerById(String id, CustomerUpdateDto customerUpdateDto) {
-        log.info("Updated customer with id {} was called.", id);
-        Customer customer = customerRepository.findById(UUID.fromString(id)).orElseThrow(() -> new CustomerNotFoundException("Customer with this id not found!"));
-        customer.setAddress(customerUpdateDto.getAddress());
-        customer.setEmail(customerUpdateDto.getEmail());
-        customer.setFirstName(customerUpdateDto.getFirstName());
-        customer.setLastName(customerUpdateDto.getLastName());
-        customer.setPhoneNumber(customerUpdateDto.getPhoneNumber());
-        return customerRepository.save(customer);
-    }
-
-    @Override
     @Transactional
     public CustomerDtoReservations getCustomerWithReservationByCustomerId(String id) {
         log.info("Find customer with reservation id {}.", id);
@@ -58,6 +40,26 @@ class CustomerServiceImpl implements CustomerService {
         customerDtoReservations.setReservations(customer.getReservations().stream().map(reservation -> new ReservationDto(reservation.getReservationId())).collect(Collectors.toSet()));
         return customerDtoReservations;
     }
+
+
+    @Override
+    public Customer createCustomer(Customer customer) {
+        return customerRepository.save(customer);
+    }
+
+    @Override
+    @Transactional
+    public Customer updateCustomerById(String id, CustomerUpdateDto customerUpdateDto) {
+        log.info("Updated customer with id {} was called.", id);
+        Customer customer = customerRepository.findById(UUID.fromString(id)).orElseThrow(() -> new CustomerNotFoundException("Customer with this id not found!"));
+        customer.setFirstName(customerUpdateDto.getFirstName());
+        customer.setLastName(customerUpdateDto.getLastName());
+        customer.setEmail(customerUpdateDto.getEmail());
+        customer.setAddress(customerUpdateDto.getAddress());
+        customer.setPhoneNumber(customerUpdateDto.getPhoneNumber());
+        return customerRepository.save(customer);
+    }
+
 
 //
 

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class HomepageController {
 
-    @GetMapping("/pages") //  http://localhost:8080/customer/pages
+    @GetMapping("/pages") //  http://localhost:8080/pages
     public String homepage() {
         return "index";
     }

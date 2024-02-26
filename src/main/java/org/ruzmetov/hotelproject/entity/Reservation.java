@@ -1,5 +1,6 @@
 package org.ruzmetov.hotelproject.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -27,6 +28,7 @@ public class Reservation {
 
     @ManyToOne
     @JoinColumn(name = "reservation_customer_id")
+    @JsonIgnore
     private Customer customer;
 
     @OneToOne

@@ -20,13 +20,13 @@ public class CustomerController {
 
 
     @GetMapping("/{id}") // http://localhost:8080/customer/5147b945-14c8-4f6f-8662-e8c3befb7838
-    // @RequestMapping (value = "/{id}", method = RequestMethod.GET)
+   // @RequestMapping (value = "/{id}", method = RequestMethod.GET)
     public Customer getCustomerByCustomerId(@PathVariable("id") String id) {
         return customerService.getCustomerById(id);
     }
 
     @GetMapping("/reservation/{id}") // http://localhost:8080/customer/reservation/5147b945-14c8-4f6f-8662-e8c3befb7838
-    // @RequestMapping (value = "/reservation/{id}", method = RequestMethod.GET)
+    //@RequestMapping (value = "/reservation/{id}", method = RequestMethod.GET)
     public CustomerDtoReservations getCustomerWithReservationByCustomerId(@PathVariable("id") String id) {
         return customerService.getCustomerWithReservationByCustomerId(id);
     }
