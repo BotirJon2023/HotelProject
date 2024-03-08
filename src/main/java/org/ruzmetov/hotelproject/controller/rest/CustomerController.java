@@ -7,8 +7,6 @@ import org.ruzmetov.hotelproject.entity.Customer;
 import org.ruzmetov.hotelproject.service.interf.CustomerService;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-import java.util.UUID;
 
 @RestController
 @RequestMapping("/customer")

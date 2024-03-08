@@ -6,6 +6,8 @@ import org.ruzmetov.hotelproject.entity.Service;
 import org.ruzmetov.hotelproject.exception.ServiceNotFoundException;
 import org.ruzmetov.hotelproject.repository.ServiceRepository;
 import org.ruzmetov.hotelproject.service.interf.ServiceService;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.UUID;
 
@@ -16,16 +18,19 @@ public class ServiceServiceImpl implements ServiceService {
     private final ServiceRepository serviceRepository;
 
     @Override
+    @Transactional(isolation = Isolation.READ_UNCOMMITTED)
     public Service getServiceById(String id) {
         return serviceRepository.findServiceByServiceId(UUID.fromString(id));
     }
 
     @Override
+    @Transactional(isolation = Isolation.SERIALIZABLE)
     public Service createService(Service service) {
         return serviceRepository.save(service);
     }
 
     @Override
+    @Transactional(isolation = Isolation.READ_COMMITTED)
     public Service updateServiceById(String id, ServiceUpdateDto serviceUpdateDto) {
         Service service = serviceRepository.findById(UUID.fromString(id)).orElseThrow(() -> new ServiceNotFoundException("Service with this id not found!"));
         service.setRestaurantBooked(serviceUpdateDto.isBeakfastBooked());
@@ -44,7 +49,8 @@ public class ServiceServiceImpl implements ServiceService {
     }
 
     @Override
-    public final Service deleteServiceById(String id) {
+    @Transactional(isolation = Isolation.SERIALIZABLE)
+    public Service deleteServiceById(String id) {
         return serviceRepository.deleteServiceByServiceId(UUID.fromString(id));
     }
 }

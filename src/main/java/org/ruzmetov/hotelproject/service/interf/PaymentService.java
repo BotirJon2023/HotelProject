@@ -15,6 +15,5 @@ public interface PaymentService {
 
     Payment deletePaymentById(String id);
 
-
-
+//    PaymentCheckDto checkThePaymentStatus(UUID id);
 }

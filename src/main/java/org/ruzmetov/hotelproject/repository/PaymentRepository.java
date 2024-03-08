@@ -9,6 +9,9 @@ public interface PaymentRepository extends JpaRepository<Payment, UUID> {
 
     Payment findPaymentByPaymentId(UUID id);
 
+//    PaymentCheckDto checkThePaymentStatus(Payment paymentId);
+
     Payment deletePaymentByPaymentId(UUID id);
+
 
 }

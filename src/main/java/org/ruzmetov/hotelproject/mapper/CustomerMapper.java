@@ -11,6 +11,6 @@ import static org.mapstruct.InjectionStrategy.CONSTRUCTOR;
         uses = {CustomerMapper.class, UuidMapper.class})
 public interface CustomerMapper {
 
-    @Mapping(source = "customer.id", target = "customerId")
-   CustomerDto customerDto(Customer customer);
+//    @Mapping(source = "customer.id", target = "customerId")
+//   CustomerDto customerDto(Customer customer);
 }

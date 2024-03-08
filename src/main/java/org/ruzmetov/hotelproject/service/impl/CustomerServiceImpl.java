@@ -10,6 +10,7 @@ import org.ruzmetov.hotelproject.exception.CustomerNotFoundException;
 import org.ruzmetov.hotelproject.repository.CustomerRepository;
 import org.ruzmetov.hotelproject.service.interf.CustomerService;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.UUID;
@@ -26,12 +27,13 @@ class CustomerServiceImpl implements CustomerService {
 
 
     @Override
+    @Transactional(isolation = Isolation.READ_UNCOMMITTED)
     public Customer getCustomerById(String id) {
         return customerRepository.findCustomerByCustomerId(UUID.fromString(id));
     }
 
     @Override
-    @Transactional
+    @Transactional(isolation = Isolation.READ_UNCOMMITTED)
     public CustomerDtoReservations getCustomerWithReservationByCustomerId(String id) {
         log.info("Find customer with reservation id {}.", id);
         Customer customer = customerRepository.findById(UUID.fromString(id)).orElseThrow(() -> new CustomerNotFoundException("Customer with this id not found!"));
@@ -43,12 +45,13 @@ class CustomerServiceImpl implements CustomerService {
 
 
     @Override
+    @Transactional(isolation = Isolation.SERIALIZABLE)
     public Customer createCustomer(Customer customer) {
         return customerRepository.save(customer);
     }
 
     @Override
-    @Transactional
+    @Transactional(isolation = Isolation.READ_COMMITTED)
     public Customer updateCustomerById(String id, CustomerUpdateDto customerUpdateDto) {
         log.info("Updated customer with id {} was called.", id);
         Customer customer = customerRepository.findById(UUID.fromString(id)).orElseThrow(() -> new CustomerNotFoundException("Customer with this id not found!"));
@@ -80,6 +83,7 @@ class CustomerServiceImpl implements CustomerService {
 //    }
 
     @Override
+    @Transactional(isolation = Isolation.SERIALIZABLE)
     public Customer deleteCustomerById(String id) {
         return customerRepository.deleteCustomerByCustomerId(UUID.fromString(id));
     }

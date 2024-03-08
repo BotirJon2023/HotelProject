@@ -1,10 +1,7 @@
 package org.ruzmetov.hotelproject.controller.rest;
 
 import lombok.RequiredArgsConstructor;
-import org.ruzmetov.hotelproject.dto.EventUpdateDto;
 import org.ruzmetov.hotelproject.dto.PaymentUpdateDto;
-import org.ruzmetov.hotelproject.entity.Customer;
-import org.ruzmetov.hotelproject.entity.Event;
 import org.ruzmetov.hotelproject.entity.Payment;
 import org.ruzmetov.hotelproject.service.interf.PaymentService;
 import org.springframework.web.bind.annotation.*;
@@ -22,6 +19,13 @@ public class PaymentController {
     public Payment getPaymentByPaymentId(@PathVariable("id") String id) {
         return paymentService.getPaymentById(UUID.fromString(id));
     }
+
+//    @GetMapping("/checkIsPaidById")
+//    // http://localhost:8080/payment/checkIsPaidById/48325ff0-3efc-43c7-bd4c-2896ad9d140f
+//    public PaymentCheckDto checkThePaymentStatusById(@PathVariable(value = "id") String id) {
+//        return paymentService.checkThePaymentStatus(UUID.fromString(id));
+//
+//    }
 
     @PostMapping("/createOnePayment")  // http://localhost:8080/payment/createOnePayment
     @ResponseBody
