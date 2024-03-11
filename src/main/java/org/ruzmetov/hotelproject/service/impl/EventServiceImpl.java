@@ -1,6 +1,7 @@
 package org.ruzmetov.hotelproject.service.impl;
 
 import lombok.RequiredArgsConstructor;
+import org.ruzmetov.hotelproject.dto.EventDto;
 import org.ruzmetov.hotelproject.dto.EventUpdateDto;
 import org.ruzmetov.hotelproject.entity.Event;
 import org.ruzmetov.hotelproject.exception.EventNotFoundException;
@@ -26,7 +27,7 @@ public class EventServiceImpl implements EventService {
 
     @Override
     @Transactional(isolation = Isolation.SERIALIZABLE)
-    public Event createEvent(Event event) {
+    public Event createEvent(EventDto event) {
         return eventRepository.save(event);
     }
 

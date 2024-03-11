@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 @Slf4j
 @Service
 @RequiredArgsConstructor
-class CustomerServiceImpl implements CustomerService {
+public class CustomerServiceImpl implements CustomerService {
 
 
     private final CustomerRepository customerRepository;

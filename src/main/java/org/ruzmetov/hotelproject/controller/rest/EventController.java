@@ -3,6 +3,7 @@ package org.ruzmetov.hotelproject.controller.rest;
 
 import lombok.RequiredArgsConstructor;
 import org.ruzmetov.hotelproject.dto.CustomerUpdateDto;
+import org.ruzmetov.hotelproject.dto.EventDto;
 import org.ruzmetov.hotelproject.dto.EventUpdateDto;
 import org.ruzmetov.hotelproject.entity.Customer;
 import org.ruzmetov.hotelproject.entity.Event;
@@ -23,8 +24,8 @@ public class EventController {
 
     @PostMapping("/createOneEvent")  // http://localhost:8080/event/createOneEvent
     @ResponseBody
-    public Event postCreateEvent(@RequestBody Event event) {
-        return eventService.createEvent(event);
+    public Event postCreateEvent(@RequestBody EventDto eventDto) {
+        return eventService.createEvent(eventDto);
     }
 
     @PutMapping("/updateOneEvent/{id}")

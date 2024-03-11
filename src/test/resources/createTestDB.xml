@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet author="b.ruzmetov" id="create room table">
+
+        <preConditions onFail="CONTINUE" onFailMessage="Table room already exists">
+            <not>
+                <tableExists tableName="room"/>
+            </not>
+        </preConditions>
+
+        <createTable tableName="room">
+            <column name="room_id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="room_category" type="varchar(30)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="room_price_per_night" type="double">
+                <constraints nullable="false"/>
+            </column>
+            <column name="room_availability" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+            <column name="room_floor" type="integer">
+                <constraints nullable="false"/>
+            </column>
+            <column name="room_breakfast_include" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+            <column name="room_check_in_date" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="room_check_out_date" type="date">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet author="b.ruzmetov" id="create service table">
+        <preConditions onFail="CONTINUE" onFailMessage="Table service already exists">
+            <not>
+                <tableExists tableName="service"/>
+            </not>
+        </preConditions>
+
+        <createTable tableName="service">
+            <column name="service_id" type="uuid">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="service_restaurant_booking" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+            <column name="service_restaurant_price" type="double">
+                <constraints nullable="false"/>
+            </column>
+            <column name="service_bar_booking" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+            <column name="service_bar_price" type="double">
+                <constraints nullable="false"/>
+            </column>
+            <column name="service_swimming_pool_booking" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+            <column name="service_swimming_pool_price" type="double">
+                <constraints nullable="false"/>
+            </column>
+            <column name="service_gym_booking" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+            <column name="service_gym_price" type="double">
+                <constraints nullable="false"/>
+            </column>
+            <column name="service_garage_booking" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+            <column name="service_garage_price" type="double">
+                <constraints nullable="false"/>
+            </column>
+            <column name="service_airport_transfer" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+            <column name="service_airport_transfer_price" type="double">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet author="b.ruzmetov" id="create event table">
+        <preConditions onFail="CONTINUE" onFailMessage="Table event already exists">
+            <not>
+                <tableExists tableName="event"/>
+            </not>
+        </preConditions>
+
+        <createTable tableName="event">
+            <column name="event_id" type="uuid">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="event_name" type="varchar(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="event_description" type="varchar(255)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="event_date" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="event_time_beginning" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="event_time_end" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="event_location" type="varchar(255)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="event_capacity" type="integer">
+                <constraints nullable="false"/>
+            </column>
+            <column name="event_organized_company" type="varchar(100)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="event_contact_person" type="varchar(100)">
+                <constraints nullable="true"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet author="b.ruzmetov" id="create customer table">
+        <preConditions onFail="CONTINUE" onFailMessage="Table customer already exists">
+            <not>
+                <tableExists tableName="customer"/>
+            </not>
+        </preConditions>
+
+        <createTable tableName="customer">
+            <column name="customer_id" type="uuid">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="customer_first_name" type="varchar(50)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="customer_last_name" type="varchar(50)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="customer_email" type="varchar(100)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="customer_phone_number" type="integer">
+                <constraints nullable="true"/>
+            </column>
+            <column name="customer_address" type="varchar(255)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="customer_loyality_point" type="varchar(50)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="customer_credit_card_number" type="varchar(50)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="customer_credit_card_expiring_date" type="date">
+                <constraints nullable="true"/>
+            </column>
+
+        </createTable>
+    </changeSet>
+
+    <changeSet author="b.ruzmetov" id="create payment table">
+        <preConditions onFail="CONTINUE" onFailMessage="Table payment already exists">
+            <not>
+                <tableExists tableName="payment"/>
+            </not>
+        </preConditions>
+        <createTable tableName="payment">
+            <column name="payment_id" type="uuid">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="payment_method" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="payment_is_paid" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+            <column name="payment_transaction_history" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet author="b.ruzmetov" id="create reservation table">
+        <preConditions onFail="CONTINUE" onFailMessage="Table reservation already exists">
+            <not>
+                <tableExists tableName="reservation"/>
+            </not>
+        </preConditions>
+        <createTable tableName="reservation">
+            <column name="reservation_id" type="uuid">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="reservation_customer_id" type="uuid">
+                <constraints foreignKeyName="true" nullable="true"/>
+            </column>
+            <column name="reservation_room_id" type="integer">
+                <constraints foreignKeyName="true" nullable="true"/>
+            </column>
+            <column name="reservation_event_id" type="uuid">
+                <constraints foreignKeyName="true" nullable="true"/>
+            </column>
+            <column name="reservation_service_id" type="uuid">
+                <constraints foreignKeyName="true" nullable="true"/>
+            </column>
+            <column name="reservation_payment_id" type="uuid">
+                <constraints foreignKeyName="true" nullable="true"/>
+            </column>
+            <column name="reservation_total_amount" type="double">
+                <constraints nullable="false"/>
+            </column>
+            <column name="reservation_cancelled_info" type="varchar(255)">
+                <constraints nullable="true"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>

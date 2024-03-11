@@ -56,6 +56,9 @@ public class Customer {
     @OneToMany(mappedBy = "customer")
     private Set<Reservation> reservations;
 
+    public Customer(UUID id, String firstName, String lastName, String email, int phoneNumber, String address, String loyalityPoints, String creditCardNumber, Date creditCardExpiringDate) {
+    }
+
 
     @Override
     public boolean equals(Object o) {
