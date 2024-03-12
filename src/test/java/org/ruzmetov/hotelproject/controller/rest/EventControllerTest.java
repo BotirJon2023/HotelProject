@@ -1,13 +1,11 @@
 package org.ruzmetov.hotelproject.controller.rest;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.ruzmetov.hotelproject.dto.EventDto;
 import org.ruzmetov.hotelproject.entity.Event;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.core.AutoConfigureCache;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
@@ -16,12 +14,10 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 @SpringBootTest
 @AutoConfigureMockMvc
-@Sql("/createTestDB.xml")
-@Sql("/addTestData.xml")
+@Sql("/createTestDB.sql")
+@Sql("/addTestData.sql")
 class EventControllerTest {
 
     @Autowired

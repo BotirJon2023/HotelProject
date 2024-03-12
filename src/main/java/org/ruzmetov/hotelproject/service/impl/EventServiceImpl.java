@@ -5,6 +5,7 @@ import org.ruzmetov.hotelproject.dto.EventDto;
 import org.ruzmetov.hotelproject.dto.EventUpdateDto;
 import org.ruzmetov.hotelproject.entity.Event;
 import org.ruzmetov.hotelproject.exception.EventNotFoundException;
+import org.ruzmetov.hotelproject.mapper.EventMapper;
 import org.ruzmetov.hotelproject.repository.EventRepository;
 import org.ruzmetov.hotelproject.service.interf.EventService;
 import org.springframework.stereotype.Service;
@@ -19,6 +20,8 @@ public class EventServiceImpl implements EventService {
 
     private final EventRepository eventRepository;
 
+    private final EventMapper eventMapper;
+
     @Override
     @Transactional(isolation = Isolation.READ_UNCOMMITTED)
     public Event getEventById(String id) {
@@ -27,8 +30,8 @@ public class EventServiceImpl implements EventService {
 
     @Override
     @Transactional(isolation = Isolation.SERIALIZABLE)
-    public Event createEvent(EventDto event) {
-        return eventRepository.save(event);
+    public Event createEvent(EventDto eventDto) {
+        return eventRepository.save(eventMapper.toEntity(eventDto));
     }
 
     @Override

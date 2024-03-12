@@ -1,170 +1,1293 @@
-11.03.2024 14:55:46.295 [restartedMain] INFO  o.r.h.HotelProjectApplication - Starting HotelProjectApplication using Java 21.0.2 with PID 7160 (C:\HotelProjectApp\HotelProject\target\classes started by Tel-ran.de in C:\HotelProjectApp\HotelProject)
-11.03.2024 14:55:46.309 [restartedMain] INFO  o.r.h.HotelProjectApplication - No active profile set, falling back to 1 default profile: "default"
-11.03.2024 14:55:46.448 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-11.03.2024 14:55:46.450 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-11.03.2024 14:55:47.881 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-11.03.2024 14:55:48.002 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 111 ms. Found 6 JPA repository interfaces.
-11.03.2024 14:55:49.177 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http)
-11.03.2024 14:55:49.192 [restartedMain] INFO  o.a.c.c.StandardService - Starting service [Tomcat]
-11.03.2024 14:55:49.193 [restartedMain] INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
-11.03.2024 14:55:49.269 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
-11.03.2024 14:55:49.269 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2815 ms
-11.03.2024 14:55:49.567 [restartedMain] INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
-11.03.2024 14:55:50.231 [restartedMain] INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@59881647
-11.03.2024 14:55:50.234 [restartedMain] INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
-11.03.2024 14:55:50.909 [restartedMain] INFO  l.lockservice - Successfully acquired change log lock
-11.03.2024 14:55:50.918 [restartedMain] INFO  liquibase.command - Dropping Database Objects in schema: 300523_m_be_hotel.300523_m_be_hotel
-11.03.2024 14:55:52.191 [restartedMain] INFO  liquibase.database - Successfully deleted all supported object types in schema 300523_m_be_hotel.300523_m_be_hotel.
-11.03.2024 14:55:52.255 [restartedMain] WARN  l.lockservice - Failed to release change log lock
-11.03.2024 14:55:52.260 [restartedMain] INFO  liquibase.ui - All objects dropped from root@localhost@jdbc:mysql://localhost:3306/300523_m_be_hotel
-11.03.2024 14:55:52.261 [restartedMain] INFO  liquibase.command - Command execution complete
-11.03.2024 14:55:52.949 [restartedMain] INFO  liquibase.changelog - Creating database history table with name: `300523_m_be_hotel`.databasechangelog
-11.03.2024 14:55:53.016 [restartedMain] INFO  liquibase.changelog - Reading from `300523_m_be_hotel`.databasechangelog
-11.03.2024 14:55:53.135 [restartedMain] WARN  liquibase.changelog - liquibase.statement.core.CreateSequenceStatement is not supported on mysql, but createSequence will still execute
-11.03.2024 14:55:53.162 [restartedMain] WARN  liquibase.changelog - liquibase.statement.core.CreateSequenceStatement is not supported on mysql, but createSequence will still execute
-11.03.2024 14:55:53.182 [restartedMain] INFO  l.lockservice - Successfully acquired change log lock
-11.03.2024 14:55:53.183 [restartedMain] INFO  liquibase.command - Using deploymentId: 0165353183
-11.03.2024 14:55:53.187 [restartedMain] INFO  liquibase.changelog - Reading from `300523_m_be_hotel`.databasechangelog
-11.03.2024 14:55:53.269 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop reservation table::b.ruzmetov
-11.03.2024 14:55:53.294 [restartedMain] INFO  liquibase.changelog - Marking ChangeSet: "db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop reservation table::b.ruzmetov" as ran despite precondition failure due to onFail='MARK_RAN': 
+12.03.2024 15:54:44.496 [main] INFO  o.r.h.c.r.EventControllerTest - Starting EventControllerTest using Java 21.0.2 with PID 688 (started by Tel-ran.de in C:\HotelProjectApp\HotelProject)
+12.03.2024 15:54:44.535 [main] INFO  o.r.h.c.r.EventControllerTest - No active profile set, falling back to 1 default profile: "default"
+12.03.2024 15:54:49.499 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12.03.2024 15:54:49.916 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 363 ms. Found 6 JPA repository interfaces.
+12.03.2024 15:54:53.373 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+12.03.2024 15:54:53.736 [main] INFO  o.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+12.03.2024 15:54:53.915 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+12.03.2024 15:54:55.288 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+12.03.2024 15:54:55.386 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+12.03.2024 15:54:56.350 [main] INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./testDB user=ROOT
+12.03.2024 15:54:56.358 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+12.03.2024 15:54:56.510 [main] WARN  o.h.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+12.03.2024 15:54:59.682 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12.03.2024 15:54:59.688 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12.03.2024 15:55:07.758 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12.03.2024 15:55:08.488 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+12.03.2024 15:55:11.963 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+12.03.2024 15:55:11.965 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+12.03.2024 15:55:11.971 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 4 ms
+12.03.2024 15:55:12.109 [main] INFO  o.r.h.c.r.EventControllerTest - Started EventControllerTest in 29.622 seconds (process running for 35.418)
+12.03.2024 15:55:12.425 [main] WARN  o.s.t.c.TestContextManager - Caught exception while invoking 'beforeTestMethod' callback on TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] for test method [void org.ruzmetov.hotelproject.controller.rest.EventControllerTest.postCreateEventTest() throws java.lang.Exception] and test instance [org.ruzmetov.hotelproject.controller.rest.EventControllerTest@28bf7bea]
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of class path resource [createTestDB.xml]: <?xml version="1.0" encoding="UTF-8"?>
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.execute(ResourceDatabasePopulator.java:269)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.lambda$executeSqlScripts$9(SqlScriptsTestExecutionListener.java:362)
+	at org.springframework.transaction.support.TransactionOperations.lambda$executeWithoutResult$0(TransactionOperations.java:68)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.springframework.transaction.support.TransactionOperations.executeWithoutResult(TransactionOperations.java:67)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.executeSqlScripts(SqlScriptsTestExecutionListener.java:362)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.lambda$executeSqlScripts$4(SqlScriptsTestExecutionListener.java:275)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.executeSqlScripts(SqlScriptsTestExecutionListener.java:275)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.executeSqlScripts(SqlScriptsTestExecutionListener.java:222)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.beforeTestMethod(SqlScriptsTestExecutionListener.java:165)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:320)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.beforeEach(SpringExtension.java:240)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachCallbacks$2(TestMethodTestDescriptor.java:167)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:203)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:203)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachCallbacks(TestMethodTestDescriptor.java:166)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:133)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]<?xml version=""1.0"" encoding=""UTF-8""?>"; SQL statement:
+<?xml version="1.0" encoding="UTF-8"?> [42000-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.getSyntaxError(DbException.java:247)
+	at org.h2.command.ParserBase.getSyntaxError(ParserBase.java:748)
+	at org.h2.command.Parser.parsePrepared(Parser.java:773)
+	at org.h2.command.Parser.parse(Parser.java:592)
+	at org.h2.command.Parser.parse(Parser.java:569)
+	at org.h2.command.Parser.prepareCommand(Parser.java:483)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	... 69 common frames omitted
+12.03.2024 15:55:14.791 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12.03.2024 15:55:14.795 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12.03.2024 15:55:14.803 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+12.03.2024 16:40:13.838 [main] INFO  o.r.h.c.r.EventControllerTest - Starting EventControllerTest using Java 21.0.2 with PID 17012 (started by Tel-ran.de in C:\HotelProjectApp\HotelProject)
+12.03.2024 16:40:13.842 [main] INFO  o.r.h.c.r.EventControllerTest - No active profile set, falling back to 1 default profile: "default"
+12.03.2024 16:40:15.725 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12.03.2024 16:40:15.903 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 161 ms. Found 6 JPA repository interfaces.
+12.03.2024 16:40:17.422 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+12.03.2024 16:40:17.609 [main] INFO  o.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+12.03.2024 16:40:17.729 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+12.03.2024 16:40:18.389 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+12.03.2024 16:40:18.460 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+12.03.2024 16:40:19.150 [main] INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./testDB user=ROOT
+12.03.2024 16:40:19.155 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+12.03.2024 16:40:19.216 [main] WARN  o.h.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+12.03.2024 16:40:21.194 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12.03.2024 16:40:21.199 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12.03.2024 16:40:24.807 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12.03.2024 16:40:24.938 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+12.03.2024 16:40:26.975 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+12.03.2024 16:40:26.976 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+12.03.2024 16:40:26.981 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+12.03.2024 16:40:27.041 [main] INFO  o.r.h.c.r.EventControllerTest - Started EventControllerTest in 14.306 seconds (process running for 16.852)
+12.03.2024 16:40:28.790 [main] WARN  o.h.e.j.s.SqlExceptionHelper - SQL Error: 23502, SQLState: 23502
+12.03.2024 16:40:28.791 [main] ERROR o.h.e.j.s.SqlExceptionHelper - NULL not allowed for column "EVENT_NAME"; SQL statement:
+insert into event (event_capacity,event_contact_person,event_date,event_description,event_name,event_time_beginning,event_time_end,event_location,event_organized_company,event_id) values (?,?,?,?,?,?,?,?,?,?) [23502-224]
+12.03.2024 16:40:28.870 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12.03.2024 16:40:28.877 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12.03.2024 16:40:28.882 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+12.03.2024 16:42:58.733 [restartedMain] INFO  o.r.h.HotelProjectApplication - Starting HotelProjectApplication using Java 21.0.2 with PID 15744 (C:\HotelProjectApp\HotelProject\target\classes started by Tel-ran.de in C:\HotelProjectApp\HotelProject)
+12.03.2024 16:42:58.738 [restartedMain] INFO  o.r.h.HotelProjectApplication - No active profile set, falling back to 1 default profile: "default"
+12.03.2024 16:42:58.867 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12.03.2024 16:42:58.868 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+12.03.2024 16:43:00.930 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12.03.2024 16:43:01.215 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 258 ms. Found 6 JPA repository interfaces.
+12.03.2024 16:43:04.002 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http)
+12.03.2024 16:43:04.040 [restartedMain] INFO  o.a.c.c.StandardService - Starting service [Tomcat]
+12.03.2024 16:43:04.041 [restartedMain] INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+12.03.2024 16:43:04.256 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+12.03.2024 16:43:04.257 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5386 ms
+12.03.2024 16:43:04.822 [restartedMain] INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+12.03.2024 16:43:05.753 [restartedMain] INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b738222
+12.03.2024 16:43:05.756 [restartedMain] INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+12.03.2024 16:43:06.484 [restartedMain] INFO  l.lockservice - Successfully acquired change log lock
+12.03.2024 16:43:06.500 [restartedMain] INFO  liquibase.command - Dropping Database Objects in schema: 300523_m_be_hotel.300523_m_be_hotel
+12.03.2024 16:43:07.672 [restartedMain] INFO  liquibase.database - Successfully deleted all supported object types in schema 300523_m_be_hotel.300523_m_be_hotel.
+12.03.2024 16:43:07.717 [restartedMain] WARN  l.lockservice - Failed to release change log lock
+12.03.2024 16:43:07.720 [restartedMain] INFO  liquibase.ui - All objects dropped from root@localhost@jdbc:mysql://localhost:3306/300523_m_be_hotel
+12.03.2024 16:43:07.721 [restartedMain] INFO  liquibase.command - Command execution complete
+12.03.2024 16:43:08.428 [restartedMain] INFO  liquibase.changelog - Creating database history table with name: `300523_m_be_hotel`.databasechangelog
+12.03.2024 16:43:08.493 [restartedMain] INFO  liquibase.changelog - Reading from `300523_m_be_hotel`.databasechangelog
+12.03.2024 16:43:08.707 [restartedMain] WARN  liquibase.changelog - liquibase.statement.core.CreateSequenceStatement is not supported on mysql, but createSequence will still execute
+12.03.2024 16:43:08.742 [restartedMain] WARN  liquibase.changelog - liquibase.statement.core.CreateSequenceStatement is not supported on mysql, but createSequence will still execute
+12.03.2024 16:43:08.761 [restartedMain] INFO  l.lockservice - Successfully acquired change log lock
+12.03.2024 16:43:08.764 [restartedMain] INFO  liquibase.command - Using deploymentId: 0258188763
+12.03.2024 16:43:08.767 [restartedMain] INFO  liquibase.changelog - Reading from `300523_m_be_hotel`.databasechangelog
+12.03.2024 16:43:08.890 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop reservation table::b.ruzmetov
+12.03.2024 16:43:08.916 [restartedMain] INFO  liquibase.changelog - Marking ChangeSet: "db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop reservation table::b.ruzmetov" as ran despite precondition failure due to onFail='MARK_RAN': 
           db/changelog/changelog-master.xml : Table `300523_m_be_hotel`.reservation does not exist
 
-11.03.2024 14:55:53.305 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop payment table::b.ruzmetov
-11.03.2024 14:55:53.326 [restartedMain] INFO  liquibase.changelog - Marking ChangeSet: "db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop payment table::b.ruzmetov" as ran despite precondition failure due to onFail='MARK_RAN': 
+12.03.2024 16:43:08.935 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop payment table::b.ruzmetov
+12.03.2024 16:43:08.967 [restartedMain] INFO  liquibase.changelog - Marking ChangeSet: "db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop payment table::b.ruzmetov" as ran despite precondition failure due to onFail='MARK_RAN': 
           db/changelog/changelog-master.xml : Table `300523_m_be_hotel`.payment does not exist
 
-11.03.2024 14:55:53.334 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop service table::b.ruzmetov
-11.03.2024 14:55:53.355 [restartedMain] INFO  liquibase.changelog - Marking ChangeSet: "db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop service table::b.ruzmetov" as ran despite precondition failure due to onFail='MARK_RAN': 
+12.03.2024 16:43:08.978 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop service table::b.ruzmetov
+12.03.2024 16:43:09.017 [restartedMain] INFO  liquibase.changelog - Marking ChangeSet: "db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop service table::b.ruzmetov" as ran despite precondition failure due to onFail='MARK_RAN': 
           db/changelog/changelog-master.xml : Table `300523_m_be_hotel`.service does not exist
 
-11.03.2024 14:55:53.364 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop room table::b.ruzmetov
-11.03.2024 14:55:53.394 [restartedMain] INFO  liquibase.changelog - Marking ChangeSet: "db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop room table::b.ruzmetov" as ran despite precondition failure due to onFail='MARK_RAN': 
+12.03.2024 16:43:09.027 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop room table::b.ruzmetov
+12.03.2024 16:43:09.048 [restartedMain] INFO  liquibase.changelog - Marking ChangeSet: "db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop room table::b.ruzmetov" as ran despite precondition failure due to onFail='MARK_RAN': 
           db/changelog/changelog-master.xml : Table `300523_m_be_hotel`.room does not exist
 
-11.03.2024 14:55:53.403 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop event table::b.ruzmetov
-11.03.2024 14:55:53.435 [restartedMain] INFO  liquibase.changelog - Marking ChangeSet: "db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop event table::b.ruzmetov" as ran despite precondition failure due to onFail='MARK_RAN': 
+12.03.2024 16:43:09.055 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop event table::b.ruzmetov
+12.03.2024 16:43:09.074 [restartedMain] INFO  liquibase.changelog - Marking ChangeSet: "db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop event table::b.ruzmetov" as ran despite precondition failure due to onFail='MARK_RAN': 
           db/changelog/changelog-master.xml : Table `300523_m_be_hotel`.event does not exist
 
-11.03.2024 14:55:53.469 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop customer table::b.ruzmetov
-11.03.2024 14:55:53.501 [restartedMain] INFO  liquibase.changelog - Marking ChangeSet: "db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop customer table::b.ruzmetov" as ran despite precondition failure due to onFail='MARK_RAN': 
+12.03.2024 16:43:09.084 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop customer table::b.ruzmetov
+12.03.2024 16:43:09.102 [restartedMain] INFO  liquibase.changelog - Marking ChangeSet: "db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop customer table::b.ruzmetov" as ran despite precondition failure due to onFail='MARK_RAN': 
           db/changelog/changelog-master.xml : Table `300523_m_be_hotel`.customer does not exist
 
-11.03.2024 14:55:53.520 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create room table::b.ruzmetov
-11.03.2024 14:55:53.595 [restartedMain] INFO  liquibase.changelog - Table room created
-11.03.2024 14:55:53.597 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create room table::b.ruzmetov ran successfully in 77ms
-11.03.2024 14:55:53.612 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create service table::b.ruzmetov
-11.03.2024 14:55:53.731 [restartedMain] INFO  liquibase.changelog - Table service created
-11.03.2024 14:55:53.732 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create service table::b.ruzmetov ran successfully in 118ms
-11.03.2024 14:55:53.740 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create event table::b.ruzmetov
-11.03.2024 14:55:53.859 [restartedMain] INFO  liquibase.changelog - Table event created
-11.03.2024 14:55:53.861 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create event table::b.ruzmetov ran successfully in 121ms
-11.03.2024 14:55:53.878 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create customer table::b.ruzmetov
-11.03.2024 14:55:53.948 [restartedMain] INFO  liquibase.changelog - Table customer created
-11.03.2024 14:55:53.949 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create customer table::b.ruzmetov ran successfully in 69ms
-11.03.2024 14:55:53.957 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create payment table::b.ruzmetov
-11.03.2024 14:55:54.054 [restartedMain] INFO  liquibase.changelog - Table payment created
-11.03.2024 14:55:54.055 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create payment table::b.ruzmetov ran successfully in 98ms
-11.03.2024 14:55:54.067 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create reservation table::b.ruzmetov
-11.03.2024 14:55:54.140 [restartedMain] INFO  liquibase.changelog - Table reservation created
-11.03.2024 14:55:54.142 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create reservation table::b.ruzmetov ran successfully in 73ms
-11.03.2024 14:55:54.151 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/create-sequence.xml::create sequence for UUID generator::b.ruzmetov
-11.03.2024 14:55:54.153 [restartedMain] INFO  liquibase.changelog - Sequence seq_for_uuid_generator created
-11.03.2024 14:55:54.154 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/create-sequence.xml::create sequence for UUID generator::b.ruzmetov ran successfully in 3ms
-11.03.2024 14:55:54.166 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into service table::b.ruzmetov
-11.03.2024 14:55:54.176 [restartedMain] INFO  liquibase.changelog - New row inserted into service
-11.03.2024 14:55:54.185 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into service table::b.ruzmetov ran successfully in 18ms
-11.03.2024 14:55:54.194 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into room table::b.ruzmetov
-11.03.2024 14:55:54.204 [restartedMain] INFO  liquibase.changelog - New row inserted into room
-11.03.2024 14:55:54.206 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into room table::b.ruzmetov ran successfully in 11ms
-11.03.2024 14:55:54.215 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into event table::b.ruzmetov
-11.03.2024 14:55:54.224 [restartedMain] INFO  liquibase.changelog - New row inserted into event
-11.03.2024 14:55:54.227 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into event table::b.ruzmetov ran successfully in 11ms
-11.03.2024 14:55:54.235 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into customer table::b.ruzmetov
-11.03.2024 14:55:54.244 [restartedMain] INFO  liquibase.changelog - New row inserted into customer
-11.03.2024 14:55:54.247 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into customer table::b.ruzmetov ran successfully in 10ms
-11.03.2024 14:55:54.256 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into payment table::b.ruzmetov
-11.03.2024 14:55:54.263 [restartedMain] INFO  liquibase.changelog - New row inserted into payment
-11.03.2024 14:55:54.266 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into payment table::b.ruzmetov ran successfully in 10ms
-11.03.2024 14:55:54.273 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into reservation table::b.ruzmetov
-11.03.2024 14:55:54.287 [restartedMain] INFO  liquibase.changelog - New row inserted into reservation
-11.03.2024 14:55:54.293 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into reservation table::b.ruzmetov ran successfully in 19ms
-11.03.2024 14:55:54.305 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into service table::b.ruzmetov
-11.03.2024 14:55:54.313 [restartedMain] INFO  liquibase.changelog - New row inserted into service
-11.03.2024 14:55:54.315 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into service table::b.ruzmetov ran successfully in 8ms
-11.03.2024 14:55:54.327 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into room table::b.ruzmetov
-11.03.2024 14:55:54.333 [restartedMain] INFO  liquibase.changelog - New row inserted into room
-11.03.2024 14:55:54.336 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into room table::b.ruzmetov ran successfully in 9ms
-11.03.2024 14:55:54.353 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into event table::b.ruzmetov
-11.03.2024 14:55:54.360 [restartedMain] INFO  liquibase.changelog - New row inserted into event
-11.03.2024 14:55:54.363 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into event table::b.ruzmetov ran successfully in 9ms
-11.03.2024 14:55:54.371 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into customer table::b.ruzmetov
-11.03.2024 14:55:54.381 [restartedMain] INFO  liquibase.changelog - New row inserted into customer
-11.03.2024 14:55:54.384 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into customer table::b.ruzmetov ran successfully in 9ms
-11.03.2024 14:55:54.392 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into payment table::b.ruzmetov
-11.03.2024 14:55:54.398 [restartedMain] INFO  liquibase.changelog - New row inserted into payment
-11.03.2024 14:55:54.401 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into payment table::b.ruzmetov ran successfully in 8ms
-11.03.2024 14:55:54.414 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into reservation table::b.ruzmetov
-11.03.2024 14:55:54.421 [restartedMain] INFO  liquibase.changelog - New row inserted into reservation
-11.03.2024 14:55:54.424 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into reservation table::b.ruzmetov ran successfully in 9ms
-11.03.2024 14:55:54.434 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into service table::b.ruzmetov
-11.03.2024 14:55:54.440 [restartedMain] INFO  liquibase.changelog - New row inserted into service
-11.03.2024 14:55:54.443 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into service table::b.ruzmetov ran successfully in 8ms
-11.03.2024 14:55:54.452 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into room table::b.ruzmetov
-11.03.2024 14:55:54.457 [restartedMain] INFO  liquibase.changelog - New row inserted into room
-11.03.2024 14:55:54.463 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into room table::b.ruzmetov ran successfully in 11ms
-11.03.2024 14:55:54.482 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into event table::b.ruzmetov
-11.03.2024 14:55:54.488 [restartedMain] INFO  liquibase.changelog - New row inserted into event
-11.03.2024 14:55:54.492 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into event table::b.ruzmetov ran successfully in 10ms
-11.03.2024 14:55:54.512 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into customer table::b.ruzmetov
-11.03.2024 14:55:54.522 [restartedMain] INFO  liquibase.changelog - New row inserted into customer
-11.03.2024 14:55:54.527 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into customer table::b.ruzmetov ran successfully in 14ms
-11.03.2024 14:55:54.537 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into payment table::b.ruzmetov
-11.03.2024 14:55:54.547 [restartedMain] INFO  liquibase.changelog - New row inserted into payment
-11.03.2024 14:55:54.551 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into payment table::b.ruzmetov ran successfully in 13ms
-11.03.2024 14:55:54.569 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into reservation table::b.ruzmetov
-11.03.2024 14:55:54.623 [restartedMain] INFO  liquibase.changelog - New row inserted into reservation
-11.03.2024 14:55:54.627 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into reservation table::b.ruzmetov ran successfully in 58ms
-11.03.2024 14:55:54.640 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into service table::b.ruzmetov
-11.03.2024 14:55:54.656 [restartedMain] INFO  liquibase.changelog - New row inserted into service
-11.03.2024 14:55:54.669 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into service table::b.ruzmetov ran successfully in 24ms
-11.03.2024 14:55:54.690 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into room table::b.ruzmetov
-11.03.2024 14:55:54.697 [restartedMain] INFO  liquibase.changelog - New row inserted into room
-11.03.2024 14:55:54.713 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into room table::b.ruzmetov ran successfully in 22ms
-11.03.2024 14:55:54.722 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into event table::b.ruzmetov
-11.03.2024 14:55:54.732 [restartedMain] INFO  liquibase.changelog - New row inserted into event
-11.03.2024 14:55:54.735 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into event table::b.ruzmetov ran successfully in 11ms
-11.03.2024 14:55:54.755 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into customer table::b.ruzmetov
-11.03.2024 14:55:54.766 [restartedMain] INFO  liquibase.changelog - New row inserted into customer
-11.03.2024 14:55:54.774 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into customer table::b.ruzmetov ran successfully in 17ms
-11.03.2024 14:55:54.788 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into payment table::b.ruzmetov
-11.03.2024 14:55:54.798 [restartedMain] INFO  liquibase.changelog - New row inserted into payment
-11.03.2024 14:55:54.810 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into payment table::b.ruzmetov ran successfully in 20ms
-11.03.2024 14:55:54.820 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into reservation table::b.ruzmetov
-11.03.2024 14:55:54.828 [restartedMain] INFO  liquibase.changelog - New row inserted into reservation
-11.03.2024 14:55:54.830 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into reservation table::b.ruzmetov ran successfully in 10ms
-11.03.2024 14:55:54.849 [restartedMain] INFO  liquibase.util - UPDATE SUMMARY
-11.03.2024 14:55:54.849 [restartedMain] INFO  liquibase.util - Run:                         37
-11.03.2024 14:55:54.849 [restartedMain] INFO  liquibase.util - Previously run:               0
-11.03.2024 14:55:54.849 [restartedMain] INFO  liquibase.util - Filtered out:                 0
-11.03.2024 14:55:54.850 [restartedMain] INFO  liquibase.util - -------------------------------
-11.03.2024 14:55:54.850 [restartedMain] INFO  liquibase.util - Total change sets:           37
-11.03.2024 14:55:54.851 [restartedMain] INFO  liquibase.util - Update summary generated
-11.03.2024 14:55:54.857 [restartedMain] INFO  liquibase.command - Update command completed successfully.
-11.03.2024 14:55:54.857 [restartedMain] INFO  liquibase.ui - Liquibase: Update has been successful. Rows affected: 61
-11.03.2024 14:55:54.866 [restartedMain] INFO  l.lockservice - Successfully released change log lock
-11.03.2024 14:55:54.866 [restartedMain] INFO  liquibase.command - Command execution complete
-11.03.2024 14:55:55.902 [restartedMain] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-11.03.2024 14:55:56.099 [restartedMain] INFO  o.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
-11.03.2024 14:55:56.200 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-11.03.2024 14:55:57.066 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-11.03.2024 14:55:57.199 [restartedMain] WARN  o.h.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-11.03.2024 14:56:01.162 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-11.03.2024 14:56:01.169 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-11.03.2024 14:56:05.423 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-11.03.2024 14:56:05.561 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
-11.03.2024 14:56:08.119 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-11.03.2024 14:56:08.222 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
-11.03.2024 14:56:08.238 [restartedMain] INFO  o.r.h.HotelProjectApplication - Started HotelProjectApplication in 23.108 seconds (process running for 24.766)
-11.03.2024 14:57:40.792 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-11.03.2024 14:57:40.797 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
-11.03.2024 14:57:40.853 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+12.03.2024 16:43:09.111 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create room table::b.ruzmetov
+12.03.2024 16:43:09.172 [restartedMain] INFO  liquibase.changelog - Table room created
+12.03.2024 16:43:09.174 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create room table::b.ruzmetov ran successfully in 63ms
+12.03.2024 16:43:09.188 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create service table::b.ruzmetov
+12.03.2024 16:43:09.258 [restartedMain] INFO  liquibase.changelog - Table service created
+12.03.2024 16:43:09.259 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create service table::b.ruzmetov ran successfully in 70ms
+12.03.2024 16:43:09.269 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create event table::b.ruzmetov
+12.03.2024 16:43:09.315 [restartedMain] INFO  liquibase.changelog - Table event created
+12.03.2024 16:43:09.316 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create event table::b.ruzmetov ran successfully in 46ms
+12.03.2024 16:43:09.325 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create customer table::b.ruzmetov
+12.03.2024 16:43:09.383 [restartedMain] INFO  liquibase.changelog - Table customer created
+12.03.2024 16:43:09.384 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create customer table::b.ruzmetov ran successfully in 59ms
+12.03.2024 16:43:09.392 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create payment table::b.ruzmetov
+12.03.2024 16:43:09.454 [restartedMain] INFO  liquibase.changelog - Table payment created
+12.03.2024 16:43:09.455 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create payment table::b.ruzmetov ran successfully in 62ms
+12.03.2024 16:43:09.465 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create reservation table::b.ruzmetov
+12.03.2024 16:43:09.518 [restartedMain] INFO  liquibase.changelog - Table reservation created
+12.03.2024 16:43:09.518 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create reservation table::b.ruzmetov ran successfully in 52ms
+12.03.2024 16:43:09.525 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/create-sequence.xml::create sequence for UUID generator::b.ruzmetov
+12.03.2024 16:43:09.527 [restartedMain] INFO  liquibase.changelog - Sequence seq_for_uuid_generator created
+12.03.2024 16:43:09.528 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/create-sequence.xml::create sequence for UUID generator::b.ruzmetov ran successfully in 3ms
+12.03.2024 16:43:09.536 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into service table::b.ruzmetov
+12.03.2024 16:43:09.542 [restartedMain] INFO  liquibase.changelog - New row inserted into service
+12.03.2024 16:43:09.546 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into service table::b.ruzmetov ran successfully in 8ms
+12.03.2024 16:43:09.559 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into room table::b.ruzmetov
+12.03.2024 16:43:09.566 [restartedMain] INFO  liquibase.changelog - New row inserted into room
+12.03.2024 16:43:09.569 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into room table::b.ruzmetov ran successfully in 9ms
+12.03.2024 16:43:09.577 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into event table::b.ruzmetov
+12.03.2024 16:43:09.586 [restartedMain] INFO  liquibase.changelog - New row inserted into event
+12.03.2024 16:43:09.589 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into event table::b.ruzmetov ran successfully in 12ms
+12.03.2024 16:43:09.598 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into customer table::b.ruzmetov
+12.03.2024 16:43:09.608 [restartedMain] INFO  liquibase.changelog - New row inserted into customer
+12.03.2024 16:43:09.612 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into customer table::b.ruzmetov ran successfully in 12ms
+12.03.2024 16:43:09.626 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into payment table::b.ruzmetov
+12.03.2024 16:43:09.634 [restartedMain] INFO  liquibase.changelog - New row inserted into payment
+12.03.2024 16:43:09.637 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into payment table::b.ruzmetov ran successfully in 10ms
+12.03.2024 16:43:09.649 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into reservation table::b.ruzmetov
+12.03.2024 16:43:09.665 [restartedMain] INFO  liquibase.changelog - New row inserted into reservation
+12.03.2024 16:43:09.668 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into reservation table::b.ruzmetov ran successfully in 18ms
+12.03.2024 16:43:09.681 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into service table::b.ruzmetov
+12.03.2024 16:43:09.687 [restartedMain] INFO  liquibase.changelog - New row inserted into service
+12.03.2024 16:43:09.690 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into service table::b.ruzmetov ran successfully in 9ms
+12.03.2024 16:43:09.700 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into room table::b.ruzmetov
+12.03.2024 16:43:09.706 [restartedMain] INFO  liquibase.changelog - New row inserted into room
+12.03.2024 16:43:09.709 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into room table::b.ruzmetov ran successfully in 8ms
+12.03.2024 16:43:09.721 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into event table::b.ruzmetov
+12.03.2024 16:43:09.725 [restartedMain] INFO  liquibase.changelog - New row inserted into event
+12.03.2024 16:43:09.730 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into event table::b.ruzmetov ran successfully in 8ms
+12.03.2024 16:43:09.737 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into customer table::b.ruzmetov
+12.03.2024 16:43:09.742 [restartedMain] INFO  liquibase.changelog - New row inserted into customer
+12.03.2024 16:43:09.744 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into customer table::b.ruzmetov ran successfully in 7ms
+12.03.2024 16:43:09.751 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into payment table::b.ruzmetov
+12.03.2024 16:43:09.756 [restartedMain] INFO  liquibase.changelog - New row inserted into payment
+12.03.2024 16:43:09.758 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into payment table::b.ruzmetov ran successfully in 6ms
+12.03.2024 16:43:09.765 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into reservation table::b.ruzmetov
+12.03.2024 16:43:09.770 [restartedMain] INFO  liquibase.changelog - New row inserted into reservation
+12.03.2024 16:43:09.773 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into reservation table::b.ruzmetov ran successfully in 7ms
+12.03.2024 16:43:09.781 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into service table::b.ruzmetov
+12.03.2024 16:43:09.785 [restartedMain] INFO  liquibase.changelog - New row inserted into service
+12.03.2024 16:43:09.787 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into service table::b.ruzmetov ran successfully in 6ms
+12.03.2024 16:43:09.797 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into room table::b.ruzmetov
+12.03.2024 16:43:09.802 [restartedMain] INFO  liquibase.changelog - New row inserted into room
+12.03.2024 16:43:09.804 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into room table::b.ruzmetov ran successfully in 7ms
+12.03.2024 16:43:09.813 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into event table::b.ruzmetov
+12.03.2024 16:43:09.818 [restartedMain] INFO  liquibase.changelog - New row inserted into event
+12.03.2024 16:43:09.821 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into event table::b.ruzmetov ran successfully in 8ms
+12.03.2024 16:43:09.831 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into customer table::b.ruzmetov
+12.03.2024 16:43:09.836 [restartedMain] INFO  liquibase.changelog - New row inserted into customer
+12.03.2024 16:43:09.839 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into customer table::b.ruzmetov ran successfully in 8ms
+12.03.2024 16:43:09.848 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into payment table::b.ruzmetov
+12.03.2024 16:43:09.853 [restartedMain] INFO  liquibase.changelog - New row inserted into payment
+12.03.2024 16:43:09.856 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into payment table::b.ruzmetov ran successfully in 8ms
+12.03.2024 16:43:09.866 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into reservation table::b.ruzmetov
+12.03.2024 16:43:09.873 [restartedMain] INFO  liquibase.changelog - New row inserted into reservation
+12.03.2024 16:43:09.876 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into reservation table::b.ruzmetov ran successfully in 8ms
+12.03.2024 16:43:09.885 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into service table::b.ruzmetov
+12.03.2024 16:43:09.893 [restartedMain] INFO  liquibase.changelog - New row inserted into service
+12.03.2024 16:43:09.895 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into service table::b.ruzmetov ran successfully in 10ms
+12.03.2024 16:43:09.906 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into room table::b.ruzmetov
+12.03.2024 16:43:09.912 [restartedMain] INFO  liquibase.changelog - New row inserted into room
+12.03.2024 16:43:09.916 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into room table::b.ruzmetov ran successfully in 9ms
+12.03.2024 16:43:09.925 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into event table::b.ruzmetov
+12.03.2024 16:43:09.933 [restartedMain] INFO  liquibase.changelog - New row inserted into event
+12.03.2024 16:43:09.935 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into event table::b.ruzmetov ran successfully in 10ms
+12.03.2024 16:43:09.941 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into customer table::b.ruzmetov
+12.03.2024 16:43:09.945 [restartedMain] INFO  liquibase.changelog - New row inserted into customer
+12.03.2024 16:43:09.948 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into customer table::b.ruzmetov ran successfully in 7ms
+12.03.2024 16:43:09.954 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into payment table::b.ruzmetov
+12.03.2024 16:43:09.958 [restartedMain] INFO  liquibase.changelog - New row inserted into payment
+12.03.2024 16:43:09.961 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into payment table::b.ruzmetov ran successfully in 6ms
+12.03.2024 16:43:09.973 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into reservation table::b.ruzmetov
+12.03.2024 16:43:09.978 [restartedMain] INFO  liquibase.changelog - New row inserted into reservation
+12.03.2024 16:43:09.980 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into reservation table::b.ruzmetov ran successfully in 7ms
+12.03.2024 16:43:09.994 [restartedMain] INFO  liquibase.util - UPDATE SUMMARY
+12.03.2024 16:43:09.994 [restartedMain] INFO  liquibase.util - Run:                         37
+12.03.2024 16:43:09.994 [restartedMain] INFO  liquibase.util - Previously run:               0
+12.03.2024 16:43:09.994 [restartedMain] INFO  liquibase.util - Filtered out:                 0
+12.03.2024 16:43:09.994 [restartedMain] INFO  liquibase.util - -------------------------------
+12.03.2024 16:43:09.995 [restartedMain] INFO  liquibase.util - Total change sets:           37
+12.03.2024 16:43:09.995 [restartedMain] INFO  liquibase.util - Update summary generated
+12.03.2024 16:43:10.001 [restartedMain] INFO  liquibase.command - Update command completed successfully.
+12.03.2024 16:43:10.002 [restartedMain] INFO  liquibase.ui - Liquibase: Update has been successful. Rows affected: 61
+12.03.2024 16:43:10.008 [restartedMain] INFO  l.lockservice - Successfully released change log lock
+12.03.2024 16:43:10.009 [restartedMain] INFO  liquibase.command - Command execution complete
+12.03.2024 16:43:10.268 [restartedMain] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+12.03.2024 16:43:10.380 [restartedMain] INFO  o.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+12.03.2024 16:43:10.428 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+12.03.2024 16:43:10.813 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+12.03.2024 16:43:10.894 [restartedMain] WARN  o.h.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+12.03.2024 16:43:13.362 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12.03.2024 16:43:13.369 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12.03.2024 16:43:15.814 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12.03.2024 16:43:15.905 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+12.03.2024 16:43:17.447 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+12.03.2024 16:43:17.614 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+12.03.2024 16:43:17.635 [restartedMain] INFO  o.r.h.HotelProjectApplication - Started HotelProjectApplication in 20.876 seconds (process running for 23.274)
+12.03.2024 16:47:19.622 [main] INFO  o.r.h.c.r.EventControllerTest - Starting EventControllerTest using Java 21.0.2 with PID 15136 (started by Tel-ran.de in C:\HotelProjectApp\HotelProject)
+12.03.2024 16:47:19.626 [main] INFO  o.r.h.c.r.EventControllerTest - No active profile set, falling back to 1 default profile: "default"
+12.03.2024 16:47:21.991 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12.03.2024 16:47:22.222 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 197 ms. Found 6 JPA repository interfaces.
+12.03.2024 16:47:25.445 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+12.03.2024 16:47:25.742 [main] INFO  o.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+12.03.2024 16:47:25.868 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+12.03.2024 16:47:26.516 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+12.03.2024 16:47:26.588 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+12.03.2024 16:47:27.266 [main] INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./testDB user=ROOT
+12.03.2024 16:47:27.270 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+12.03.2024 16:47:27.340 [main] WARN  o.h.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+12.03.2024 16:47:29.539 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12.03.2024 16:47:29.544 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12.03.2024 16:47:33.915 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12.03.2024 16:47:34.032 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+12.03.2024 16:47:36.100 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+12.03.2024 16:47:36.101 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+12.03.2024 16:47:36.103 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+12.03.2024 16:47:36.167 [main] INFO  o.r.h.c.r.EventControllerTest - Started EventControllerTest in 17.675 seconds (process running for 20.446)
+12.03.2024 16:47:36.310 [main] WARN  o.s.t.c.TestContextManager - Caught exception while invoking 'beforeTestMethod' callback on TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] for test method [void org.ruzmetov.hotelproject.controller.rest.EventControllerTest.postCreateEventTest() throws java.lang.Exception] and test instance [org.ruzmetov.hotelproject.controller.rest.EventControllerTest@44881fcc]
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of class path resource [addTestData.sql]: INSERT INTO service (service_id, service_restaurant_booking, service_restaurant_price, service_bar_booking, service_bar_price, service_swimming_pool_booking, service_swimming_pool_price, service_gym_booking, service_gym_price, service_garage_booking, service_garage_price, service_airport_transfer, service_airport_transfer_price) VALUES ('e87832a7-e9a7-45fc-bc18-48a122632ff1', 0, 0.0, 1, 8.50, 0, 0.0, 1, 12.75, 0, 0.0, 1, 25.00)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.execute(ResourceDatabasePopulator.java:269)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.lambda$executeSqlScripts$9(SqlScriptsTestExecutionListener.java:362)
+	at org.springframework.transaction.support.TransactionOperations.lambda$executeWithoutResult$0(TransactionOperations.java:68)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.springframework.transaction.support.TransactionOperations.executeWithoutResult(TransactionOperations.java:67)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.executeSqlScripts(SqlScriptsTestExecutionListener.java:362)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.lambda$executeSqlScripts$4(SqlScriptsTestExecutionListener.java:275)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.executeSqlScripts(SqlScriptsTestExecutionListener.java:275)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.executeSqlScripts(SqlScriptsTestExecutionListener.java:222)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.beforeTestMethod(SqlScriptsTestExecutionListener.java:165)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:320)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.beforeEach(SpringExtension.java:240)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachCallbacks$2(TestMethodTestDescriptor.java:167)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:203)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:203)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachCallbacks(TestMethodTestDescriptor.java:166)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:133)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.PRIMARY_KEY_A ON PUBLIC.SERVICE(SERVICE_ID) VALUES ( /* 1 */ UUID 'e87832a7-e9a7-45fc-bc18-48a122632ff1' )"; SQL statement:
+INSERT INTO service (service_id, service_restaurant_booking, service_restaurant_price, service_bar_booking, service_bar_price, service_swimming_pool_booking, service_swimming_pool_price, service_gym_booking, service_gym_price, service_garage_booking, service_garage_price, service_airport_transfer, service_airport_transfer_price) VALUES ('e87832a7-e9a7-45fc-bc18-48a122632ff1', 0, 0.0, 1, 8.50, 0, 0.0, 1, 12.75, 0, 0.0, 1, 25.00) [23505-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:527)
+	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:223)
+	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:184)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	... 69 common frames omitted
+12.03.2024 16:47:37.962 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12.03.2024 16:47:37.967 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12.03.2024 16:47:37.972 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+12.03.2024 16:59:51.024 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12.03.2024 16:59:51.108 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12.03.2024 16:59:51.226 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+12.03.2024 17:00:50.722 [main] INFO  o.r.h.c.r.EventControllerTest - Starting EventControllerTest using Java 21.0.2 with PID 15176 (started by Tel-ran.de in C:\HotelProjectApp\HotelProject)
+12.03.2024 17:00:50.727 [main] INFO  o.r.h.c.r.EventControllerTest - No active profile set, falling back to 1 default profile: "default"
+12.03.2024 17:00:53.242 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12.03.2024 17:00:53.456 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 195 ms. Found 6 JPA repository interfaces.
+12.03.2024 17:00:55.427 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+12.03.2024 17:00:55.649 [main] INFO  o.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+12.03.2024 17:00:55.803 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+12.03.2024 17:00:56.601 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+12.03.2024 17:00:56.666 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+12.03.2024 17:00:57.559 [main] INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./testDB user=ROOT
+12.03.2024 17:00:57.562 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+12.03.2024 17:00:57.626 [main] WARN  o.h.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+12.03.2024 17:00:59.877 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12.03.2024 17:00:59.964 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12.03.2024 17:01:04.203 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12.03.2024 17:01:04.322 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+12.03.2024 17:01:06.220 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+12.03.2024 17:01:06.221 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+12.03.2024 17:01:06.223 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+12.03.2024 17:01:06.286 [main] INFO  o.r.h.c.r.EventControllerTest - Started EventControllerTest in 16.799 seconds (process running for 19.72)
+12.03.2024 17:01:06.386 [main] WARN  o.s.t.c.TestContextManager - Caught exception while invoking 'beforeTestMethod' callback on TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] for test method [void org.ruzmetov.hotelproject.controller.rest.EventControllerTest.postCreateEventTest() throws java.lang.Exception] and test instance [org.ruzmetov.hotelproject.controller.rest.EventControllerTest@1e32a3ed]
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of class path resource [addTestData.sql]: INSERT INTO service (service_id, service_restaurant_booking, service_restaurant_price, service_bar_booking, service_bar_price, service_swimming_pool_booking, service_swimming_pool_price, service_gym_booking, service_gym_price, service_garage_booking, service_garage_price, service_airport_transfer, service_airport_transfer_price) VALUES ('e87832a7-e9a7-45fc-bc18-48a122632ff1', 0, 0.0, 1, 8.50, 0, 0.0, 1, 12.75, 0, 0.0, 1, 25.00)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.execute(ResourceDatabasePopulator.java:269)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.lambda$executeSqlScripts$9(SqlScriptsTestExecutionListener.java:362)
+	at org.springframework.transaction.support.TransactionOperations.lambda$executeWithoutResult$0(TransactionOperations.java:68)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.springframework.transaction.support.TransactionOperations.executeWithoutResult(TransactionOperations.java:67)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.executeSqlScripts(SqlScriptsTestExecutionListener.java:362)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.lambda$executeSqlScripts$4(SqlScriptsTestExecutionListener.java:275)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.executeSqlScripts(SqlScriptsTestExecutionListener.java:275)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.executeSqlScripts(SqlScriptsTestExecutionListener.java:222)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.beforeTestMethod(SqlScriptsTestExecutionListener.java:165)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:320)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.beforeEach(SpringExtension.java:240)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachCallbacks$2(TestMethodTestDescriptor.java:167)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:203)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:203)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachCallbacks(TestMethodTestDescriptor.java:166)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:133)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.PRIMARY_KEY_A ON PUBLIC.SERVICE(SERVICE_ID) VALUES ( /* 1 */ UUID 'e87832a7-e9a7-45fc-bc18-48a122632ff1' )"; SQL statement:
+INSERT INTO service (service_id, service_restaurant_booking, service_restaurant_price, service_bar_booking, service_bar_price, service_swimming_pool_booking, service_swimming_pool_price, service_gym_booking, service_gym_price, service_garage_booking, service_garage_price, service_airport_transfer, service_airport_transfer_price) VALUES ('e87832a7-e9a7-45fc-bc18-48a122632ff1', 0, 0.0, 1, 8.50, 0, 0.0, 1, 12.75, 0, 0.0, 1, 25.00) [23505-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:527)
+	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:223)
+	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:184)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	... 69 common frames omitted
+12.03.2024 17:01:08.044 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12.03.2024 17:01:08.052 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12.03.2024 17:01:08.058 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+12.03.2024 17:04:38.948 [main] INFO  o.r.h.c.r.EventControllerTest - Starting EventControllerTest using Java 21.0.2 with PID 9636 (started by Tel-ran.de in C:\HotelProjectApp\HotelProject)
+12.03.2024 17:04:38.953 [main] INFO  o.r.h.c.r.EventControllerTest - No active profile set, falling back to 1 default profile: "default"
+12.03.2024 17:04:41.369 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12.03.2024 17:04:41.620 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 222 ms. Found 6 JPA repository interfaces.
+12.03.2024 17:04:44.096 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+12.03.2024 17:04:44.377 [main] INFO  o.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+12.03.2024 17:04:44.502 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+12.03.2024 17:04:45.219 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+12.03.2024 17:04:45.272 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+12.03.2024 17:04:45.930 [main] INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./testDB user=ROOT
+12.03.2024 17:04:45.933 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+12.03.2024 17:04:45.991 [main] WARN  o.h.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+12.03.2024 17:04:48.185 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12.03.2024 17:04:48.191 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12.03.2024 17:04:52.661 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12.03.2024 17:04:52.762 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+12.03.2024 17:04:54.506 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+12.03.2024 17:04:54.507 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+12.03.2024 17:04:54.509 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+12.03.2024 17:04:54.567 [main] INFO  o.r.h.c.r.EventControllerTest - Started EventControllerTest in 16.872 seconds (process running for 19.718)
+12.03.2024 17:04:54.693 [main] WARN  o.s.t.c.TestContextManager - Caught exception while invoking 'beforeTestMethod' callback on TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] for test method [void org.ruzmetov.hotelproject.controller.rest.EventControllerTest.postCreateEventTest() throws java.lang.Exception] and test instance [org.ruzmetov.hotelproject.controller.rest.EventControllerTest@7b4b6dca]
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of class path resource [addTestData.sql]: INSERT INTO service (service_id, service_restaurant_booking, service_restaurant_price, service_bar_booking, service_bar_price, service_swimming_pool_booking, service_swimming_pool_price, service_gym_booking, service_gym_price, service_garage_booking, service_garage_price, service_airport_transfer, service_airport_transfer_price) VALUES ('e87832a7-e9a7-45fc-bc18-48a122632ff1', 0, 0.0, 1, 8.50, 0, 0.0, 1, 12.75, 0, 0.0, 1, 25.00)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.execute(ResourceDatabasePopulator.java:269)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.lambda$executeSqlScripts$9(SqlScriptsTestExecutionListener.java:362)
+	at org.springframework.transaction.support.TransactionOperations.lambda$executeWithoutResult$0(TransactionOperations.java:68)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.springframework.transaction.support.TransactionOperations.executeWithoutResult(TransactionOperations.java:67)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.executeSqlScripts(SqlScriptsTestExecutionListener.java:362)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.lambda$executeSqlScripts$4(SqlScriptsTestExecutionListener.java:275)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.executeSqlScripts(SqlScriptsTestExecutionListener.java:275)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.executeSqlScripts(SqlScriptsTestExecutionListener.java:222)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.beforeTestMethod(SqlScriptsTestExecutionListener.java:165)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:320)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.beforeEach(SpringExtension.java:240)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachCallbacks$2(TestMethodTestDescriptor.java:167)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:203)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:203)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachCallbacks(TestMethodTestDescriptor.java:166)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:133)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.PRIMARY_KEY_A ON PUBLIC.SERVICE(SERVICE_ID) VALUES ( /* 1 */ UUID 'e87832a7-e9a7-45fc-bc18-48a122632ff1' )"; SQL statement:
+INSERT INTO service (service_id, service_restaurant_booking, service_restaurant_price, service_bar_booking, service_bar_price, service_swimming_pool_booking, service_swimming_pool_price, service_gym_booking, service_gym_price, service_garage_booking, service_garage_price, service_airport_transfer, service_airport_transfer_price) VALUES ('e87832a7-e9a7-45fc-bc18-48a122632ff1', 0, 0.0, 1, 8.50, 0, 0.0, 1, 12.75, 0, 0.0, 1, 25.00) [23505-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:527)
+	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:223)
+	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:184)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	... 69 common frames omitted
+12.03.2024 17:04:56.440 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12.03.2024 17:04:56.447 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12.03.2024 17:04:56.457 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+12.03.2024 17:12:54.163 [main] INFO  o.r.h.c.r.EventControllerTest - Starting EventControllerTest using Java 21.0.2 with PID 15068 (started by Tel-ran.de in C:\HotelProjectApp\HotelProject)
+12.03.2024 17:12:54.167 [main] INFO  o.r.h.c.r.EventControllerTest - No active profile set, falling back to 1 default profile: "default"
+12.03.2024 17:12:56.263 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12.03.2024 17:12:56.420 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 142 ms. Found 6 JPA repository interfaces.
+12.03.2024 17:12:58.157 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+12.03.2024 17:12:58.502 [main] INFO  o.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+12.03.2024 17:12:58.584 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+12.03.2024 17:12:59.216 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+12.03.2024 17:12:59.265 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+12.03.2024 17:12:59.853 [main] INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./testDB user=ROOT
+12.03.2024 17:12:59.856 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+12.03.2024 17:12:59.898 [main] WARN  o.h.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+12.03.2024 17:13:01.940 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12.03.2024 17:13:01.945 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12.03.2024 17:13:05.906 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12.03.2024 17:13:06.083 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+12.03.2024 17:13:08.312 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+12.03.2024 17:13:08.315 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+12.03.2024 17:13:08.319 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 4 ms
+12.03.2024 17:13:08.390 [main] INFO  o.r.h.c.r.EventControllerTest - Started EventControllerTest in 15.286 seconds (process running for 18.438)
+12.03.2024 17:13:08.514 [main] WARN  o.s.t.c.TestContextManager - Caught exception while invoking 'beforeTestMethod' callback on TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] for test method [void org.ruzmetov.hotelproject.controller.rest.EventControllerTest.postCreateEventTest() throws java.lang.Exception] and test instance [org.ruzmetov.hotelproject.controller.rest.EventControllerTest@4602fa2f]
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of class path resource [addTestData.sql]: INSERT INTO service (service_id, service_restaurant_booking, service_restaurant_price, service_bar_booking, service_bar_price, service_swimming_pool_booking, service_swimming_pool_price, service_gym_booking, service_gym_price, service_garage_booking, service_garage_price, service_airport_transfer, service_airport_transfer_price) VALUES ('e87832a7-e9a7-45fc-bc18-48a122632ff1', 0, 0.0, 1, 8.50, 0, 0.0, 1, 12.75, 0, 0.0, 1, 25.00)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.execute(ResourceDatabasePopulator.java:269)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.lambda$executeSqlScripts$9(SqlScriptsTestExecutionListener.java:362)
+	at org.springframework.transaction.support.TransactionOperations.lambda$executeWithoutResult$0(TransactionOperations.java:68)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.springframework.transaction.support.TransactionOperations.executeWithoutResult(TransactionOperations.java:67)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.executeSqlScripts(SqlScriptsTestExecutionListener.java:362)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.lambda$executeSqlScripts$4(SqlScriptsTestExecutionListener.java:275)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.executeSqlScripts(SqlScriptsTestExecutionListener.java:275)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.executeSqlScripts(SqlScriptsTestExecutionListener.java:222)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.beforeTestMethod(SqlScriptsTestExecutionListener.java:165)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:320)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.beforeEach(SpringExtension.java:240)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachCallbacks$2(TestMethodTestDescriptor.java:167)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:203)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:203)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachCallbacks(TestMethodTestDescriptor.java:166)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:133)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.PRIMARY_KEY_A ON PUBLIC.SERVICE(SERVICE_ID) VALUES ( /* 1 */ UUID 'e87832a7-e9a7-45fc-bc18-48a122632ff1' )"; SQL statement:
+INSERT INTO service (service_id, service_restaurant_booking, service_restaurant_price, service_bar_booking, service_bar_price, service_swimming_pool_booking, service_swimming_pool_price, service_gym_booking, service_gym_price, service_garage_booking, service_garage_price, service_airport_transfer, service_airport_transfer_price) VALUES ('e87832a7-e9a7-45fc-bc18-48a122632ff1', 0, 0.0, 1, 8.50, 0, 0.0, 1, 12.75, 0, 0.0, 1, 25.00) [23505-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:527)
+	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:223)
+	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:184)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	... 70 common frames omitted
+12.03.2024 17:13:10.149 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12.03.2024 17:13:10.153 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12.03.2024 17:13:10.158 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+12.03.2024 17:13:45.931 [main] INFO  o.r.h.c.r.EventControllerTest - Starting EventControllerTest using Java 21.0.2 with PID 19160 (started by Tel-ran.de in C:\HotelProjectApp\HotelProject)
+12.03.2024 17:13:45.935 [main] INFO  o.r.h.c.r.EventControllerTest - No active profile set, falling back to 1 default profile: "default"
+12.03.2024 17:13:48.038 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12.03.2024 17:13:48.209 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 158 ms. Found 6 JPA repository interfaces.
+12.03.2024 17:13:50.145 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+12.03.2024 17:13:50.486 [main] INFO  o.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+12.03.2024 17:13:50.770 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+12.03.2024 17:13:51.625 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+12.03.2024 17:13:51.690 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+12.03.2024 17:13:52.343 [main] INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./testDB user=ROOT
+12.03.2024 17:13:52.347 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+12.03.2024 17:13:52.412 [main] WARN  o.h.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+12.03.2024 17:13:54.619 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12.03.2024 17:13:54.625 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12.03.2024 17:13:58.430 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12.03.2024 17:13:58.528 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+12.03.2024 17:14:01.048 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+12.03.2024 17:14:01.049 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+12.03.2024 17:14:01.050 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+12.03.2024 17:14:01.122 [main] INFO  o.r.h.c.r.EventControllerTest - Started EventControllerTest in 16.294 seconds (process running for 18.983)
+12.03.2024 17:14:01.225 [main] WARN  o.s.t.c.TestContextManager - Caught exception while invoking 'beforeTestMethod' callback on TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] for test method [void org.ruzmetov.hotelproject.controller.rest.EventControllerTest.postCreateEventTest() throws java.lang.Exception] and test instance [org.ruzmetov.hotelproject.controller.rest.EventControllerTest@3d577add]
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of class path resource [addTestData.sql]: INSERT INTO service (service_id, service_restaurant_booking, service_restaurant_price, service_bar_booking, service_bar_price, service_swimming_pool_booking, service_swimming_pool_price, service_gym_booking, service_gym_price, service_garage_booking, service_garage_price, service_airport_transfer, service_airport_transfer_price) VALUES ('e87832a7-e9a7-45fc-bc18-48a122632ff1', 0, 0.0, 1, 8.50, 0, 0.0, 1, 12.75, 0, 0.0, 1, 25.00)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.execute(ResourceDatabasePopulator.java:269)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.lambda$executeSqlScripts$9(SqlScriptsTestExecutionListener.java:362)
+	at org.springframework.transaction.support.TransactionOperations.lambda$executeWithoutResult$0(TransactionOperations.java:68)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.springframework.transaction.support.TransactionOperations.executeWithoutResult(TransactionOperations.java:67)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.executeSqlScripts(SqlScriptsTestExecutionListener.java:362)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.lambda$executeSqlScripts$4(SqlScriptsTestExecutionListener.java:275)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.executeSqlScripts(SqlScriptsTestExecutionListener.java:275)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.executeSqlScripts(SqlScriptsTestExecutionListener.java:222)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.beforeTestMethod(SqlScriptsTestExecutionListener.java:165)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:320)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.beforeEach(SpringExtension.java:240)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachCallbacks$2(TestMethodTestDescriptor.java:167)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:203)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:203)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachCallbacks(TestMethodTestDescriptor.java:166)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:133)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.PRIMARY_KEY_A ON PUBLIC.SERVICE(SERVICE_ID) VALUES ( /* 1 */ UUID 'e87832a7-e9a7-45fc-bc18-48a122632ff1' )"; SQL statement:
+INSERT INTO service (service_id, service_restaurant_booking, service_restaurant_price, service_bar_booking, service_bar_price, service_swimming_pool_booking, service_swimming_pool_price, service_gym_booking, service_gym_price, service_garage_booking, service_garage_price, service_airport_transfer, service_airport_transfer_price) VALUES ('e87832a7-e9a7-45fc-bc18-48a122632ff1', 0, 0.0, 1, 8.50, 0, 0.0, 1, 12.75, 0, 0.0, 1, 25.00) [23505-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:527)
+	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:223)
+	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:184)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	... 69 common frames omitted
+12.03.2024 17:14:02.656 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12.03.2024 17:14:02.660 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12.03.2024 17:14:02.665 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+12.03.2024 17:19:53.310 [main] INFO  o.r.h.c.r.EventControllerTest - Starting EventControllerTest using Java 21.0.2 with PID 7092 (started by Tel-ran.de in C:\HotelProjectApp\HotelProject)
+12.03.2024 17:19:53.314 [main] INFO  o.r.h.c.r.EventControllerTest - No active profile set, falling back to 1 default profile: "default"
+12.03.2024 17:19:55.433 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12.03.2024 17:19:55.598 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 147 ms. Found 6 JPA repository interfaces.
+12.03.2024 17:19:57.272 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+12.03.2024 17:19:57.433 [main] INFO  o.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+12.03.2024 17:19:57.547 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+12.03.2024 17:19:58.089 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+12.03.2024 17:19:58.157 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+12.03.2024 17:19:58.800 [main] INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./testDB user=ROOT
+12.03.2024 17:19:58.804 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+12.03.2024 17:19:58.844 [main] WARN  o.h.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+12.03.2024 17:20:01.068 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12.03.2024 17:20:01.074 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12.03.2024 17:20:04.919 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12.03.2024 17:20:05.038 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+12.03.2024 17:20:08.842 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+12.03.2024 17:20:08.843 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+12.03.2024 17:20:08.846 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+12.03.2024 17:20:08.937 [main] INFO  o.r.h.c.r.EventControllerTest - Started EventControllerTest in 16.722 seconds (process running for 19.307)
+12.03.2024 17:20:09.060 [main] WARN  o.s.t.c.TestContextManager - Caught exception while invoking 'beforeTestMethod' callback on TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] for test method [void org.ruzmetov.hotelproject.controller.rest.EventControllerTest.postCreateEventTest() throws java.lang.Exception] and test instance [org.ruzmetov.hotelproject.controller.rest.EventControllerTest@5f0b2fe1]
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of class path resource [addTestData.sql]: INSERT INTO service (service_id, service_restaurant_booking, service_restaurant_price, service_bar_booking, service_bar_price, service_swimming_pool_booking, service_swimming_pool_price, service_gym_booking, service_gym_price, service_garage_booking, service_garage_price, service_airport_transfer, service_airport_transfer_price) VALUES ('e87832a7-e9a7-45fc-bc18-48a122632ff1', '0', '0.0', '1', '8.50', '0', '0.0', '1', '12.75', '0', '0.0', '1', '25.00')
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.execute(ResourceDatabasePopulator.java:269)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.lambda$executeSqlScripts$9(SqlScriptsTestExecutionListener.java:362)
+	at org.springframework.transaction.support.TransactionOperations.lambda$executeWithoutResult$0(TransactionOperations.java:68)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.springframework.transaction.support.TransactionOperations.executeWithoutResult(TransactionOperations.java:67)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.executeSqlScripts(SqlScriptsTestExecutionListener.java:362)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.lambda$executeSqlScripts$4(SqlScriptsTestExecutionListener.java:275)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.executeSqlScripts(SqlScriptsTestExecutionListener.java:275)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.executeSqlScripts(SqlScriptsTestExecutionListener.java:222)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.beforeTestMethod(SqlScriptsTestExecutionListener.java:165)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:320)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.beforeEach(SpringExtension.java:240)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachCallbacks$2(TestMethodTestDescriptor.java:167)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:203)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:203)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachCallbacks(TestMethodTestDescriptor.java:166)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:133)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.PRIMARY_KEY_A ON PUBLIC.SERVICE(SERVICE_ID) VALUES ( /* 1 */ UUID 'e87832a7-e9a7-45fc-bc18-48a122632ff1' )"; SQL statement:
+INSERT INTO service (service_id, service_restaurant_booking, service_restaurant_price, service_bar_booking, service_bar_price, service_swimming_pool_booking, service_swimming_pool_price, service_gym_booking, service_gym_price, service_garage_booking, service_garage_price, service_airport_transfer, service_airport_transfer_price) VALUES ('e87832a7-e9a7-45fc-bc18-48a122632ff1', '0', '0.0', '1', '8.50', '0', '0.0', '1', '12.75', '0', '0.0', '1', '25.00') [23505-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:527)
+	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:223)
+	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:184)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	... 69 common frames omitted
+12.03.2024 17:20:10.826 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12.03.2024 17:20:10.830 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12.03.2024 17:20:10.836 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+12.03.2024 17:24:53.600 [main] INFO  o.r.h.c.r.EventControllerTest - Starting EventControllerTest using Java 21.0.2 with PID 1624 (started by Tel-ran.de in C:\HotelProjectApp\HotelProject)
+12.03.2024 17:24:53.604 [main] INFO  o.r.h.c.r.EventControllerTest - No active profile set, falling back to 1 default profile: "default"
+12.03.2024 17:24:55.726 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12.03.2024 17:24:55.901 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 154 ms. Found 6 JPA repository interfaces.
+12.03.2024 17:24:57.649 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+12.03.2024 17:24:58.003 [main] INFO  o.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+12.03.2024 17:24:58.095 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+12.03.2024 17:24:58.734 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+12.03.2024 17:24:58.796 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+12.03.2024 17:24:59.390 [main] INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./testDB user=ROOT
+12.03.2024 17:24:59.395 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+12.03.2024 17:24:59.436 [main] WARN  o.h.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+12.03.2024 17:25:01.429 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12.03.2024 17:25:01.434 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12.03.2024 17:25:05.116 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12.03.2024 17:25:05.216 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+12.03.2024 17:25:07.130 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+12.03.2024 17:25:07.131 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+12.03.2024 17:25:07.134 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+12.03.2024 17:25:07.207 [main] INFO  o.r.h.c.r.EventControllerTest - Started EventControllerTest in 14.771 seconds (process running for 17.545)
+12.03.2024 17:25:07.296 [main] WARN  o.s.t.c.TestContextManager - Caught exception while invoking 'beforeTestMethod' callback on TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] for test method [void org.ruzmetov.hotelproject.controller.rest.EventControllerTest.postCreateEventTest() throws java.lang.Exception] and test instance [org.ruzmetov.hotelproject.controller.rest.EventControllerTest@62bcfa01]
+org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #1 of class path resource [addTestData.sql]: INSERT INTO room (room_id, room_category, room_price_per_night, room_availability, room_floor, room_breakfast_include, room_check_in_date, room_check_out_date) VALUES ('101', 'Standard', '100.00', '1', '1', '1', '2024-01-02', '2024-01-07')
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.execute(ResourceDatabasePopulator.java:269)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.lambda$executeSqlScripts$9(SqlScriptsTestExecutionListener.java:362)
+	at org.springframework.transaction.support.TransactionOperations.lambda$executeWithoutResult$0(TransactionOperations.java:68)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.springframework.transaction.support.TransactionOperations.executeWithoutResult(TransactionOperations.java:67)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.executeSqlScripts(SqlScriptsTestExecutionListener.java:362)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.lambda$executeSqlScripts$4(SqlScriptsTestExecutionListener.java:275)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.executeSqlScripts(SqlScriptsTestExecutionListener.java:275)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.executeSqlScripts(SqlScriptsTestExecutionListener.java:222)
+	at org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener.beforeTestMethod(SqlScriptsTestExecutionListener.java:165)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:320)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.beforeEach(SpringExtension.java:240)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachCallbacks$2(TestMethodTestDescriptor.java:167)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:203)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:203)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachCallbacks(TestMethodTestDescriptor.java:166)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:133)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.ROOM(ROOM_ID) ( /* key:0 */ 101, 'Standard', CAST(100.0 AS DOUBLE PRECISION), TRUE, 1, TRUE, DATE '2024-01-02', DATE '2024-01-07')"; SQL statement:
+INSERT INTO room (room_id, room_category, room_price_per_night, room_availability, room_floor, room_breakfast_include, room_check_in_date, room_check_out_date) VALUES ('101', 'Standard', '100.00', '1', '1', '1', '2024-01-02', '2024-01-07') [23505-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	... 69 common frames omitted
+12.03.2024 17:25:08.503 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12.03.2024 17:25:08.509 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12.03.2024 17:25:08.513 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+12.03.2024 17:32:00.106 [restartedMain] INFO  o.r.h.HotelProjectApplication - Starting HotelProjectApplication using Java 21.0.2 with PID 17016 (C:\HotelProjectApp\HotelProject\target\classes started by Tel-ran.de in C:\HotelProjectApp\HotelProject)
+12.03.2024 17:32:00.110 [restartedMain] INFO  o.r.h.HotelProjectApplication - No active profile set, falling back to 1 default profile: "default"
+12.03.2024 17:32:00.282 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12.03.2024 17:32:00.282 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+12.03.2024 17:32:01.788 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12.03.2024 17:32:01.925 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 126 ms. Found 6 JPA repository interfaces.
+12.03.2024 17:32:03.172 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http)
+12.03.2024 17:32:03.191 [restartedMain] INFO  o.a.c.c.StandardService - Starting service [Tomcat]
+12.03.2024 17:32:03.191 [restartedMain] INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+12.03.2024 17:32:03.278 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+12.03.2024 17:32:03.279 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2996 ms
+12.03.2024 17:32:03.603 [restartedMain] INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+12.03.2024 17:32:04.105 [restartedMain] INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@42b559b4
+12.03.2024 17:32:04.108 [restartedMain] INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+12.03.2024 17:32:04.844 [restartedMain] INFO  l.lockservice - Successfully acquired change log lock
+12.03.2024 17:32:04.856 [restartedMain] INFO  liquibase.command - Dropping Database Objects in schema: 300523_m_be_hotel.300523_m_be_hotel
+12.03.2024 17:32:05.912 [restartedMain] INFO  liquibase.database - Successfully deleted all supported object types in schema 300523_m_be_hotel.300523_m_be_hotel.
+12.03.2024 17:32:05.963 [restartedMain] WARN  l.lockservice - Failed to release change log lock
+12.03.2024 17:32:05.968 [restartedMain] INFO  liquibase.ui - All objects dropped from root@localhost@jdbc:mysql://localhost:3306/300523_m_be_hotel
+12.03.2024 17:32:05.969 [restartedMain] INFO  liquibase.command - Command execution complete
+12.03.2024 17:32:06.653 [restartedMain] INFO  liquibase.changelog - Creating database history table with name: `300523_m_be_hotel`.databasechangelog
+12.03.2024 17:32:06.725 [restartedMain] INFO  liquibase.changelog - Reading from `300523_m_be_hotel`.databasechangelog
+12.03.2024 17:32:06.927 [restartedMain] WARN  liquibase.changelog - liquibase.statement.core.CreateSequenceStatement is not supported on mysql, but createSequence will still execute
+12.03.2024 17:32:06.959 [restartedMain] WARN  liquibase.changelog - liquibase.statement.core.CreateSequenceStatement is not supported on mysql, but createSequence will still execute
+12.03.2024 17:32:06.977 [restartedMain] INFO  l.lockservice - Successfully acquired change log lock
+12.03.2024 17:32:06.980 [restartedMain] INFO  liquibase.command - Using deploymentId: 0261126979
+12.03.2024 17:32:06.988 [restartedMain] INFO  liquibase.changelog - Reading from `300523_m_be_hotel`.databasechangelog
+12.03.2024 17:32:07.087 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop reservation table::b.ruzmetov
+12.03.2024 17:32:07.107 [restartedMain] INFO  liquibase.changelog - Marking ChangeSet: "db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop reservation table::b.ruzmetov" as ran despite precondition failure due to onFail='MARK_RAN': 
+          db/changelog/changelog-master.xml : Table `300523_m_be_hotel`.reservation does not exist
+
+12.03.2024 17:32:07.120 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop payment table::b.ruzmetov
+12.03.2024 17:32:07.157 [restartedMain] INFO  liquibase.changelog - Marking ChangeSet: "db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop payment table::b.ruzmetov" as ran despite precondition failure due to onFail='MARK_RAN': 
+          db/changelog/changelog-master.xml : Table `300523_m_be_hotel`.payment does not exist
+
+12.03.2024 17:32:07.168 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop service table::b.ruzmetov
+12.03.2024 17:32:07.199 [restartedMain] INFO  liquibase.changelog - Marking ChangeSet: "db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop service table::b.ruzmetov" as ran despite precondition failure due to onFail='MARK_RAN': 
+          db/changelog/changelog-master.xml : Table `300523_m_be_hotel`.service does not exist
+
+12.03.2024 17:32:07.207 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop room table::b.ruzmetov
+12.03.2024 17:32:07.232 [restartedMain] INFO  liquibase.changelog - Marking ChangeSet: "db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop room table::b.ruzmetov" as ran despite precondition failure due to onFail='MARK_RAN': 
+          db/changelog/changelog-master.xml : Table `300523_m_be_hotel`.room does not exist
+
+12.03.2024 17:32:07.241 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop event table::b.ruzmetov
+12.03.2024 17:32:07.259 [restartedMain] INFO  liquibase.changelog - Marking ChangeSet: "db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop event table::b.ruzmetov" as ran despite precondition failure due to onFail='MARK_RAN': 
+          db/changelog/changelog-master.xml : Table `300523_m_be_hotel`.event does not exist
+
+12.03.2024 17:32:07.267 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop customer table::b.ruzmetov
+12.03.2024 17:32:07.284 [restartedMain] INFO  liquibase.changelog - Marking ChangeSet: "db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop customer table::b.ruzmetov" as ran despite precondition failure due to onFail='MARK_RAN': 
+          db/changelog/changelog-master.xml : Table `300523_m_be_hotel`.customer does not exist
+
+12.03.2024 17:32:07.291 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create room table::b.ruzmetov
+12.03.2024 17:32:07.334 [restartedMain] INFO  liquibase.changelog - Table room created
+12.03.2024 17:32:07.336 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create room table::b.ruzmetov ran successfully in 44ms
+12.03.2024 17:32:07.345 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create service table::b.ruzmetov
+12.03.2024 17:32:07.399 [restartedMain] INFO  liquibase.changelog - Table service created
+12.03.2024 17:32:07.400 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create service table::b.ruzmetov ran successfully in 55ms
+12.03.2024 17:32:07.409 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create event table::b.ruzmetov
+12.03.2024 17:32:07.479 [restartedMain] INFO  liquibase.changelog - Table event created
+12.03.2024 17:32:07.480 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create event table::b.ruzmetov ran successfully in 70ms
+12.03.2024 17:32:07.488 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create customer table::b.ruzmetov
+12.03.2024 17:32:07.533 [restartedMain] INFO  liquibase.changelog - Table customer created
+12.03.2024 17:32:07.533 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create customer table::b.ruzmetov ran successfully in 44ms
+12.03.2024 17:32:07.540 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create payment table::b.ruzmetov
+12.03.2024 17:32:07.592 [restartedMain] INFO  liquibase.changelog - Table payment created
+12.03.2024 17:32:07.594 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create payment table::b.ruzmetov ran successfully in 54ms
+12.03.2024 17:32:07.604 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create reservation table::b.ruzmetov
+12.03.2024 17:32:07.683 [restartedMain] INFO  liquibase.changelog - Table reservation created
+12.03.2024 17:32:07.684 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create reservation table::b.ruzmetov ran successfully in 79ms
+12.03.2024 17:32:07.693 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/create-sequence.xml::create sequence for UUID generator::b.ruzmetov
+12.03.2024 17:32:07.696 [restartedMain] INFO  liquibase.changelog - Sequence seq_for_uuid_generator created
+12.03.2024 17:32:07.697 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/create-sequence.xml::create sequence for UUID generator::b.ruzmetov ran successfully in 3ms
+12.03.2024 17:32:07.707 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into service table::b.ruzmetov
+12.03.2024 17:32:07.719 [restartedMain] INFO  liquibase.changelog - New row inserted into service
+12.03.2024 17:32:07.721 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into service table::b.ruzmetov ran successfully in 13ms
+12.03.2024 17:32:07.728 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into room table::b.ruzmetov
+12.03.2024 17:32:07.736 [restartedMain] INFO  liquibase.changelog - New row inserted into room
+12.03.2024 17:32:07.739 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into room table::b.ruzmetov ran successfully in 10ms
+12.03.2024 17:32:07.746 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into event table::b.ruzmetov
+12.03.2024 17:32:07.753 [restartedMain] INFO  liquibase.changelog - New row inserted into event
+12.03.2024 17:32:07.756 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into event table::b.ruzmetov ran successfully in 9ms
+12.03.2024 17:32:07.764 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into customer table::b.ruzmetov
+12.03.2024 17:32:07.770 [restartedMain] INFO  liquibase.changelog - New row inserted into customer
+12.03.2024 17:32:07.773 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into customer table::b.ruzmetov ran successfully in 8ms
+12.03.2024 17:32:07.779 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into payment table::b.ruzmetov
+12.03.2024 17:32:07.786 [restartedMain] INFO  liquibase.changelog - New row inserted into payment
+12.03.2024 17:32:07.788 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into payment table::b.ruzmetov ran successfully in 8ms
+12.03.2024 17:32:07.794 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into reservation table::b.ruzmetov
+12.03.2024 17:32:07.802 [restartedMain] INFO  liquibase.changelog - New row inserted into reservation
+12.03.2024 17:32:07.804 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into reservation table::b.ruzmetov ran successfully in 9ms
+12.03.2024 17:32:07.813 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into service table::b.ruzmetov
+12.03.2024 17:32:07.823 [restartedMain] INFO  liquibase.changelog - New row inserted into service
+12.03.2024 17:32:07.825 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into service table::b.ruzmetov ran successfully in 10ms
+12.03.2024 17:32:07.835 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into room table::b.ruzmetov
+12.03.2024 17:32:07.840 [restartedMain] INFO  liquibase.changelog - New row inserted into room
+12.03.2024 17:32:07.843 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into room table::b.ruzmetov ran successfully in 8ms
+12.03.2024 17:32:07.858 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into event table::b.ruzmetov
+12.03.2024 17:32:07.864 [restartedMain] INFO  liquibase.changelog - New row inserted into event
+12.03.2024 17:32:07.868 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into event table::b.ruzmetov ran successfully in 9ms
+12.03.2024 17:32:07.877 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into customer table::b.ruzmetov
+12.03.2024 17:32:07.884 [restartedMain] INFO  liquibase.changelog - New row inserted into customer
+12.03.2024 17:32:07.888 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into customer table::b.ruzmetov ran successfully in 11ms
+12.03.2024 17:32:07.897 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into payment table::b.ruzmetov
+12.03.2024 17:32:07.903 [restartedMain] INFO  liquibase.changelog - New row inserted into payment
+12.03.2024 17:32:07.907 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into payment table::b.ruzmetov ran successfully in 8ms
+12.03.2024 17:32:07.926 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into reservation table::b.ruzmetov
+12.03.2024 17:32:07.938 [restartedMain] INFO  liquibase.changelog - New row inserted into reservation
+12.03.2024 17:32:07.941 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into reservation table::b.ruzmetov ran successfully in 12ms
+12.03.2024 17:32:07.952 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into service table::b.ruzmetov
+12.03.2024 17:32:07.959 [restartedMain] INFO  liquibase.changelog - New row inserted into service
+12.03.2024 17:32:07.962 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into service table::b.ruzmetov ran successfully in 9ms
+12.03.2024 17:32:07.970 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into room table::b.ruzmetov
+12.03.2024 17:32:07.976 [restartedMain] INFO  liquibase.changelog - New row inserted into room
+12.03.2024 17:32:07.979 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into room table::b.ruzmetov ran successfully in 9ms
+12.03.2024 17:32:07.986 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into event table::b.ruzmetov
+12.03.2024 17:32:07.991 [restartedMain] INFO  liquibase.changelog - New row inserted into event
+12.03.2024 17:32:07.993 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into event table::b.ruzmetov ran successfully in 7ms
+12.03.2024 17:32:08.000 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into customer table::b.ruzmetov
+12.03.2024 17:32:08.004 [restartedMain] INFO  liquibase.changelog - New row inserted into customer
+12.03.2024 17:32:08.006 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into customer table::b.ruzmetov ran successfully in 6ms
+12.03.2024 17:32:08.013 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into payment table::b.ruzmetov
+12.03.2024 17:32:08.017 [restartedMain] INFO  liquibase.changelog - New row inserted into payment
+12.03.2024 17:32:08.021 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into payment table::b.ruzmetov ran successfully in 8ms
+12.03.2024 17:32:08.029 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into reservation table::b.ruzmetov
+12.03.2024 17:32:08.038 [restartedMain] INFO  liquibase.changelog - New row inserted into reservation
+12.03.2024 17:32:08.040 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into reservation table::b.ruzmetov ran successfully in 10ms
+12.03.2024 17:32:08.053 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into service table::b.ruzmetov
+12.03.2024 17:32:08.064 [restartedMain] INFO  liquibase.changelog - New row inserted into service
+12.03.2024 17:32:08.069 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into service table::b.ruzmetov ran successfully in 13ms
+12.03.2024 17:32:08.079 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into room table::b.ruzmetov
+12.03.2024 17:32:08.086 [restartedMain] INFO  liquibase.changelog - New row inserted into room
+12.03.2024 17:32:08.089 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into room table::b.ruzmetov ran successfully in 8ms
+12.03.2024 17:32:08.101 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into event table::b.ruzmetov
+12.03.2024 17:32:08.107 [restartedMain] INFO  liquibase.changelog - New row inserted into event
+12.03.2024 17:32:08.110 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into event table::b.ruzmetov ran successfully in 9ms
+12.03.2024 17:32:08.122 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into customer table::b.ruzmetov
+12.03.2024 17:32:08.127 [restartedMain] INFO  liquibase.changelog - New row inserted into customer
+12.03.2024 17:32:08.131 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into customer table::b.ruzmetov ran successfully in 9ms
+12.03.2024 17:32:08.139 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into payment table::b.ruzmetov
+12.03.2024 17:32:08.143 [restartedMain] INFO  liquibase.changelog - New row inserted into payment
+12.03.2024 17:32:08.148 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into payment table::b.ruzmetov ran successfully in 7ms
+12.03.2024 17:32:08.156 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into reservation table::b.ruzmetov
+12.03.2024 17:32:08.162 [restartedMain] INFO  liquibase.changelog - New row inserted into reservation
+12.03.2024 17:32:08.164 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into reservation table::b.ruzmetov ran successfully in 7ms
+12.03.2024 17:32:08.176 [restartedMain] INFO  liquibase.util - UPDATE SUMMARY
+12.03.2024 17:32:08.177 [restartedMain] INFO  liquibase.util - Run:                         37
+12.03.2024 17:32:08.177 [restartedMain] INFO  liquibase.util - Previously run:               0
+12.03.2024 17:32:08.177 [restartedMain] INFO  liquibase.util - Filtered out:                 0
+12.03.2024 17:32:08.177 [restartedMain] INFO  liquibase.util - -------------------------------
+12.03.2024 17:32:08.177 [restartedMain] INFO  liquibase.util - Total change sets:           37
+12.03.2024 17:32:08.177 [restartedMain] INFO  liquibase.util - Update summary generated
+12.03.2024 17:32:08.181 [restartedMain] INFO  liquibase.command - Update command completed successfully.
+12.03.2024 17:32:08.181 [restartedMain] INFO  liquibase.ui - Liquibase: Update has been successful. Rows affected: 61
+12.03.2024 17:32:08.187 [restartedMain] INFO  l.lockservice - Successfully released change log lock
+12.03.2024 17:32:08.188 [restartedMain] INFO  liquibase.command - Command execution complete
+12.03.2024 17:32:08.459 [restartedMain] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+12.03.2024 17:32:08.631 [restartedMain] INFO  o.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+12.03.2024 17:32:08.693 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+12.03.2024 17:32:09.107 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+12.03.2024 17:32:09.198 [restartedMain] WARN  o.h.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+12.03.2024 17:32:11.417 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12.03.2024 17:32:11.422 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12.03.2024 17:32:14.146 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12.03.2024 17:32:14.248 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+12.03.2024 17:32:16.142 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+12.03.2024 17:32:16.227 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+12.03.2024 17:32:16.248 [restartedMain] INFO  o.r.h.HotelProjectApplication - Started HotelProjectApplication in 17.469 seconds (process running for 18.94)
+12.03.2024 17:43:28.835 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12.03.2024 17:43:28.849 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12.03.2024 17:43:28.876 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
