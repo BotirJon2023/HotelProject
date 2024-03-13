@@ -59,11 +59,11 @@ CREATE TABLE IF NOT EXISTS payment (
 
 CREATE TABLE IF NOT EXISTS reservation (
        reservation_id UUID PRIMARY KEY NOT NULL,
-       reservation_customer_id UUID,
-       reservation_room_id INT,
-       reservation_event_id UUID,
-       reservation_service_id UUID,
-       reservation_payment_id UUID,
+       reservation_customer_id UUID NULL,
+       reservation_room_id INT NULL,
+       reservation_event_id UUID NULL,
+       reservation_service_id UUID NULL,
+       reservation_payment_id UUID NULL,
        reservation_total_amount DOUBLE NOT NULL,
-       reservation_cancelled_info VARCHAR(255)
+       reservation_cancelled_info VARCHAR(255) NOT NULL
        );

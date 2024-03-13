@@ -223,7 +223,7 @@
                 <constraints nullable="false"/>
             </column>
             <column name="reservation_cancelled_info" type="varchar(255)">
-                <constraints nullable="true"/>
+                <constraints nullable="false"/>
             </column>
         </createTable>
     </changeSet>
