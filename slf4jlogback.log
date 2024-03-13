@@ -531,3 +531,377 @@
 13.03.2024 12:46:40.868 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 13.03.2024 12:46:40.874 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
 13.03.2024 12:46:40.884 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+13.03.2024 12:49:33.030 [main] INFO  o.r.h.c.r.CustomerControllerTest - Starting CustomerControllerTest using Java 21.0.2 with PID 1768 (started by Tel-ran.de in C:\HotelProjectApp\HotelProject)
+13.03.2024 12:49:33.035 [main] INFO  o.r.h.c.r.CustomerControllerTest - No active profile set, falling back to 1 default profile: "default"
+13.03.2024 12:49:36.708 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13.03.2024 12:49:36.989 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 255 ms. Found 6 JPA repository interfaces.
+13.03.2024 12:49:39.536 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+13.03.2024 12:49:39.829 [main] INFO  o.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+13.03.2024 12:49:39.979 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+13.03.2024 12:49:41.114 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+13.03.2024 12:49:41.248 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+13.03.2024 12:49:42.796 [main] INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./testDB user=ROOT
+13.03.2024 12:49:42.806 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+13.03.2024 12:49:42.899 [main] WARN  o.h.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+13.03.2024 12:49:46.863 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13.03.2024 12:49:46.871 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13.03.2024 12:49:51.723 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13.03.2024 12:49:51.846 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+13.03.2024 12:49:54.974 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+13.03.2024 12:49:54.974 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+13.03.2024 12:49:54.976 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+13.03.2024 12:49:55.042 [main] INFO  o.r.h.c.r.CustomerControllerTest - Started CustomerControllerTest in 24.42 seconds (process running for 29.676)
+13.03.2024 12:49:59.489 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.ruzmetov.hotelproject.controller.rest.EventControllerTest]: EventControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13.03.2024 12:49:59.533 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.ruzmetov.hotelproject.HotelProjectApplication for test class org.ruzmetov.hotelproject.controller.rest.EventControllerTest
+13.03.2024 12:49:59.789 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.ruzmetov.hotelproject.controller.rest.PaymentControllerTest]: PaymentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13.03.2024 12:49:59.806 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.ruzmetov.hotelproject.HotelProjectApplication for test class org.ruzmetov.hotelproject.controller.rest.PaymentControllerTest
+13.03.2024 12:50:00.068 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.ruzmetov.hotelproject.controller.rest.ReservationControllerTest]: ReservationControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13.03.2024 12:50:00.077 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.ruzmetov.hotelproject.HotelProjectApplication for test class org.ruzmetov.hotelproject.controller.rest.ReservationControllerTest
+13.03.2024 12:50:00.346 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+13.03.2024 12:50:00.353 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+13.03.2024 12:50:00.423 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+13.03.2024 13:16:52.228 [main] INFO  o.r.h.c.r.RoomControllerTest - Starting RoomControllerTest using Java 21.0.2 with PID 6044 (started by Tel-ran.de in C:\HotelProjectApp\HotelProject)
+13.03.2024 13:16:52.231 [main] INFO  o.r.h.c.r.RoomControllerTest - No active profile set, falling back to 1 default profile: "default"
+13.03.2024 13:16:54.116 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13.03.2024 13:16:54.273 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 136 ms. Found 6 JPA repository interfaces.
+13.03.2024 13:16:55.929 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+13.03.2024 13:16:56.119 [main] INFO  o.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+13.03.2024 13:16:56.234 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+13.03.2024 13:16:56.898 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+13.03.2024 13:16:56.966 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+13.03.2024 13:16:57.608 [main] INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./testDB user=ROOT
+13.03.2024 13:16:57.612 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+13.03.2024 13:16:57.664 [main] WARN  o.h.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+13.03.2024 13:16:59.619 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13.03.2024 13:16:59.624 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13.03.2024 13:17:03.255 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13.03.2024 13:17:03.387 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+13.03.2024 13:17:05.286 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+13.03.2024 13:17:05.287 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+13.03.2024 13:17:05.290 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+13.03.2024 13:17:05.354 [main] INFO  o.r.h.c.r.RoomControllerTest - Started RoomControllerTest in 14.17 seconds (process running for 16.768)
+13.03.2024 13:17:06.900 [main] WARN  o.h.e.j.s.SqlExceptionHelper - SQL Error: 90036, SQLState: 90036
+13.03.2024 13:17:06.900 [main] ERROR o.h.e.j.s.SqlExceptionHelper - Sequence "ROOM_SEQ" not found; SQL statement:
+select next value for room_seq [90036-224]
+13.03.2024 13:17:06.987 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+13.03.2024 13:17:06.997 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+13.03.2024 13:17:07.001 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+13.03.2024 13:22:05.643 [main] INFO  o.r.h.c.r.RoomControllerTest - Starting RoomControllerTest using Java 21.0.2 with PID 18452 (started by Tel-ran.de in C:\HotelProjectApp\HotelProject)
+13.03.2024 13:22:05.650 [main] INFO  o.r.h.c.r.RoomControllerTest - No active profile set, falling back to 1 default profile: "default"
+13.03.2024 13:22:08.950 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13.03.2024 13:22:09.268 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 293 ms. Found 6 JPA repository interfaces.
+13.03.2024 13:22:11.222 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+13.03.2024 13:22:11.462 [main] INFO  o.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+13.03.2024 13:22:11.616 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+13.03.2024 13:22:12.832 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+13.03.2024 13:22:12.928 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+13.03.2024 13:22:14.517 [main] INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./testDB user=ROOT
+13.03.2024 13:22:14.531 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+13.03.2024 13:22:14.625 [main] WARN  o.h.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+13.03.2024 13:22:16.947 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13.03.2024 13:22:16.954 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13.03.2024 13:22:20.921 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13.03.2024 13:22:21.146 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+13.03.2024 13:22:23.211 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+13.03.2024 13:22:23.211 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+13.03.2024 13:22:23.214 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+13.03.2024 13:22:23.285 [main] INFO  o.r.h.c.r.RoomControllerTest - Started RoomControllerTest in 19.476 seconds (process running for 23.578)
+13.03.2024 13:22:24.915 [main] WARN  o.h.e.j.s.SqlExceptionHelper - SQL Error: 90036, SQLState: 90036
+13.03.2024 13:22:24.915 [main] ERROR o.h.e.j.s.SqlExceptionHelper - Sequence "ROOM_SEQ" not found; SQL statement:
+select next value for room_seq [90036-224]
+13.03.2024 13:22:25.027 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+13.03.2024 13:22:25.030 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+13.03.2024 13:22:25.035 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+13.03.2024 13:29:14.665 [main] INFO  o.r.h.c.r.RoomControllerTest - Starting RoomControllerTest using Java 21.0.2 with PID 13192 (started by Tel-ran.de in C:\HotelProjectApp\HotelProject)
+13.03.2024 13:29:14.668 [main] INFO  o.r.h.c.r.RoomControllerTest - No active profile set, falling back to 1 default profile: "default"
+13.03.2024 13:29:15.417 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+13.03.2024 13:29:15.418 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+13.03.2024 13:29:15.724 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 306 ms
+13.03.2024 13:29:15.796 [main] INFO  o.r.h.c.r.RoomControllerTest - Started RoomControllerTest in 2.279 seconds (process running for 4.431)
+13.03.2024 13:29:15.830 [main] WARN  o.s.t.c.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] to prepare test instance [org.ruzmetov.hotelproject.controller.rest.RoomControllerTest@5460b754]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.ruzmetov.hotelproject.controller.rest.RoomControllerTest': Unsatisfied dependency expressed through field 'objectMapper': No qualifying bean of type 'com.fasterxml.jackson.databind.ObjectMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1418)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:397)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:142)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:97)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:378)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:290)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:279)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:278)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.fasterxml.jackson.databind.ObjectMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1880)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1406)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	... 76 common frames omitted
+13.03.2024 13:38:51.899 [main] INFO  o.r.h.c.r.RoomControllerTest - Starting RoomControllerTest using Java 21.0.2 with PID 7468 (started by Tel-ran.de in C:\HotelProjectApp\HotelProject)
+13.03.2024 13:38:51.904 [main] INFO  o.r.h.c.r.RoomControllerTest - No active profile set, falling back to 1 default profile: "default"
+13.03.2024 13:38:52.702 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+13.03.2024 13:38:52.703 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+13.03.2024 13:38:53.004 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 301 ms
+13.03.2024 13:38:53.093 [main] INFO  o.r.h.c.r.RoomControllerTest - Started RoomControllerTest in 2.339 seconds (process running for 4.824)
+13.03.2024 13:38:53.132 [main] WARN  o.s.t.c.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] to prepare test instance [org.ruzmetov.hotelproject.controller.rest.RoomControllerTest@625d9132]
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.ruzmetov.hotelproject.controller.rest.RoomControllerTest': Unsatisfied dependency expressed through field 'objectMapper': No qualifying bean of type 'com.fasterxml.jackson.databind.ObjectMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1418)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:397)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:142)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:97)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:378)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:290)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:279)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:278)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.fasterxml.jackson.databind.ObjectMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1880)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1406)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	... 76 common frames omitted
+13.03.2024 13:44:18.080 [main] INFO  o.r.h.c.r.RoomControllerTest - Starting RoomControllerTest using Java 21.0.2 with PID 14724 (started by Tel-ran.de in C:\HotelProjectApp\HotelProject)
+13.03.2024 13:44:18.083 [main] INFO  o.r.h.c.r.RoomControllerTest - No active profile set, falling back to 1 default profile: "default"
+13.03.2024 13:44:20.289 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13.03.2024 13:44:20.458 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 146 ms. Found 6 JPA repository interfaces.
+13.03.2024 13:44:22.159 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+13.03.2024 13:44:22.295 [main] INFO  o.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+13.03.2024 13:44:22.382 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+13.03.2024 13:44:23.095 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+13.03.2024 13:44:23.147 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+13.03.2024 13:44:23.662 [main] INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./testDB user=ROOT
+13.03.2024 13:44:23.666 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+13.03.2024 13:44:23.710 [main] WARN  o.h.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+13.03.2024 13:44:26.126 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13.03.2024 13:44:26.133 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13.03.2024 13:44:29.351 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13.03.2024 13:44:29.485 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+13.03.2024 13:44:31.056 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+13.03.2024 13:44:31.057 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+13.03.2024 13:44:31.060 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+13.03.2024 13:44:31.118 [main] INFO  o.r.h.c.r.RoomControllerTest - Started RoomControllerTest in 14.258 seconds (process running for 16.689)
+13.03.2024 13:44:32.508 [main] WARN  o.h.e.j.s.SqlExceptionHelper - SQL Error: 90036, SQLState: 90036
+13.03.2024 13:44:32.509 [main] ERROR o.h.e.j.s.SqlExceptionHelper - Sequence "ROOM_SEQ" not found; SQL statement:
+select next value for room_seq [90036-224]
+13.03.2024 13:44:32.588 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+13.03.2024 13:44:32.593 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+13.03.2024 13:44:32.597 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+13.03.2024 14:07:28.589 [main] INFO  o.r.h.c.r.ServiceControllerTest - Starting ServiceControllerTest using Java 21.0.2 with PID 18548 (started by Tel-ran.de in C:\HotelProjectApp\HotelProject)
+13.03.2024 14:07:28.593 [main] INFO  o.r.h.c.r.ServiceControllerTest - No active profile set, falling back to 1 default profile: "default"
+13.03.2024 14:07:30.406 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13.03.2024 14:07:30.580 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 154 ms. Found 6 JPA repository interfaces.
+13.03.2024 14:07:32.022 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+13.03.2024 14:07:32.284 [main] INFO  o.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+13.03.2024 14:07:32.376 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+13.03.2024 14:07:33.020 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+13.03.2024 14:07:33.086 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+13.03.2024 14:07:33.722 [main] INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./testDB user=ROOT
+13.03.2024 14:07:33.726 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+13.03.2024 14:07:33.786 [main] WARN  o.h.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+13.03.2024 14:07:35.638 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13.03.2024 14:07:35.645 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13.03.2024 14:07:39.052 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13.03.2024 14:07:39.159 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+13.03.2024 14:07:41.080 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+13.03.2024 14:07:41.081 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+13.03.2024 14:07:41.084 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+13.03.2024 14:07:41.146 [main] INFO  o.r.h.c.r.ServiceControllerTest - Started ServiceControllerTest in 13.594 seconds (process running for 16.036)
+13.03.2024 14:07:42.813 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+13.03.2024 14:07:42.819 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+13.03.2024 14:07:42.825 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+13.03.2024 14:08:47.310 [main] INFO  o.r.h.c.r.CustomerControllerTest - Starting CustomerControllerTest using Java 21.0.2 with PID 12172 (started by Tel-ran.de in C:\HotelProjectApp\HotelProject)
+13.03.2024 14:08:47.318 [main] INFO  o.r.h.c.r.CustomerControllerTest - No active profile set, falling back to 1 default profile: "default"
+13.03.2024 14:08:50.745 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13.03.2024 14:08:50.981 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 214 ms. Found 6 JPA repository interfaces.
+13.03.2024 14:08:53.361 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+13.03.2024 14:08:53.593 [main] INFO  o.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+13.03.2024 14:08:53.749 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+13.03.2024 14:08:55.161 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+13.03.2024 14:08:55.280 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+13.03.2024 14:08:57.222 [main] INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./testDB user=ROOT
+13.03.2024 14:08:57.231 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+13.03.2024 14:08:57.364 [main] WARN  o.h.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+13.03.2024 14:09:02.507 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13.03.2024 14:09:02.514 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13.03.2024 14:09:08.162 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13.03.2024 14:09:08.343 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+13.03.2024 14:09:11.089 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+13.03.2024 14:09:11.089 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+13.03.2024 14:09:11.092 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+13.03.2024 14:09:11.154 [main] INFO  o.r.h.c.r.CustomerControllerTest - Started CustomerControllerTest in 26.731 seconds (process running for 32.049)
+13.03.2024 14:09:13.415 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.ruzmetov.hotelproject.controller.rest.EventControllerTest]: EventControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13.03.2024 14:09:13.430 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.ruzmetov.hotelproject.HotelProjectApplication for test class org.ruzmetov.hotelproject.controller.rest.EventControllerTest
+13.03.2024 14:09:13.653 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.ruzmetov.hotelproject.controller.rest.PaymentControllerTest]: PaymentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13.03.2024 14:09:13.658 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.ruzmetov.hotelproject.HotelProjectApplication for test class org.ruzmetov.hotelproject.controller.rest.PaymentControllerTest
+13.03.2024 14:09:13.764 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.ruzmetov.hotelproject.controller.rest.ReservationControllerTest]: ReservationControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13.03.2024 14:09:13.774 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.ruzmetov.hotelproject.HotelProjectApplication for test class org.ruzmetov.hotelproject.controller.rest.ReservationControllerTest
+13.03.2024 14:09:13.963 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.ruzmetov.hotelproject.controller.rest.ServiceControllerTest]: ServiceControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13.03.2024 14:09:13.971 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.ruzmetov.hotelproject.HotelProjectApplication for test class org.ruzmetov.hotelproject.controller.rest.ServiceControllerTest
+13.03.2024 14:09:14.346 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+13.03.2024 14:09:14.351 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+13.03.2024 14:09:14.399 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+13.03.2024 15:26:11.103 [main] INFO  o.r.h.c.r.CustomerControllerTest - Starting CustomerControllerTest using Java 21.0.2 with PID 6232 (started by Tel-ran.de in C:\HotelProjectApp\HotelProject)
+13.03.2024 15:26:11.108 [main] INFO  o.r.h.c.r.CustomerControllerTest - No active profile set, falling back to 1 default profile: "default"
+13.03.2024 15:26:13.881 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13.03.2024 15:26:14.172 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 253 ms. Found 6 JPA repository interfaces.
+13.03.2024 15:26:16.345 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+13.03.2024 15:26:16.605 [main] INFO  o.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+13.03.2024 15:26:16.736 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+13.03.2024 15:26:17.669 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+13.03.2024 15:26:17.772 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+13.03.2024 15:26:18.984 [main] INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./testDB user=ROOT
+13.03.2024 15:26:18.990 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+13.03.2024 15:26:19.099 [main] WARN  o.h.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+13.03.2024 15:26:22.392 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13.03.2024 15:26:22.399 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13.03.2024 15:26:26.224 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13.03.2024 15:26:26.318 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+13.03.2024 15:26:28.326 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+13.03.2024 15:26:28.327 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+13.03.2024 15:26:28.331 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 3 ms
+13.03.2024 15:26:28.382 [main] INFO  o.r.h.c.r.CustomerControllerTest - Started CustomerControllerTest in 19.059 seconds (process running for 24.801)
+13.03.2024 15:26:30.308 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.ruzmetov.hotelproject.controller.rest.EventControllerTest]: EventControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13.03.2024 15:26:30.330 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.ruzmetov.hotelproject.HotelProjectApplication for test class org.ruzmetov.hotelproject.controller.rest.EventControllerTest
+13.03.2024 15:26:30.490 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.ruzmetov.hotelproject.controller.rest.PaymentControllerTest]: PaymentControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13.03.2024 15:26:30.500 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.ruzmetov.hotelproject.HotelProjectApplication for test class org.ruzmetov.hotelproject.controller.rest.PaymentControllerTest
+13.03.2024 15:26:30.683 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.ruzmetov.hotelproject.controller.rest.ReservationControllerTest]: ReservationControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13.03.2024 15:26:30.693 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.ruzmetov.hotelproject.HotelProjectApplication for test class org.ruzmetov.hotelproject.controller.rest.ReservationControllerTest
+13.03.2024 15:26:30.838 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.ruzmetov.hotelproject.controller.rest.ServiceControllerTest]: ServiceControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13.03.2024 15:26:30.852 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.ruzmetov.hotelproject.HotelProjectApplication for test class org.ruzmetov.hotelproject.controller.rest.ServiceControllerTest
+13.03.2024 15:26:31.089 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+13.03.2024 15:26:31.100 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+13.03.2024 15:26:31.107 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.

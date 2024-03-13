@@ -34,10 +34,10 @@
                 <constraints nullable="false"/>
             </column>
             <column name="room_check_in_date" type="date">
-                <constraints nullable="false"/>
+                <constraints nullable="true"/>
             </column>
             <column name="room_check_out_date" type="date">
-                <constraints nullable="false"/>
+                <constraints nullable="true"/>
             </column>
         </createTable>
     </changeSet>

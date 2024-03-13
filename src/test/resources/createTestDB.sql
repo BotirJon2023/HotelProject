@@ -5,8 +5,8 @@ CREATE TABLE IF NOT EXISTS room (
         room_availability BOOLEAN NOT NULL,
         room_floor INTEGER NOT NULL,
         room_breakfast_include BOOLEAN NOT NULL,
-        room_check_in_date DATE NOT NULL,
-        room_check_out_date DATE NOT NULL
+        room_check_in_date DATE NULL,
+        room_check_out_date DATE NULL
         );
 
 CREATE TABLE IF NOT EXISTS service (
