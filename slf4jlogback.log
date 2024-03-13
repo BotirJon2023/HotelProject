@@ -458,3 +458,26 @@
 13.03.2024 11:55:40.036 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 13.03.2024 11:55:40.040 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
 13.03.2024 11:55:40.046 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+13.03.2024 12:16:13.887 [main] INFO  o.r.h.c.r.PaymentControllerTest - Starting PaymentControllerTest using Java 21.0.2 with PID 8864 (started by Tel-ran.de in C:\HotelProjectApp\HotelProject)
+13.03.2024 12:16:13.893 [main] INFO  o.r.h.c.r.PaymentControllerTest - No active profile set, falling back to 1 default profile: "default"
+13.03.2024 12:16:16.920 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13.03.2024 12:16:17.230 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 272 ms. Found 6 JPA repository interfaces.
+13.03.2024 12:16:19.767 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+13.03.2024 12:16:20.014 [main] INFO  o.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+13.03.2024 12:16:20.209 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+13.03.2024 12:16:20.990 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+13.03.2024 12:16:21.069 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+13.03.2024 12:16:21.904 [main] INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./testDB user=ROOT
+13.03.2024 12:16:21.909 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+13.03.2024 12:16:21.972 [main] WARN  o.h.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+13.03.2024 12:16:24.579 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13.03.2024 12:16:24.586 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13.03.2024 12:16:30.196 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13.03.2024 12:16:30.357 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+13.03.2024 12:16:33.002 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+13.03.2024 12:16:33.003 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+13.03.2024 12:16:33.006 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+13.03.2024 12:16:33.103 [main] INFO  o.r.h.c.r.PaymentControllerTest - Started PaymentControllerTest in 20.775 seconds (process running for 24.109)
+13.03.2024 12:16:35.600 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+13.03.2024 12:16:35.605 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+13.03.2024 12:16:35.619 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
