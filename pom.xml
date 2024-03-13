@@ -153,6 +153,54 @@
                     </excludes>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.11</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.jacoco</groupId>
+                        <artifactId>org.jacoco.agent</artifactId>
+                        <version>0.8.11</version>
+                        <scope>compile</scope>
+                    </dependency>
+                </dependencies>
+                <configuration>
+
+                    <outputDirectory>
+                        ${project.basedir}/target/site/jacoco
+                    </outputDirectory>
+
+                    <excludes>
+                        <exclude>org/ruzmetov/hotelproject/aspect/*</exclude>
+                        <exclude>org/ruzmetov/hotelproject/dto/*</exclude>
+                        <exclude>org/ruzmetov/hotelproject/exceptions/*</exclude>
+                        <exclude>org/ruzmetov/hotelproject/mapper/*</exclude>
+                        <exclude>org/ruzmetov/hotelproject/entity/*</exclude>
+                        <exclude>org/ruzmetov/hotelproject/HotelProjectApplication.class/*</exclude>
+                    </excludes>
+
+                </configuration>
+
+                <executions>
+                    <execution>
+                        <id>jacoco-initialize</id>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>jacoco-site</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
+            </plugin>
+
         </plugins>
     </build>
     <repositories>

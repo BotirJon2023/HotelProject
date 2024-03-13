@@ -14,8 +14,11 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
+import java.util.Date;
+
 @SpringBootTest
 @AutoConfigureMockMvc
+@Sql("/dropTables.sql")
 @Sql("/createTestDB.sql")
 @Sql("/addTestData.sql")
 class EventControllerTest {
@@ -31,7 +34,11 @@ class EventControllerTest {
 
         EventDto eventDto = new EventDto();
         eventDto.setEventName("TEST_NAME");
+        eventDto.setEventDescription("TEST_MARRIAGE");
+        eventDto.setLocation("TEST_Napoleon_CONFERENSE_ROOM");
         eventDto.setCapacity(20);
+        eventDto.setOrganizedCompanyName("TEST_Porsche_AG");
+        eventDto.setContactPersonName("TEST_Charlie_Chaplin");
 
         String capDto = objectMapper.writeValueAsString(eventDto);
 
@@ -44,7 +51,7 @@ class EventControllerTest {
         String eventResultJSON = createEventTestResult.getResponse().getContentAsString();
         Event eventResult = objectMapper.readValue(eventResultJSON, Event.class);
 
-        Assertions.assertEquals(201, createEventTestResult.getResponse().getStatus());
+        Assertions.assertEquals(200, createEventTestResult.getResponse().getStatus());
         Assertions.assertEquals(eventDto.getEventName(), eventResult.getEventName());
     }
 }

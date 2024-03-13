@@ -110,13 +110,13 @@
                 <constraints nullable="true"/>
             </column>
             <column name="event_date" type="date">
-                <constraints nullable="false"/>
+                <constraints nullable="true"/>
             </column>
             <column name="event_time_beginning" type="timestamp">
-                <constraints nullable="false"/>
+                <constraints nullable="true"/>
             </column>
             <column name="event_time_end" type="timestamp">
-                <constraints nullable="false"/>
+                <constraints nullable="true"/>
             </column>
             <column name="event_location" type="varchar(255)">
                 <constraints nullable="true"/>
