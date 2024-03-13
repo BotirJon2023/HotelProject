@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS customer (
        customer_address VARCHAR(255),
        customer_loyality_point VARCHAR(50),
        customer_credit_card_number VARCHAR(50),
-       customer_credit_card_expiring_date DATE
+       customer_credit_card_expiring_date DATE NULL
        );
 
 CREATE TABLE IF NOT EXISTS payment (

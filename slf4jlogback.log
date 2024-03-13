@@ -240,3 +240,221 @@
 13.03.2024 10:54:31.526 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 13.03.2024 10:54:31.531 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
 13.03.2024 10:54:31.632 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+13.03.2024 11:38:15.654 [restartedMain] INFO  o.r.h.HotelProjectApplication - Starting HotelProjectApplication using Java 21.0.2 with PID 2552 (C:\HotelProjectApp\HotelProject\target\classes started by Tel-ran.de in C:\HotelProjectApp\HotelProject)
+13.03.2024 11:38:15.660 [restartedMain] INFO  o.r.h.HotelProjectApplication - No active profile set, falling back to 1 default profile: "default"
+13.03.2024 11:38:15.799 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13.03.2024 11:38:15.800 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13.03.2024 11:38:17.719 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13.03.2024 11:38:17.882 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 146 ms. Found 6 JPA repository interfaces.
+13.03.2024 11:38:19.518 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http)
+13.03.2024 11:38:19.540 [restartedMain] INFO  o.a.c.c.StandardService - Starting service [Tomcat]
+13.03.2024 11:38:19.542 [restartedMain] INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+13.03.2024 11:38:19.646 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+13.03.2024 11:38:19.646 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3845 ms
+13.03.2024 11:38:20.010 [restartedMain] INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+13.03.2024 11:38:20.836 [restartedMain] INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5e3fdd7a
+13.03.2024 11:38:20.841 [restartedMain] INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+13.03.2024 11:38:21.611 [restartedMain] INFO  l.lockservice - Successfully acquired change log lock
+13.03.2024 11:38:21.625 [restartedMain] INFO  liquibase.command - Dropping Database Objects in schema: 300523_m_be_hotel.300523_m_be_hotel
+13.03.2024 11:38:22.826 [restartedMain] INFO  liquibase.database - Successfully deleted all supported object types in schema 300523_m_be_hotel.300523_m_be_hotel.
+13.03.2024 11:38:22.884 [restartedMain] WARN  l.lockservice - Failed to release change log lock
+13.03.2024 11:38:22.888 [restartedMain] INFO  liquibase.ui - All objects dropped from root@localhost@jdbc:mysql://localhost:3306/300523_m_be_hotel
+13.03.2024 11:38:22.889 [restartedMain] INFO  liquibase.command - Command execution complete
+13.03.2024 11:38:23.722 [restartedMain] INFO  liquibase.changelog - Creating database history table with name: `300523_m_be_hotel`.databasechangelog
+13.03.2024 11:38:23.785 [restartedMain] INFO  liquibase.changelog - Reading from `300523_m_be_hotel`.databasechangelog
+13.03.2024 11:38:23.957 [restartedMain] WARN  liquibase.changelog - liquibase.statement.core.CreateSequenceStatement is not supported on mysql, but createSequence will still execute
+13.03.2024 11:38:24.006 [restartedMain] WARN  liquibase.changelog - liquibase.statement.core.CreateSequenceStatement is not supported on mysql, but createSequence will still execute
+13.03.2024 11:38:24.029 [restartedMain] INFO  l.lockservice - Successfully acquired change log lock
+13.03.2024 11:38:24.030 [restartedMain] INFO  liquibase.command - Using deploymentId: 0326304030
+13.03.2024 11:38:24.034 [restartedMain] INFO  liquibase.changelog - Reading from `300523_m_be_hotel`.databasechangelog
+13.03.2024 11:38:24.156 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop reservation table::b.ruzmetov
+13.03.2024 11:38:24.190 [restartedMain] INFO  liquibase.changelog - Marking ChangeSet: "db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop reservation table::b.ruzmetov" as ran despite precondition failure due to onFail='MARK_RAN': 
+          db/changelog/changelog-master.xml : Table `300523_m_be_hotel`.reservation does not exist
+
+13.03.2024 11:38:24.206 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop payment table::b.ruzmetov
+13.03.2024 11:38:24.238 [restartedMain] INFO  liquibase.changelog - Marking ChangeSet: "db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop payment table::b.ruzmetov" as ran despite precondition failure due to onFail='MARK_RAN': 
+          db/changelog/changelog-master.xml : Table `300523_m_be_hotel`.payment does not exist
+
+13.03.2024 11:38:24.248 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop service table::b.ruzmetov
+13.03.2024 11:38:24.282 [restartedMain] INFO  liquibase.changelog - Marking ChangeSet: "db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop service table::b.ruzmetov" as ran despite precondition failure due to onFail='MARK_RAN': 
+          db/changelog/changelog-master.xml : Table `300523_m_be_hotel`.service does not exist
+
+13.03.2024 11:38:24.292 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop room table::b.ruzmetov
+13.03.2024 11:38:24.316 [restartedMain] INFO  liquibase.changelog - Marking ChangeSet: "db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop room table::b.ruzmetov" as ran despite precondition failure due to onFail='MARK_RAN': 
+          db/changelog/changelog-master.xml : Table `300523_m_be_hotel`.room does not exist
+
+13.03.2024 11:38:24.322 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop event table::b.ruzmetov
+13.03.2024 11:38:24.343 [restartedMain] INFO  liquibase.changelog - Marking ChangeSet: "db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop event table::b.ruzmetov" as ran despite precondition failure due to onFail='MARK_RAN': 
+          db/changelog/changelog-master.xml : Table `300523_m_be_hotel`.event does not exist
+
+13.03.2024 11:38:24.349 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop customer table::b.ruzmetov
+13.03.2024 11:38:24.366 [restartedMain] INFO  liquibase.changelog - Marking ChangeSet: "db/changelog/changes/v0.0.1-SNAPSHOT/drop-tables-changelog.xml::drop customer table::b.ruzmetov" as ran despite precondition failure due to onFail='MARK_RAN': 
+          db/changelog/changelog-master.xml : Table `300523_m_be_hotel`.customer does not exist
+
+13.03.2024 11:38:24.375 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create room table::b.ruzmetov
+13.03.2024 11:38:24.446 [restartedMain] INFO  liquibase.changelog - Table room created
+13.03.2024 11:38:24.448 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create room table::b.ruzmetov ran successfully in 72ms
+13.03.2024 11:38:24.463 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create service table::b.ruzmetov
+13.03.2024 11:38:24.536 [restartedMain] INFO  liquibase.changelog - Table service created
+13.03.2024 11:38:24.537 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create service table::b.ruzmetov ran successfully in 74ms
+13.03.2024 11:38:24.570 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create event table::b.ruzmetov
+13.03.2024 11:38:24.654 [restartedMain] INFO  liquibase.changelog - Table event created
+13.03.2024 11:38:24.657 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create event table::b.ruzmetov ran successfully in 84ms
+13.03.2024 11:38:24.675 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create customer table::b.ruzmetov
+13.03.2024 11:38:24.779 [restartedMain] INFO  liquibase.changelog - Table customer created
+13.03.2024 11:38:24.780 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create customer table::b.ruzmetov ran successfully in 105ms
+13.03.2024 11:38:24.796 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create payment table::b.ruzmetov
+13.03.2024 11:38:24.886 [restartedMain] INFO  liquibase.changelog - Table payment created
+13.03.2024 11:38:24.888 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create payment table::b.ruzmetov ran successfully in 91ms
+13.03.2024 11:38:24.903 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create reservation table::b.ruzmetov
+13.03.2024 11:38:25.035 [restartedMain] INFO  liquibase.changelog - Table reservation created
+13.03.2024 11:38:25.036 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/create-tables-changelog.xml::create reservation table::b.ruzmetov ran successfully in 131ms
+13.03.2024 11:38:25.047 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/create-sequence.xml::create sequence for UUID generator::b.ruzmetov
+13.03.2024 11:38:25.050 [restartedMain] INFO  liquibase.changelog - Sequence seq_for_uuid_generator created
+13.03.2024 11:38:25.051 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/create-sequence.xml::create sequence for UUID generator::b.ruzmetov ran successfully in 4ms
+13.03.2024 11:38:25.066 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into service table::b.ruzmetov
+13.03.2024 11:38:25.082 [restartedMain] INFO  liquibase.changelog - New row inserted into service
+13.03.2024 11:38:25.087 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into service table::b.ruzmetov ran successfully in 20ms
+13.03.2024 11:38:25.101 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into room table::b.ruzmetov
+13.03.2024 11:38:25.122 [restartedMain] INFO  liquibase.changelog - New row inserted into room
+13.03.2024 11:38:25.127 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into room table::b.ruzmetov ran successfully in 22ms
+13.03.2024 11:38:25.147 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into event table::b.ruzmetov
+13.03.2024 11:38:25.159 [restartedMain] INFO  liquibase.changelog - New row inserted into event
+13.03.2024 11:38:25.167 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into event table::b.ruzmetov ran successfully in 20ms
+13.03.2024 11:38:25.195 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into customer table::b.ruzmetov
+13.03.2024 11:38:25.218 [restartedMain] INFO  liquibase.changelog - New row inserted into customer
+13.03.2024 11:38:25.223 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into customer table::b.ruzmetov ran successfully in 23ms
+13.03.2024 11:38:25.238 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into payment table::b.ruzmetov
+13.03.2024 11:38:25.253 [restartedMain] INFO  liquibase.changelog - New row inserted into payment
+13.03.2024 11:38:25.257 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into payment table::b.ruzmetov ran successfully in 18ms
+13.03.2024 11:38:25.273 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into reservation table::b.ruzmetov
+13.03.2024 11:38:25.292 [restartedMain] INFO  liquibase.changelog - New row inserted into reservation
+13.03.2024 11:38:25.297 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_1.xml::insert test data into reservation table::b.ruzmetov ran successfully in 24ms
+13.03.2024 11:38:25.316 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into service table::b.ruzmetov
+13.03.2024 11:38:25.325 [restartedMain] INFO  liquibase.changelog - New row inserted into service
+13.03.2024 11:38:25.332 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into service table::b.ruzmetov ran successfully in 15ms
+13.03.2024 11:38:25.349 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into room table::b.ruzmetov
+13.03.2024 11:38:25.357 [restartedMain] INFO  liquibase.changelog - New row inserted into room
+13.03.2024 11:38:25.365 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into room table::b.ruzmetov ran successfully in 14ms
+13.03.2024 11:38:25.407 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into event table::b.ruzmetov
+13.03.2024 11:38:25.417 [restartedMain] INFO  liquibase.changelog - New row inserted into event
+13.03.2024 11:38:25.427 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into event table::b.ruzmetov ran successfully in 19ms
+13.03.2024 11:38:25.439 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into customer table::b.ruzmetov
+13.03.2024 11:38:25.493 [restartedMain] INFO  liquibase.changelog - New row inserted into customer
+13.03.2024 11:38:25.497 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into customer table::b.ruzmetov ran successfully in 53ms
+13.03.2024 11:38:25.515 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into payment table::b.ruzmetov
+13.03.2024 11:38:25.525 [restartedMain] INFO  liquibase.changelog - New row inserted into payment
+13.03.2024 11:38:25.536 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into payment table::b.ruzmetov ran successfully in 21ms
+13.03.2024 11:38:25.552 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into reservation table::b.ruzmetov
+13.03.2024 11:38:25.564 [restartedMain] INFO  liquibase.changelog - New row inserted into reservation
+13.03.2024 11:38:25.572 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_2.xml::insert test data into reservation table::b.ruzmetov ran successfully in 19ms
+13.03.2024 11:38:25.594 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into service table::b.ruzmetov
+13.03.2024 11:38:25.604 [restartedMain] INFO  liquibase.changelog - New row inserted into service
+13.03.2024 11:38:25.609 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into service table::b.ruzmetov ran successfully in 13ms
+13.03.2024 11:38:25.673 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into room table::b.ruzmetov
+13.03.2024 11:38:25.679 [restartedMain] INFO  liquibase.changelog - New row inserted into room
+13.03.2024 11:38:25.688 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into room table::b.ruzmetov ran successfully in 15ms
+13.03.2024 11:38:25.703 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into event table::b.ruzmetov
+13.03.2024 11:38:25.714 [restartedMain] INFO  liquibase.changelog - New row inserted into event
+13.03.2024 11:38:25.719 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into event table::b.ruzmetov ran successfully in 14ms
+13.03.2024 11:38:25.732 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into customer table::b.ruzmetov
+13.03.2024 11:38:25.739 [restartedMain] INFO  liquibase.changelog - New row inserted into customer
+13.03.2024 11:38:25.744 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into customer table::b.ruzmetov ran successfully in 11ms
+13.03.2024 11:38:25.759 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into payment table::b.ruzmetov
+13.03.2024 11:38:25.768 [restartedMain] INFO  liquibase.changelog - New row inserted into payment
+13.03.2024 11:38:25.772 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into payment table::b.ruzmetov ran successfully in 11ms
+13.03.2024 11:38:25.782 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into reservation table::b.ruzmetov
+13.03.2024 11:38:25.791 [restartedMain] INFO  liquibase.changelog - New row inserted into reservation
+13.03.2024 11:38:25.797 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_3.xml::insert test data into reservation table::b.ruzmetov ran successfully in 14ms
+13.03.2024 11:38:25.808 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into service table::b.ruzmetov
+13.03.2024 11:38:25.819 [restartedMain] INFO  liquibase.changelog - New row inserted into service
+13.03.2024 11:38:25.824 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into service table::b.ruzmetov ran successfully in 13ms
+13.03.2024 11:38:25.838 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into room table::b.ruzmetov
+13.03.2024 11:38:25.846 [restartedMain] INFO  liquibase.changelog - New row inserted into room
+13.03.2024 11:38:25.849 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into room table::b.ruzmetov ran successfully in 11ms
+13.03.2024 11:38:25.863 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into event table::b.ruzmetov
+13.03.2024 11:38:25.869 [restartedMain] INFO  liquibase.changelog - New row inserted into event
+13.03.2024 11:38:25.871 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into event table::b.ruzmetov ran successfully in 8ms
+13.03.2024 11:38:25.882 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into customer table::b.ruzmetov
+13.03.2024 11:38:25.890 [restartedMain] INFO  liquibase.changelog - New row inserted into customer
+13.03.2024 11:38:25.893 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into customer table::b.ruzmetov ran successfully in 10ms
+13.03.2024 11:38:25.900 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into payment table::b.ruzmetov
+13.03.2024 11:38:25.906 [restartedMain] INFO  liquibase.changelog - New row inserted into payment
+13.03.2024 11:38:25.909 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into payment table::b.ruzmetov ran successfully in 8ms
+13.03.2024 11:38:25.917 [restartedMain] INFO  liquibase.ui - Running Changeset: db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into reservation table::b.ruzmetov
+13.03.2024 11:38:25.928 [restartedMain] INFO  liquibase.changelog - New row inserted into reservation
+13.03.2024 11:38:25.934 [restartedMain] INFO  liquibase.changelog - ChangeSet db/changelog/changes/v0.0.1-SNAPSHOT/insert_test_data_changelog_4.xml::insert test data into reservation table::b.ruzmetov ran successfully in 16ms
+13.03.2024 11:38:25.958 [restartedMain] INFO  liquibase.util - UPDATE SUMMARY
+13.03.2024 11:38:25.958 [restartedMain] INFO  liquibase.util - Run:                         37
+13.03.2024 11:38:25.958 [restartedMain] INFO  liquibase.util - Previously run:               0
+13.03.2024 11:38:25.958 [restartedMain] INFO  liquibase.util - Filtered out:                 0
+13.03.2024 11:38:25.959 [restartedMain] INFO  liquibase.util - -------------------------------
+13.03.2024 11:38:25.959 [restartedMain] INFO  liquibase.util - Total change sets:           37
+13.03.2024 11:38:25.962 [restartedMain] INFO  liquibase.util - Update summary generated
+13.03.2024 11:38:25.972 [restartedMain] INFO  liquibase.command - Update command completed successfully.
+13.03.2024 11:38:25.973 [restartedMain] INFO  liquibase.ui - Liquibase: Update has been successful. Rows affected: 61
+13.03.2024 11:38:25.982 [restartedMain] INFO  l.lockservice - Successfully released change log lock
+13.03.2024 11:38:25.983 [restartedMain] INFO  liquibase.command - Command execution complete
+13.03.2024 11:38:26.396 [restartedMain] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+13.03.2024 11:38:26.553 [restartedMain] INFO  o.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+13.03.2024 11:38:26.683 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+13.03.2024 11:38:27.387 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+13.03.2024 11:38:27.505 [restartedMain] WARN  o.h.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+13.03.2024 11:38:29.765 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13.03.2024 11:38:29.774 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13.03.2024 11:38:32.628 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13.03.2024 11:38:32.734 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+13.03.2024 11:38:34.536 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+13.03.2024 11:38:34.617 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+13.03.2024 11:38:34.636 [restartedMain] INFO  o.r.h.HotelProjectApplication - Started HotelProjectApplication in 20.434 seconds (process running for 22.415)
+13.03.2024 11:39:45.108 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+13.03.2024 11:39:45.112 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+13.03.2024 11:39:45.127 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+13.03.2024 11:53:43.937 [main] INFO  o.r.h.c.r.CustomerControllerTest - Starting CustomerControllerTest using Java 21.0.2 with PID 3976 (started by Tel-ran.de in C:\HotelProjectApp\HotelProject)
+13.03.2024 11:53:43.944 [main] INFO  o.r.h.c.r.CustomerControllerTest - No active profile set, falling back to 1 default profile: "default"
+13.03.2024 11:53:46.476 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13.03.2024 11:53:46.710 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 211 ms. Found 6 JPA repository interfaces.
+13.03.2024 11:53:48.950 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+13.03.2024 11:53:49.183 [main] INFO  o.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+13.03.2024 11:53:49.319 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+13.03.2024 11:53:50.266 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+13.03.2024 11:53:50.361 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+13.03.2024 11:53:51.199 [main] INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./testDB user=ROOT
+13.03.2024 11:53:51.205 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+13.03.2024 11:53:51.265 [main] WARN  o.h.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+13.03.2024 11:53:53.632 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13.03.2024 11:53:53.637 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13.03.2024 11:53:58.913 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13.03.2024 11:53:59.027 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+13.03.2024 11:54:01.621 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+13.03.2024 11:54:01.622 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+13.03.2024 11:54:01.626 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+13.03.2024 11:54:01.714 [main] INFO  o.r.h.c.r.CustomerControllerTest - Started CustomerControllerTest in 19.145 seconds (process running for 23.671)
+13.03.2024 11:54:04.074 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+13.03.2024 11:54:04.078 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+13.03.2024 11:54:04.088 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+13.03.2024 11:55:06.136 [main] INFO  o.r.h.c.r.CustomerControllerTest - Starting CustomerControllerTest using Java 21.0.2 with PID 8236 (started by Tel-ran.de in C:\HotelProjectApp\HotelProject)
+13.03.2024 11:55:06.156 [main] INFO  o.r.h.c.r.CustomerControllerTest - No active profile set, falling back to 1 default profile: "default"
+13.03.2024 11:55:11.538 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13.03.2024 11:55:11.799 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 230 ms. Found 6 JPA repository interfaces.
+13.03.2024 11:55:15.702 [main] INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+13.03.2024 11:55:16.024 [main] INFO  o.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+13.03.2024 11:55:16.354 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+13.03.2024 11:55:17.970 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+13.03.2024 11:55:18.074 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting...
+13.03.2024 11:55:20.316 [main] INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./testDB user=ROOT
+13.03.2024 11:55:20.329 [main] INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+13.03.2024 11:55:20.514 [main] WARN  o.h.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+13.03.2024 11:55:26.461 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13.03.2024 11:55:26.469 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13.03.2024 11:55:33.846 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13.03.2024 11:55:33.984 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+13.03.2024 11:55:36.938 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+13.03.2024 11:55:36.938 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+13.03.2024 11:55:36.940 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+13.03.2024 11:55:37.013 [main] INFO  o.r.h.c.r.CustomerControllerTest - Started CustomerControllerTest in 34.169 seconds (process running for 43.133)
+13.03.2024 11:55:39.258 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.ruzmetov.hotelproject.controller.rest.EventControllerTest]: EventControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13.03.2024 11:55:39.275 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.ruzmetov.hotelproject.HotelProjectApplication for test class org.ruzmetov.hotelproject.controller.rest.EventControllerTest
+13.03.2024 11:55:40.036 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+13.03.2024 11:55:40.040 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+13.03.2024 11:55:40.046 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
