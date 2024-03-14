@@ -22,11 +22,11 @@ public class RoomController {
         return roomService.getRoomById(id);
     }
 
-    @PostMapping("/createOneRoom")  // http://localhost:8080/room/createOneRoom
-    @ResponseBody
-    public Room postCreateRoom(@RequestBody Room room) {
-        return roomService.createRoom(room);
-    }
+//    @PostMapping("/createOneRoom")  // http://localhost:8080/room/createOneRoom
+//    @ResponseBody
+//    public Room postCreateRoom(@RequestBody Room room) {
+//        return roomService.createRoom(room);
+//    }
 
     @PutMapping("/updateOneRoom/{id}")
     // http://localhost:8080/room/updateOneRoom/101

@@ -47,6 +47,7 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     @Transactional(isolation = Isolation.SERIALIZABLE)
     public Customer createCustomer(Customer customer) {
+
         return customerRepository.save(customer);
     }
 

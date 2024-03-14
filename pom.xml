@@ -175,9 +175,15 @@
                     <excludes>
                         <exclude>org/ruzmetov/hotelproject/aspect/*</exclude>
                         <exclude>org/ruzmetov/hotelproject/dto/*</exclude>
-                        <exclude>org/ruzmetov/hotelproject/exceptions/*</exclude>
+                        <exclude>org/ruzmetov/hotelproject/exception/errorMessages/*</exclude>
+                        <exclude>org/ruzmetov/hotelproject/exception/*</exclude>
+                        <exclude>org/ruzmetov/hotelproject/controller/exception_handler/*</exclude>
                         <exclude>org/ruzmetov/hotelproject/mapper/*</exclude>
                         <exclude>org/ruzmetov/hotelproject/entity/*</exclude>
+                        <exclude>org/ruzmetov/hotelproject/repository/*</exclude>
+                        <exclude>org/ruzmetov/hotelproject/service/impl/*</exclude>
+                        <exclude>org/ruzmetov/hotelproject/config/*</exclude>
+                        <exclude>org/ruzmetov/hotelproject/validation/*</exclude>
                         <exclude>org/ruzmetov/hotelproject/HotelProjectApplication.class/*</exclude>
                     </excludes>
 
@@ -197,6 +203,34 @@
                             <goal>report</goal>
                         </goals>
                     </execution>
+
+                    <execution>
+                        <id>jacoco-check</id>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <rule>
+                                    <element>BUNDLE</element>
+                                    <limits>
+                                        <limit>
+                                            <counter>INSTRUCTION</counter>
+                                            <value>COVEREDRATIO</value>
+                                            <minimum>0.10</minimum>
+                                        </limit>
+                                        <limit>
+                                            <counter>CLASS</counter>
+                                            <value>MISSEDCOUNT</value>
+                                            <maximum>0</maximum>
+                                        </limit>
+                                    </limits>
+                                </rule>
+                            </rules>
+                        </configuration>
+
+                    </execution>
+
                 </executions>
 
             </plugin>
