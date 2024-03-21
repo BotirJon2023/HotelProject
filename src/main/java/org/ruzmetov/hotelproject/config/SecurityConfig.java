@@ -1,6 +1,7 @@
 package org.ruzmetov.hotelproject.config;
 
 import lombok.RequiredArgsConstructor;
+import org.ruzmetov.hotelproject.security.AuthTokenFilter;
 import org.ruzmetov.hotelproject.security.UserDetailsServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -15,11 +16,14 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Configuration
 @EnableWebSecurity
 @RequiredArgsConstructor
 public class SecurityConfig {
+
+    private final AuthTokenFilter authTokenFilter;
 
     private final UserDetailsServiceImpl userDetailsService;
 
@@ -47,6 +51,7 @@ public class SecurityConfig {
                                 .requestMatchers("/read_secret").hasAnyAuthority("READ_SECRET"))
                 .formLogin(Customizer.withDefaults())
                 .logout(logoutPage -> logoutPage.logoutSuccessUrl("/"))
+                .addFilterBefore(authTokenFilter, UsernamePasswordAuthenticationFilter.class)
                 .build();
     }
 
