@@ -49,6 +49,7 @@ public class SecurityConfig {
                                 .requestMatchers("/page_for_admins").hasRole("ADMIN")
                                 .requestMatchers("/page_for_users").hasRole("USER")
                                 .requestMatchers("/read_secret").hasAnyAuthority("READ_SECRET"))
+                .httpBasic(Customizer.withDefaults())
                 .formLogin(Customizer.withDefaults())
                 .logout(logoutPage -> logoutPage.logoutSuccessUrl("/"))
                 .addFilterBefore(authTokenFilter, UsernamePasswordAuthenticationFilter.class)

@@ -1,5 +1,6 @@
 package org.ruzmetov.hotelproject.security;
 
+import io.jsonwebtoken.Header;
 import io.micrometer.common.lang.NonNull;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -49,6 +50,7 @@ public class AuthTokenFilter extends OncePerRequestFilter {
 
     private String parseJwt(HttpServletRequest request) {
         String header = request.getHeader("cookie");
+        System.out.println(header);
         if (header.startsWith(BEARER)) {
             int index = header.contains(";") ? header.indexOf(";") : header.length();
             return header.substring(BEARER.length(), index);
