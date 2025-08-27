@@ -1,0 +1,840 @@
+{
+  "rooms": [
+    {
+      "id": 1,
+      "number": "001",
+      "category": "Standard",
+      "price": 120,
+      "maxGuests": 2,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom"
+      ],
+      "available": true
+    },
+    {
+      "id": 2,
+      "number": "002",
+      "category": "Standard",
+      "price": 120,
+      "maxGuests": 2,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom"
+      ],
+      "available": true
+    },
+    {
+      "id": 3,
+      "number": "003",
+      "category": "Standard",
+      "price": 120,
+      "maxGuests": 2,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom"
+      ],
+      "available": true
+    },
+    {
+      "id": 4,
+      "number": "004",
+      "category": "Standard",
+      "price": 120,
+      "maxGuests": 2,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom"
+      ],
+      "available": true
+    },
+    {
+      "id": 5,
+      "number": "005",
+      "category": "Standard",
+      "price": 120,
+      "maxGuests": 2,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom"
+      ],
+      "available": true
+    },
+    {
+      "id": 6,
+      "number": "006",
+      "category": "Standard",
+      "price": 120,
+      "maxGuests": 2,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom"
+      ],
+      "available": true
+    },
+    {
+      "id": 7,
+      "number": "007",
+      "category": "Standard",
+      "price": 120,
+      "maxGuests": 2,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom"
+      ],
+      "available": true
+    },
+    {
+      "id": 8,
+      "number": "008",
+      "category": "Standard",
+      "price": 120,
+      "maxGuests": 2,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom"
+      ],
+      "available": true
+    },
+    {
+      "id": 9,
+      "number": "009",
+      "category": "Standard",
+      "price": 120,
+      "maxGuests": 2,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom"
+      ],
+      "available": true
+    },
+    {
+      "id": 10,
+      "number": "010",
+      "category": "Standard",
+      "price": 120,
+      "maxGuests": 2,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom"
+      ],
+      "available": true
+    },
+    {
+      "id": 11,
+      "number": "011",
+      "category": "Standard",
+      "price": 120,
+      "maxGuests": 2,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom"
+      ],
+      "available": true
+    },
+    {
+      "id": 12,
+      "number": "012",
+      "category": "Standard",
+      "price": 120,
+      "maxGuests": 2,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom"
+      ],
+      "available": true
+    },
+    {
+      "id": 13,
+      "number": "013",
+      "category": "Standard",
+      "price": 120,
+      "maxGuests": 2,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom"
+      ],
+      "available": true
+    },
+    {
+      "id": 14,
+      "number": "014",
+      "category": "Standard",
+      "price": 120,
+      "maxGuests": 2,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom"
+      ],
+      "available": true
+    },
+    {
+      "id": 15,
+      "number": "015",
+      "category": "Standard",
+      "price": 120,
+      "maxGuests": 2,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom"
+      ],
+      "available": true
+    },
+    {
+      "id": 16,
+      "number": "016",
+      "category": "Standard",
+      "price": 120,
+      "maxGuests": 2,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom"
+      ],
+      "available": true
+    },
+    {
+      "id": 17,
+      "number": "017",
+      "category": "Standard",
+      "price": 120,
+      "maxGuests": 2,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom"
+      ],
+      "available": true
+    },
+    {
+      "id": 18,
+      "number": "018",
+      "category": "Standard",
+      "price": 120,
+      "maxGuests": 2,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom"
+      ],
+      "available": true
+    },
+    {
+      "id": 19,
+      "number": "019",
+      "category": "Standard",
+      "price": 120,
+      "maxGuests": 2,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom"
+      ],
+      "available": true
+    },
+    {
+      "id": 20,
+      "number": "020",
+      "category": "Standard",
+      "price": 120,
+      "maxGuests": 2,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom"
+      ],
+      "available": true
+    },
+    {
+      "id": 21,
+      "number": "021",
+      "category": "Deluxe",
+      "price": 180,
+      "maxGuests": 3,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom",
+        "Mini Bar",
+        "City View",
+        "Room Service"
+      ],
+      "available": true
+    },
+    {
+      "id": 22,
+      "number": "022",
+      "category": "Deluxe",
+      "price": 180,
+      "maxGuests": 3,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom",
+        "Mini Bar",
+        "City View",
+        "Room Service"
+      ],
+      "available": true
+    },
+    {
+      "id": 23,
+      "number": "023",
+      "category": "Deluxe",
+      "price": 180,
+      "maxGuests": 3,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom",
+        "Mini Bar",
+        "City View",
+        "Room Service"
+      ],
+      "available": true
+    },
+    {
+      "id": 24,
+      "number": "024",
+      "category": "Deluxe",
+      "price": 180,
+      "maxGuests": 3,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom",
+        "Mini Bar",
+        "City View",
+        "Room Service"
+      ],
+      "available": true
+    },
+    {
+      "id": 25,
+      "number": "025",
+      "category": "Deluxe",
+      "price": 180,
+      "maxGuests": 3,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom",
+        "Mini Bar",
+        "City View",
+        "Room Service"
+      ],
+      "available": true
+    },
+    {
+      "id": 26,
+      "number": "026",
+      "category": "Deluxe",
+      "price": 180,
+      "maxGuests": 3,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom",
+        "Mini Bar",
+        "City View",
+        "Room Service"
+      ],
+      "available": true
+    },
+    {
+      "id": 27,
+      "number": "027",
+      "category": "Deluxe",
+      "price": 180,
+      "maxGuests": 3,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom",
+        "Mini Bar",
+        "City View",
+        "Room Service"
+      ],
+      "available": true
+    },
+    {
+      "id": 28,
+      "number": "028",
+      "category": "Deluxe",
+      "price": 180,
+      "maxGuests": 3,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom",
+        "Mini Bar",
+        "City View",
+        "Room Service"
+      ],
+      "available": true
+    },
+    {
+      "id": 29,
+      "number": "029",
+      "category": "Deluxe",
+      "price": 180,
+      "maxGuests": 3,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom",
+        "Mini Bar",
+        "City View",
+        "Room Service"
+      ],
+      "available": true
+    },
+    {
+      "id": 30,
+      "number": "030",
+      "category": "Deluxe",
+      "price": 180,
+      "maxGuests": 3,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom",
+        "Mini Bar",
+        "City View",
+        "Room Service"
+      ],
+      "available": true
+    },
+    {
+      "id": 31,
+      "number": "031",
+      "category": "Deluxe",
+      "price": 180,
+      "maxGuests": 3,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom",
+        "Mini Bar",
+        "City View",
+        "Room Service"
+      ],
+      "available": true
+    },
+    {
+      "id": 32,
+      "number": "032",
+      "category": "Deluxe",
+      "price": 180,
+      "maxGuests": 3,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom",
+        "Mini Bar",
+        "City View",
+        "Room Service"
+      ],
+      "available": true
+    },
+    {
+      "id": 33,
+      "number": "033",
+      "category": "Deluxe",
+      "price": 180,
+      "maxGuests": 3,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom",
+        "Mini Bar",
+        "City View",
+        "Room Service"
+      ],
+      "available": true
+    },
+    {
+      "id": 34,
+      "number": "034",
+      "category": "Deluxe",
+      "price": 180,
+      "maxGuests": 3,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom",
+        "Mini Bar",
+        "City View",
+        "Room Service"
+      ],
+      "available": true
+    },
+    {
+      "id": 35,
+      "number": "035",
+      "category": "Deluxe",
+      "price": 180,
+      "maxGuests": 3,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom",
+        "Mini Bar",
+        "City View",
+        "Room Service"
+      ],
+      "available": true
+    },
+    {
+      "id": 36,
+      "number": "036",
+      "category": "Suite",
+      "price": 280,
+      "maxGuests": 4,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom",
+        "Mini Bar",
+        "Ocean View",
+        "Room Service",
+        "Balcony",
+        "Sofa"
+      ],
+      "available": true
+    },
+    {
+      "id": 37,
+      "number": "037",
+      "category": "Suite",
+      "price": 280,
+      "maxGuests": 4,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom",
+        "Mini Bar",
+        "Ocean View",
+        "Room Service",
+        "Balcony",
+        "Sofa"
+      ],
+      "available": true
+    },
+    {
+      "id": 38,
+      "number": "038",
+      "category": "Suite",
+      "price": 280,
+      "maxGuests": 4,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom",
+        "Mini Bar",
+        "Ocean View",
+        "Room Service",
+        "Balcony",
+        "Sofa"
+      ],
+      "available": true
+    },
+    {
+      "id": 39,
+      "number": "039",
+      "category": "Suite",
+      "price": 280,
+      "maxGuests": 4,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom",
+        "Mini Bar",
+        "Ocean View",
+        "Room Service",
+        "Balcony",
+        "Sofa"
+      ],
+      "available": true
+    },
+    {
+      "id": 40,
+      "number": "040",
+      "category": "Suite",
+      "price": 280,
+      "maxGuests": 4,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom",
+        "Mini Bar",
+        "Ocean View",
+        "Room Service",
+        "Balcony",
+        "Sofa"
+      ],
+      "available": true
+    },
+    {
+      "id": 41,
+      "number": "041",
+      "category": "Suite",
+      "price": 280,
+      "maxGuests": 4,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom",
+        "Mini Bar",
+        "Ocean View",
+        "Room Service",
+        "Balcony",
+        "Sofa"
+      ],
+      "available": true
+    },
+    {
+      "id": 42,
+      "number": "042",
+      "category": "Suite",
+      "price": 280,
+      "maxGuests": 4,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom",
+        "Mini Bar",
+        "Ocean View",
+        "Room Service",
+        "Balcony",
+        "Sofa"
+      ],
+      "available": true
+    },
+    {
+      "id": 43,
+      "number": "043",
+      "category": "Suite",
+      "price": 280,
+      "maxGuests": 4,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom",
+        "Mini Bar",
+        "Ocean View",
+        "Room Service",
+        "Balcony",
+        "Sofa"
+      ],
+      "available": true
+    },
+    {
+      "id": 44,
+      "number": "044",
+      "category": "Suite",
+      "price": 280,
+      "maxGuests": 4,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom",
+        "Mini Bar",
+        "Ocean View",
+        "Room Service",
+        "Balcony",
+        "Sofa"
+      ],
+      "available": true
+    },
+    {
+      "id": 45,
+      "number": "045",
+      "category": "Suite",
+      "price": 280,
+      "maxGuests": 4,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom",
+        "Mini Bar",
+        "Ocean View",
+        "Room Service",
+        "Balcony",
+        "Sofa"
+      ],
+      "available": true
+    },
+    {
+      "id": 46,
+      "number": "046",
+      "category": "Presidential",
+      "price": 450,
+      "maxGuests": 4,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom",
+        "Mini Bar",
+        "Ocean View",
+        "Room Service",
+        "Balcony",
+        "Sofa",
+        "Jacuzzi",
+        "Butler Service",
+        "Kitchen"
+      ],
+      "available": true
+    },
+    {
+      "id": 47,
+      "number": "047",
+      "category": "Presidential",
+      "price": 450,
+      "maxGuests": 4,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom",
+        "Mini Bar",
+        "Ocean View",
+        "Room Service",
+        "Balcony",
+        "Sofa",
+        "Jacuzzi",
+        "Butler Service",
+        "Kitchen"
+      ],
+      "available": true
+    },
+    {
+      "id": 48,
+      "number": "048",
+      "category": "Presidential",
+      "price": 450,
+      "maxGuests": 4,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom",
+        "Mini Bar",
+        "Ocean View",
+        "Room Service",
+        "Balcony",
+        "Sofa",
+        "Jacuzzi",
+        "Butler Service",
+        "Kitchen"
+      ],
+      "available": true
+    },
+    {
+      "id": 49,
+      "number": "049",
+      "category": "Presidential",
+      "price": 450,
+      "maxGuests": 4,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom",
+        "Mini Bar",
+        "Ocean View",
+        "Room Service",
+        "Balcony",
+        "Sofa",
+        "Jacuzzi",
+        "Butler Service",
+        "Kitchen"
+      ],
+      "available": true
+    },
+    {
+      "id": 50,
+      "number": "050",
+      "category": "Presidential",
+      "price": 450,
+      "maxGuests": 4,
+      "amenities": [
+        "WiFi",
+        "Air Conditioning",
+        "TV",
+        "Private Bathroom",
+        "Mini Bar",
+        "Ocean View",
+        "Room Service",
+        "Balcony",
+        "Sofa",
+        "Jacuzzi",
+        "Butler Service",
+        "Kitchen"
+      ],
+      "available": true
+    }
+  ],
+  "bookings": []
+}
